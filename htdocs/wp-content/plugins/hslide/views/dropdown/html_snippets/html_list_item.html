@@ -1,0 +1,132 @@
+<div class="elememt_list_item" data-toggle="closed" data-position="1">
+    <div class="element_identify">
+        [ICON]
+    </div>
+    <div class="element_name">
+        <span>[NAME]</span>
+    </div>
+    <div class="element_edit">
+        <div class="hero_edits rounded_20">
+            <div class="hero_edit_item element_edit_btn" style="background-image:url(http://localhost:8080/plugin_development/slider/wp-content/plugins/hslide//assets/images/admin/edit_icon.png)"></div>
+            <div class="hero_edit_item" onclick="delete_object_request(3);" style="background-image:url(http://localhost:8080/plugin_development/slider/wp-content/plugins/hslide//assets/images/admin/delete_icon.png)"></div>
+        </div>
+    </div>
+    <div class="element_timeline">
+        <div class="element_time"></div>
+    </div>                    
+    <!-- ANIMATION ELEMENT SETTINGS -->                    
+    <div class="element_settings">
+        <!-- ELEMENT ROW : START -->
+            <div class="element_row">
+                <div class="element_settings_inner">                        	
+                    <div class="hero_col_3 element_container">
+                        <div class="element_heading hero_green size_16">
+                            Offset position
+                        </div>
+                        <div class="element_settings_holder">
+                            <div class="hero_col_6">
+                                <div class="size_12">Offset X</div>
+                                <input type="text" data-size="lrg" class="hero_int_only" maxlength="2" id="position_offset_x" name="position_offset_x">
+                            </div>
+                            <div class="hero_col_6">
+                                <div class="size_12">Offset Y</div>
+                                <input type="text" data-size="lrg" class="hero_int_only" maxlength="2" id="position_offset_y" name="position_offset_y">
+                            </div>
+                        </div>
+                    </div>                            
+                    <div class="hero_col_3 element_container">
+                        <div class="element_heading hero_green size_16">
+                            Position
+                        </div>
+                        <div class="element_settings_holder">
+                            <div class="hero_col_6">
+                                <div class="size_12">X</div>
+                                <input type="text" data-size="lrg" class="hero_int_only" maxlength="2" id="position_x" name="position_x">
+                            </div>
+                            <div class="hero_col_6">
+                                <div class="size_12">Y</div>
+                                <input type="text" data-size="lrg" class="hero_int_only" maxlength="2" id="position_y" name="position_y">
+                            </div>
+                        </div>
+                    </div>                            
+                </div>  
+            </div> 
+        <!-- ELEMENT ROW : END -->
+        <!-- ELEMENT ROW : START -->
+            <div class="element_row">
+                <div class="element_settings_inner">                        	
+                    <div class="element_container">
+                        <div class="element_heading hero_green size_16">
+                            Animation options
+                        </div>
+                        <div class="element_settings_holder">
+                            <div class="hero_col_2">
+                                <div class="size_12">Type</div>
+                                <select data-size="lrg" id="element_animation_type" name="element_animation_type">
+                                    <option value="Bounce">Bounce</option>
+                                    <option value="Elastic">Elastic</option>
+                                </select>
+                            </div>
+                            <div class="hero_col_2">
+                                <div class="size_12">Easing</div>
+                                <select data-size="lrg" id="element_animation_easing" name="element_animation_easing">
+                                    <option value="easeOut">easeOut</option>
+                                    <option value="easeIn">easeIn</option>
+                                    <option value="easeInOut">easeInOut</option>
+                                </select>
+                            </div>
+                            <div class="hero_col_1">
+                                <div class="size_12">Delay</div>
+                                <input type="text" data-size="lrg" class="hero_int_only" maxlength="2" id="element_delay" name="element_delay">
+                            </div>
+                            <div class="hero_col_1">
+                                <div class="size_12">Duration</div>
+                                <input type="text" data-size="lrg" class="hero_int_only" maxlength="2" id="element_duration" name="element_duration">
+                            </div>
+                            <div class="hero_col_1">
+                                <div class="size_12">Rotation</div>
+                                <input type="text" data-size="lrg" class="hero_int_only" maxlength="3" id="element_rotation" name="element_rotation">
+                            </div>
+                            <div class="hero_col_2">
+                                <div class="size_12">Opacity start</div>
+                                <input type="text" data-size="lrg" class="hero_int_only" maxlength="3" id="element_opacity_start" name="element_opacity_start">
+                            </div>
+                            <div class="hero_col_2">
+                                <div class="size_12">Opacity end</div>
+                                <input type="text" data-size="lrg" class="hero_int_only" maxlength="3" id="element_opacity_end" name="element_opacity_end">
+                            </div>
+                        </div>
+                    </div>                          
+                </div>  
+            </div> 
+        <!-- ELEMENT ROW : END -->      
+        <!-- ELEMENT ROW : START -->
+            <div class="element_row">
+                <div class="element_settings_inner">                        	
+                    <div class="element_container">
+                        <div class="element_heading hero_green size_16">
+                            Element options
+                        </div>
+                        <div class="element_settings_holder">
+                            <div class="hero_col_6">
+                                <div class="size_12">URL</div>
+                                <input type="text" data-size="lrg" id="element_url" name="element_url">
+                            </div>
+                            <div class="hero_col_3">
+                                <div class="size_12">Alt</div>
+                                <input type="text" data-size="lrg" id="element_alt" name="element_alt">
+                            </div>
+                            <div class="hero_col_3">
+                                <div class="size_12">Target</div>
+                                <select data-size="lrg" id="element_target_2" name="element_target_2">
+                                    <option value="_blank">New page</option>
+                                    <option value="_self">Same page</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>                          
+                </div>  
+            </div> 
+        <!-- ELEMENT ROW : END -->                     
+    </div>                    
+</div>
