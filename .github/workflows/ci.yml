@@ -8,8 +8,9 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@main
     - name: 📂 Sync files
-      uses: Automattic/FTP-Deploy-Action@v3.0.1
+      uses: Automattic/FTP-Deploy-Action@3.0.1
       with:
         ftp-server: sftp://sftp.wp.com:22/htdocs/
         ftp-username: ${{ secrets.APPA_WORDPRESS_SFTP_PASS }}
         ftp-password: ${{ secrets.APPA_WORDPRESS_SFTP_USER }}
+        git-ftp-args: --insecure # if your certificate is setup correctly this can be removed
