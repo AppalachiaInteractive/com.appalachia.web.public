@@ -1,18 +1,19 @@
 on: push
-name: Publish Website over SFTP
+name: 🚀 Publish Website over SFTP
 jobs:
-  FTP-Deploy-Action:
-    name: FTP-Deploy-Action
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@main
+    - name: 🚚 Get latest code
+      uses: actions/checkout@main 
+    - name: 📂 Sync files
+      uses: AppalachiaInteractive/FTP-Deploy-Action@4.0.0
       with:
-        fetch-depth: 2
-    - name: FTP-Deploy-Action
-      uses: Automattic/FTP-Deploy-Action@3.0.1
-      with:
-        ftp-server: sftp://sftp.wp.com:22/htdocs/
-        ftp-username: ${{ secrets.APPA_WORDPRESS_SFTP_PASS }}
-        ftp-password: ${{ secrets.APPA_WORDPRESS_SFTP_USER }}
-        known-hosts: "sftp.wp.com ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDwfT/YEhOKO2Z0+XrjRqUS5Q2Ali6AlhOhZtzlIfMOvm03SypeDJH70tlUHasS+nm0SnZ01fOiEeAXa91ZhMihIYUT3nTGuiA2J3uVYsySCJefvhWc0kg1FbEus3V3cVmx4e3XctdkzLbOgPNngypZocbP+8yCpbx6Kb9lihmgTjgGn2QzbK1enRSzsN/CbjVhej9jwukbrWqdCrQsKAsoZ2p6YCtcKbHS+Yy4RwcO9PxZUBkeMXUrejms027bRcdVfwf55hWSD9xYEHpEHupkSL4ofWs3UKeRGz+jCCzl7Nu0S6VSwK4Zzll0auHI0Hwh8WKTJbSn1gxCdF93/rmP"
-        git-ftp-args: --insecure # if your certificate is setup correctly this can be removed
+        protocol: sftp
+        server: sftp.wp.com
+        port: 22
+        security: loose
+        server-dir: htdocs/
+        username: ${{ secrets.APPA_WORDPRESS_SFTP_PASS }}
+        password: ${{ secrets.APPA_WORDPRESS_SFTP_USER }}
