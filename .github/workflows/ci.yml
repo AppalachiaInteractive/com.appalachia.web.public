@@ -11,9 +11,8 @@ jobs:
       uses: Automattic/FTP-Deploy-Action@3.0.1
       with:
         ftp-server: sftp://sftp.wp.com:22/htdocs/
-        ftp-username: ${{ secrets.APPA_WORDPRESS_SFTP_PASS }}
-        ftp-password: ${{ secrets.APPA_WORDPRESS_SFTP_USER }}
-        git-ftp-args: --insecure # if your certificate is setup correctly this can be removed
+        ftp-username: ${{ secrets.FTP_USER }}
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
         known-hosts: "sftp.wp.com ssh-rsa AAAAB3NzaC1yc2EAAAADAQAB\
           AAABAQDwfT/YEhOKO2Z0+XrjRqUS5Q2Ali6AlhOhZtzlIfMOvm03Sype\
           DJH70tlUHasS+nm0SnZ01fOiEeAXa91ZhMihIYUT3nTGuiA2J3uVYsyS\
