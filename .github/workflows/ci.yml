@@ -6,14 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
-      uses: actions/checkout@main 
+      uses: actions/checkout@main
     - name: 📂 Sync files
-      uses: AppalachiaInteractive/FTP-Deploy-Action@v6.0.2
+      uses: Automattic/FTP-Deploy-Action@v3.0.1
       with:
-        protocol: sftp
-        server: sftp.wp.com
-        port: 22
-        security: loose
-        server-dir: htdocs/
-        username: ${{ secrets.APPA_WORDPRESS_SFTP_PASS }}
-        password: ${{ secrets.APPA_WORDPRESS_SFTP_USER }}
+        ftp-server: sftp://sftp.wp.com:22/htdocs/
+        ftp-username: ${{ secrets.APPA_WORDPRESS_SFTP_PASS }}
+        ftp-password: ${{ secrets.APPA_WORDPRESS_SFTP_USER }}
