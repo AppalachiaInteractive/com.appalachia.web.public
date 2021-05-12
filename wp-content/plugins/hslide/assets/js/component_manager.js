@@ -600,7 +600,7 @@ function update_select_component(element) {
 //force integer
 function hero_force_int(object) {
 	var val = jQuery(object).val();
-	if (!/^[0-9]+$/.test(val)) {
+	if (!/^[0-9\-]+$/.test(val)) {
 		jQuery(object).val(jQuery(object).val().replace(/[^0-9]/g, ''));
 	}
 }
