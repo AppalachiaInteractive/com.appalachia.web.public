@@ -847,7 +847,7 @@ function bg_animation_effect(object_clone, hslider_click_count, unique_name) {
     switch (object_clone.slider.slides[slide_pos].background[0].backgroundAnimation) {
         case 'zoom':
             //ken_burns
-            TweenLite.to(jQuery('#hslider_' + unique_name + ' #hslider_id_' + slide_pos + ' .ken_burns_' + slide_pos), parseInt(time_array[unique_name][hslider_click_count - 1]), { css: { transform: "scale(1." + object_clone.slider.slides[slide_pos].background[0].burnsDistance + ",1." + object_clone.slider.slides[slide_pos].background[0].burnsDistance + ")", transformOrigin: object_clone.slider.slides[slide_pos].background[0].burnsDirection }, ease: Power0.easeNone, force3D: true, rotationZ: 0.01 });
+            TweenLite.to(jQuery('#hslider_' + unique_name + ' #hslider_id_' + slide_pos + ' .ken_burns_' + slide_pos), parseInt(time_array[unique_name][hslider_click_count - 1]), { css: { transform: "scale(" + object_clone.slider.slides[slide_pos].background[0].burnsDistance + "," + object_clone.slider.slides[slide_pos].background[0].burnsDistance + ")", transformOrigin: object_clone.slider.slides[slide_pos].background[0].burnsDirection }, ease: Power0.easeNone, force3D: true, rotationZ: 0.01 });
             break;
         case 'para':
 

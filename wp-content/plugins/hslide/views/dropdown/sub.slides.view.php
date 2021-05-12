@@ -253,16 +253,25 @@
                 </div>
                 <div class="hero_col_4">
                     <label><h2 class="size_14 hero_grey">Zoom distance</h2></label>
-                    <select data-height="100" data-size="lrg" id="burns_distance" name="burns_distance">
-                        <option value="1">10%</option>
-                        <option value="2">20%</option>
-                        <option value="3">30%</option>
-                        <option value="4">40%</option>
-                        <option value="5">50%</option>
-                        <option value="6">60%</option>
-                        <option value="7">70%</option>
-                        <option value="8">80%</option>
-                        <option value="9">90%</option>
+                    <select data-height="100" data-size="lrg" id="burns_distance" name="burns_distance">                        
+                        <option value="0.1">-90%</option>
+                        <option value="0.2">-80%</option>
+                        <option value="0.3">-70%</option>
+                        <option value="0.4">-60%</option>
+                        <option value="0.5">-50%</option>
+                        <option value="0.6">-40%</option>
+                        <option value="0.7">-30%</option>
+                        <option value="0.8">-20%</option>
+                        <option value="0.9">-10%</option>
+                        <option value="1.1">+10%</option>
+                        <option value="1.2">+20%</option>
+                        <option value="1.3">+30%</option>
+                        <option value="1.4">+40%</option>
+                        <option value="1.5">+50%</option>
+                        <option value="1.6">+60%</option>
+                        <option value="1.7">+70%</option>
+                        <option value="1.8">+80%</option>
+                        <option value="1.9">+90%</option>
                     </select>
                 </div>
             </div>
