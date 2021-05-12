@@ -12,6 +12,7 @@ jobs:
     - name: 🏗️ Checkout LFS items
       run: |
         git lfs pull
+        git status
     - name: 📂 Sync files
       uses: Automattic/FTP-Deploy-Action@3.0.1
       with:
