@@ -30,14 +30,14 @@
                 <label><h2 class="size_14 hero_green">Responsive Scaling</h2></label>
                 <input type="radio" data-size="sml" id="responsive_type_responsive" data-node_val="slider/sliderType" name="responsive_group" value="responsive">
             </div>
-            <div class="hero_col_3">
+            <!--<div class="hero_col_3">
                 <label><h2 class="size_14 hero_green">Full Width</h2></label>
                 <input type="radio" data-size="sml" id="responsive_type_full_width" data-node_val="slider/sliderType" name="responsive_group" value="full">
             </div>
             <div class="hero_col_3">
                 <label><h2 class="size_14 hero_green">Full Screen</h2></label>
                 <input type="radio" data-size="sml" id="responsive_type_full_screen" data-node_val="slider/sliderType" name="responsive_group" value="fullscreen">
-            </div>
+            </div>-->
         </div>
         <div class="hero_col_12"> 
             <div class="hero_col_3">
