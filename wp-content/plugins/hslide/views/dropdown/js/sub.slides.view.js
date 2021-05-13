@@ -214,7 +214,7 @@ function unique(list) {
 	return result;
 }
 
-var zoom_val = 1;
+var zoom_val = .5;
 var slide_width;
 var slide_height;
 var slide_main_width;
