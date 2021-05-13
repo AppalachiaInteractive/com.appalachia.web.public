@@ -1795,8 +1795,14 @@ function hslider_button_html(content, theme) {
             button_html += '<div class="hslider_line_bottom"></div>';
             break;
         case 'border_button':
+            button_html += '<div class="hslider_button_content">' + content + '</div>';
+            break;
         case 'border_button_translucent':
+            button_html += '<div class="hslider_button_content">' + content + '</div>';
+            break;
         case 'full_button':
+            button_html += '<div class="hslider_button_content">' + content + '</div>';
+            break;
         case 'full_button_bordered':
             button_html += '<div class="hslider_button_content">' + content + '</div>';
             break;
@@ -2098,13 +2104,36 @@ function hslider_return_styles(object_clone, unique_name) {
                                 styles += '}\n';
                                 break;
                             case 'border_button':
+                                styles += slider_id + ' ' + slide_id + ' #hslider_element_' + el.elementId + ' .hslider_button_content{ ';
+                                styles += 'line-height:' + (parseInt(el.font[0].size)) + 'px; ';
+                                styles += 'border-color:' + el.font[0].secondary;
+                                styles += '}\n';
+                                styles += slider_id + ' ' + slide_id + ' #hslider_element_' + el.elementId + '{ ';
+                                styles += 'color:' + el.font[0].color + '; ';
+                                styles += 'font-family:' + el.font[0].family + '; ';
+                                styles += 'font-size:' + el.font[0].size + el.font[0].sizing + '; ';
+                                styles += 'font-weight:' + el.font[0].weight + '; ';
+                                styles += 'text-transform:' + el.font[0].transform + '; ';
+                                styles += '}\n';
+                                if (el.borderType === "rounded") {
+                                    styles += slider_id + ' ' + slide_id + ' #hslider_element_' + el.elementId + '{ ';
+                                    styles += '-webkit-border-radius: 200px ;';
+                                    styles += '-moz-border-radius: 200px ;';
+                                    styles += 'border-radius: 200px ;';
+                                    styles += 'overflow: hidden ;';
+                                    styles += '}\n';
+                                    styles += slider_id + ' ' + slide_id + ' #hslider_element_' + el.elementId + ' .hslider_button_content{ ';
+                                    styles += '-webkit-border-radius: 200px ;';
+                                    styles += '-moz-border-radius: 200px ;';
+                                    styles += 'border-radius: 200px ;';
+                                    styles += '}\n';
+                                }
+                                break;
                             case 'border_button_translucent':
                                 styles += slider_id + ' ' + slide_id + ' #hslider_element_' + el.elementId + ' .hslider_button_content{ ';
                                 styles += 'line-height:' + (parseInt(el.font[0].size)) + 'px; ';
                                 styles += 'border-color:' + el.font[0].secondary;
-                                if (el.theme === 'border_button_translucent'){
-                                    styles += 'background-color:' + hexToRgbA(el.font[0].secondary, .5);				
-                                }
+                                styles += 'background-color:' + hexToRgbA(el.font[0].secondary, .5);	
                                 styles += '}\n';
                                 styles += slider_id + ' ' + slide_id + ' #hslider_element_' + el.elementId + '{ ';
                                 styles += 'color:' + el.font[0].color + '; ';
@@ -2128,6 +2157,28 @@ function hslider_return_styles(object_clone, unique_name) {
                                 }
                                 break;
                             case 'full_button':
+                                styles += slider_id + ' ' + slide_id + ' #hslider_element_' + el.elementId + ' .hslider_button_content{ ';
+                                styles += 'line-height:' + (parseInt(el.font[0].size)) + 'px; ';
+                                styles += '}\n';
+                                styles += slider_id + ' ' + slide_id + ' #hslider_element_' + el.elementId + ' .hslider_button_content{ ';
+                                styles += 'background-color:' + el.font[0].secondary;
+                                styles += '}\n';
+                                styles += slider_id + ' ' + slide_id + ' #hslider_element_' + el.elementId + '{ ';
+                                styles += 'color:' + el.font[0].color + '; ';
+                                styles += 'font-family:' + el.font[0].family + '; ';
+                                styles += 'font-size:' + el.font[0].size + el.font[0].sizing + '; ';
+                                styles += 'font-weight:' + el.font[0].weight + '; ';
+                                styles += 'text-transform:' + el.font[0].transform + '; ';
+                                styles += '}\n';
+                                if (el.borderType === "rounded") {
+                                    styles += slider_id + ' ' + slide_id + ' #hslider_element_' + el.elementId + '{ ';
+                                    styles += '-webkit-border-radius: 200px ;';
+                                    styles += '-moz-border-radius: 200px ;';
+                                    styles += 'border-radius: 200px ;';
+                                    styles += 'overflow: hidden ;';
+                                    styles += '}\n';
+                                }
+                                break;
                             case 'full_button_bordered':
                                 styles += slider_id + ' ' + slide_id + ' #hslider_element_' + el.elementId + ' .hslider_button_content{ ';
                                 styles += 'line-height:' + (parseInt(el.font[0].size)) + 'px; ';

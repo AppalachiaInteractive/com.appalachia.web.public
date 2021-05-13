@@ -145,14 +145,8 @@ function hslider_border_button_translucent(){
 			TweenLite.to(jQuery(this).children('.hslider_button_content'), 0.3, {borderColor:jQuery(this).attr('data-color'), backgroundColor:jQuery(this).attr('data-secondary'), color:jQuery(this).attr('data-color'), ease:Power2.easeInOut});			
 		},
 		mouseleave: function(){
-			TweenLite.to(jQuery(this).children('.hslider_button_content'), 0.3, {borderColor:jQuery(this).attr('data-secondary'), backgroundColor:'none', color:jQuery(this).attr('data-color'), ease:Power2.easeInOut});
+			TweenLite.to(jQuery(this).children('.hslider_button_content'), 0.3, {borderColor:jQuery(this).attr('data-secondary'), backgroundColor:hexToRgbA(jQuery(this).attr('data-secondary'), 0.5), color:jQuery(this).attr('data-color'), ease:Power2.easeInOut});
 		}
-		// mouseenter: function(){
-		// 	TweenLite.to(jQuery(this).children('.hslider_button_content'), 0.3, {borderColor:jQuery(this).attr('data-color'), backgroundColor:jQuery(this).attr('data-secondary'), color:jQuery(this).attr('data-color'), ease:Power2.easeInOut});			
-		// },
-		// mouseleave: function(){
-		// 	TweenLite.to(jQuery(this).children('.hslider_button_content'), 0.3, {borderColor:jQuery(this).attr('data-secondary'), backgroundColor:hexToRgbA(jQuery(this).attr('data-secondary'), 0.5), color:jQuery(this).attr('data-color'), ease:Power2.easeInOut});
-		// }
 	});
 	
 }
@@ -182,17 +176,11 @@ function hslider_full_button_bordered(){
 	
 	jQuery('.hslider_full_button_bordered').on({
 		mouseenter: function(){
-			TweenLite.to(jQuery(this).children('.hslider_button_content'), 0.3, {backgroundColor:jQuery(this).attr('data-color'), color:jQuery(this).attr('data-secondary'), ease:Power2.easeInOut});			
+		TweenLite.to(jQuery(this).children('.hslider_button_content'), 0.3, {borderColor:jQuery(this).attr('data-secondary'), backgroundColor:jQuery(this).attr('data-color'), color:jQuery(this).attr('data-secondary'), ease:Power2.easeInOut});			
 		},
 		mouseleave: function(){
-			TweenLite.to(jQuery(this).children('.hslider_button_content'), 0.3, {backgroundColor:jQuery(this).attr('data-secondary'), color:jQuery(this).attr('data-color'), ease:Power2.easeInOut});
+		TweenLite.to(jQuery(this).children('.hslider_button_content'), 0.3, {borderColor:jQuery(this).attr('data-color'), backgroundColor:jQuery(this).attr('data-secondary'), color:jQuery(this).attr('data-color'), ease:Power2.easeInOut});
 		}
-		// mouseenter: function(){
-		// 	TweenLite.to(jQuery(this).children('.hslider_button_content'), 0.3, {borderColor:jQuery(this).attr('data-secondary'), backgroundColor:jQuery(this).attr('data-color'), color:jQuery(this).attr('data-secondary'), ease:Power2.easeInOut});			
-		// },
-		// mouseleave: function(){
-		// 	TweenLite.to(jQuery(this).children('.hslider_button_content'), 0.3, {borderColor:jQuery(this).attr('data-color'), backgroundColor:jQuery(this).attr('data-secondary'), color:jQuery(this).attr('data-color'), ease:Power2.easeInOut});
-		// }
 	});
 	
 }
