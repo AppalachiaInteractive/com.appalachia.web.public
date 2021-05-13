@@ -3595,9 +3595,9 @@ function hslider_button_html(content, theme, font_obj, location, index) {
 			button_html += '<div class="hslider_line_bottom"></div>';
 			break;
 		case 'border_button':
-			button_html += '<div class="hslider_button_content">' + content + '</div>';
-			break;
+		case 'border_button_translucent':
 		case 'full_button':
+		case 'full_button_bordered':
 			button_html += '<div class="hslider_button_content">' + content + '</div>';
 			break;
 	}
@@ -3710,12 +3710,15 @@ function hslider_button_css(theme, font_obj, location, index) {
 			styles += '}\n';
 			break;
 		case 'border_button':
+		case 'border_button_translucent':
 			styles += '.button_' + location + '_' + index + ' .hslider_button_content{ ';
 			styles += 'line-height:' + (parseInt(font_obj.font[0].size)) + 'px; ';
-			styles += '}\n';
-			styles += '.button_' + location + '_' + index + ' .hslider_button_content{ ';
 			styles += 'border-color:' + font_obj.font[0].secondary;
+			if (theme === 'border_button_translucent'){
+				styles += 'background-color:' + hexToRgbA(font_obj.font[0].secondary, .5);				
+			}
 			styles += '}\n';
+
 			styles += '.button_' + location + '_' + index + ' { ';
 			styles += 'color:' + font_obj.font[0].color + '; ';
 			styles += 'font-family:' + font_obj.font[0].family + '; ';
@@ -3723,6 +3726,7 @@ function hslider_button_css(theme, font_obj, location, index) {
 			styles += 'font-weight:' + font_obj.font[0].weight + '; ';
 			styles += 'text-transform:' + font_obj.font[0].transform + '; ';
 			styles += '}\n';
+
 			if (font_obj.borderType === "rounded") {
 				styles += '.button_' + location + '_' + index + ' { ';
 				styles += '-webkit-border-radius: 200px ;';
@@ -3730,6 +3734,7 @@ function hslider_button_css(theme, font_obj, location, index) {
 				styles += 'border-radius: 200px ;';
 				styles += 'overflow: hidden ;';
 				styles += '}\n';
+
 				styles += '.button_' + location + '_' + index + ' .hslider_button_content{ ';
 				styles += '-webkit-border-radius: 200px ;';
 				styles += '-moz-border-radius: 200px ;';
@@ -3738,12 +3743,12 @@ function hslider_button_css(theme, font_obj, location, index) {
 			}
 			break;
 		case 'full_button':
+		case 'full_button_bordered':
 			styles += '.button_' + location + '_' + index + ' .hslider_button_content{ ';
 			styles += 'line-height:' + (parseInt(font_obj.font[0].size)) + 'px; ';
-			styles += '}\n';
-			styles += '.button_' + location + '_' + index + ' .hslider_button_content{ ';
 			styles += 'background-color:' + font_obj.font[0].secondary;
 			styles += '}\n';
+
 			styles += '.button_' + location + '_' + index + ' { ';
 			styles += 'color:' + font_obj.font[0].color + '; ';
 			styles += 'font-family:' + font_obj.font[0].family + '; ';
@@ -3751,6 +3756,7 @@ function hslider_button_css(theme, font_obj, location, index) {
 			styles += 'font-weight:' + font_obj.font[0].weight + '; ';
 			styles += 'text-transform:' + font_obj.font[0].transform + '; ';
 			styles += '}\n';
+
 			if (font_obj.borderType === "rounded") {
 				styles += '.button_' + location + '_' + index + ' { ';
 				styles += '-webkit-border-radius: 200px ;';
@@ -3764,6 +3770,21 @@ function hslider_button_css(theme, font_obj, location, index) {
 
 	return styles;
 
+}
+
+
+
+function hexToRgbA(hex, opacity){
+	var c;
+	if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
+		c= hex.substring(1).split('');
+		if(c.length== 3){
+			c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+		}
+		c= '0x'+c.join('');
+		return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+','+opacity+')';
+	}
+	throw new Error('Bad Hex');
 }
 
 //file uploader

@@ -540,9 +540,9 @@ function hslider_button_html(content, theme) {
 			button_html += '<div class="hslider_line_bottom"></div>';
 			break;
 		case 'border_button':
-			button_html += '<div class="hslider_button_content">' + content + '</div>';
-			break;
+		case 'border_button_translucent':
 		case 'full_button':
+		case 'full_button_bordered':
 			button_html += '<div class="hslider_button_content">' + content + '</div>';
 			break;
 	}
@@ -763,8 +763,12 @@ function hslider_return_styles(obj) {
 								styles += '}\n';
 								break;
 							case 'border_button':
+							case 'border_button_translucent':
 								styles += slider_id + ' #hslider_element_' + el.elementId + ' .hslider_button_content{ ';
-								styles += 'border-color:' + el.font[0].secondary;
+								styles += 'border-color:' + el.font[0].secondary;								
+								if (el.theme === 'border_button_translucent'){
+									styles += 'background-color:' + hexToRgbA(el.font[0].secondary, .5);				
+								}
 								styles += '}\n';
 								styles += slider_id + ' #hslider_element_' + el.elementId + '{ ';
 								styles += 'color:' + el.font[0].color + '; ';
@@ -775,6 +779,7 @@ function hslider_return_styles(obj) {
 								styles += '}\n';
 								break;
 							case 'full_button':
+							case 'full_button_bordered':
 								styles += slider_id + ' #hslider_element_' + el.elementId + ' .hslider_button_content{ ';
 								styles += 'background-color:' + el.font[0].secondary;
 								styles += '}\n';
@@ -843,6 +848,19 @@ function hslider_return_styles(obj) {
 
 }
 
+
+function hexToRgbA(hex, opacity){
+	var c;
+	if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
+		c= hex.substring(1).split('');
+		if(c.length== 3){
+			c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+		}
+		c= '0x'+c.join('');
+		return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+','+opacity+')';
+	}
+	throw new Error('Bad Hex');
+}
 
 
 /*	/////////////////////////////////
