@@ -783,7 +783,7 @@ function hslider_return_styles(obj) {
 							case 'border_button_translucent':
 								styles += slider_id + ' #hslider_element_' + el.elementId + ' .hslider_button_content{ ';
 								styles += 'border-color:' + el.font[0].secondary;		
-								styles += 'background-color:' + hexToRgbA(el.font[0].secondary, .5);
+								styles += 'background-color:' + hexToRgbA(el.font[0].secondary, '0.5');
 								styles += '}\n';
 								styles += slider_id + ' #hslider_element_' + el.elementId + '{ ';
 								styles += 'color:' + el.font[0].color + '; ';
