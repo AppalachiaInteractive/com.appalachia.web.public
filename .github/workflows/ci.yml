@@ -27,3 +27,18 @@ jobs:
           YCtcKbHS+Yy4RwcO9PxZUBkeMXUrejms027bRcdVfwf55hWSD9xYEHpE\
           HupkSL4ofWs3UKeRGz+jCCzl7Nu0S6VSwK4Zzll0auHI0Hwh8WKTJbSn\
           1gxCdF93/rmP"
+    - name: 🤖 Install expect
+      run: apt-get install expect
+    - name: 🙈 Update secrets - wp-content/plugins/documents-from-git/includes/config.json
+      run: sed -i '' 's/#{PAT_CHRISTOPHERSCHUBERT}#/${{ secrets.PAT_CHRISTOPHERSCHUBERT }}/g' wp-content/plugins/documents-from-git/includes/config.json
+    - name: 🚢 Ship it via SFTP!
+      run: |
+        spawn sftp $APPA_WORDPRESS_SFTP_USER@sftp.wp.com
+        expect "password:"
+        send "$APPA_WORDPRESS_SFTP_PASS\n"
+        expect "sftp>"
+        send "put wp-content/plugins/documents-from-git/includes/config.json wp-content/plugins/documents-from-git/includes/config.json\n"
+        expect "sftp>"
+        send "exit\n"
+        interact
+
