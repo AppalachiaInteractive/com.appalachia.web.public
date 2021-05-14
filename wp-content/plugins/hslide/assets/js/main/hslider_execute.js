@@ -58,10 +58,10 @@ function hslider_get_json_object() {
 		hslider_execute_resize(data);
 	}).done(function () {
 		//SUCCESS
-		//console.log('Success');
+		console.log('Success');
 	}).fail(function () {
 		//FAIL
-		//console.log('Fail error.');
+		console.log('Fail error.');
 	});
 
 }
@@ -790,6 +790,8 @@ function hslider_return_styles(obj) {
 								styles += 'text-transform:' + el.font[0].transform + '; ';
 								styles += '}\n';
 								break;
+
+								
 							case 'full_button':
 								styles += slider_id + ' #hslider_element_' + el.elementId + ' .hslider_button_content{ ';
 								styles += 'background-color:' + el.font[0].secondary;

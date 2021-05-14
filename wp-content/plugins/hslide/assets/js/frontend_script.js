@@ -2131,6 +2131,8 @@ function hslider_return_styles(object_clone, unique_name) {
                             case 'border_button_translucent':
                                 styles += slider_id + ' ' + slide_id + ' #hslider_element_' + el.elementId + ' .hslider_button_content{ ';
                                 styles += 'line-height:' + (parseInt(el.font[0].size)) + 'px; ';
+                                styles += '}\n';
+                                styles += slider_id + ' ' + slide_id + ' #hslider_element_' + el.elementId + ' .hslider_button_content{ ';
                                 styles += 'border-color:' + el.font[0].secondary;
                                 styles += 'background-color:' + hexToRgbA(el.font[0].secondary, '0.5');	
                                 styles += '}\n';

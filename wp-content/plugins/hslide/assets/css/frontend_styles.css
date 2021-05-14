@@ -304,12 +304,12 @@ body{
 	border:1px solid #FF0004; padding:10px 20px;
 }
 
-.hslider_full_button .hslider_button_content{
-	padding:16px 25px;
-}
-
 .hslider_border_button_translucent .hslider_button_content{
 	border:2px solid #FF0004; padding:10px 20px;
+}
+
+.hslider_full_button .hslider_button_content{
+	padding:16px 25px;
 }
 
 
