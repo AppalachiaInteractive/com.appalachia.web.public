@@ -33,9 +33,9 @@ jobs:
       run: sed -i '' 's/#{PAT_CHRISTOPHERSCHUBERT}#/${{ secrets.PAT_CHRISTOPHERSCHUBERT }}/g' wp-content/plugins/documents-from-git/includes/config.json
     - name: 🚢 Ship it via SFTP!
       run: |
-        spawn sftp $APPA_WORDPRESS_SFTP_USER@sftp.wp.com
+        spawn sftp ${{ secrets.FTP_USER }}@sftp.wp.com
         expect "password:"
-        send "$APPA_WORDPRESS_SFTP_PASS\n"
+        send "${{ secrets.FTP_PASSWORD }}\n"
         expect "sftp>"
         send "put wp-content/plugins/documents-from-git/includes/config.json wp-content/plugins/documents-from-git/includes/config.json\n"
         expect "sftp>"
