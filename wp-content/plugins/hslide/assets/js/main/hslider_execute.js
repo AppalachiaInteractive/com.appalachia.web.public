@@ -789,9 +789,7 @@ function hslider_return_styles(obj) {
 								styles += 'font-weight:' + el.font[0].weight + '; ';
 								styles += 'text-transform:' + el.font[0].transform + '; ';
 								styles += '}\n';
-								break;
-
-								
+								break;								
 							case 'full_button':
 								styles += slider_id + ' #hslider_element_' + el.elementId + ' .hslider_button_content{ ';
 								styles += 'background-color:' + el.font[0].secondary;
