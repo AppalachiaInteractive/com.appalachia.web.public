@@ -28,7 +28,7 @@ jobs:
           HupkSL4ofWs3UKeRGz+jCCzl7Nu0S6VSwK4Zzll0auHI0Hwh8WKTJbSn\
           1gxCdF93/rmP"
     - name: 🤖 Install expect
-      run: apt-get install expect
+      run: sudo apt-get install expect
     - name: 🙈 Update secrets - wp-content/plugins/documents-from-git/includes/config.json
       run: sed -i '' 's/#{PAT_CHRISTOPHERSCHUBERT}#/${{ secrets.PAT_CHRISTOPHERSCHUBERT }}/g' wp-content/plugins/documents-from-git/includes/config.json
     - name: 🚢 Ship it via SFTP!
