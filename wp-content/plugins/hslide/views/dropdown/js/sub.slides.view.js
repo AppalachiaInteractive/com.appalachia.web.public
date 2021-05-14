@@ -3603,9 +3603,6 @@ function hslider_button_html(content, theme, font_obj, location, index) {
 		case 'full_button':
 			button_html += '<div class="hslider_button_content">' + content + '</div>';
 			break;
-		case 'full_button_bordered':
-			button_html += '<div class="hslider_button_content">' + content + '</div>';
-			break;
 	}
 
 	button_html += '</div>';
@@ -3797,30 +3794,7 @@ function hslider_button_css(theme, font_obj, location, index) {
 				styles += 'overflow: hidden ;';
 				styles += '}\n';
 			}
-			break;
-		case 'full_button_bordered':
-			styles += '.button_' + location + '_' + index + ' .hslider_button_content{ ';
-			styles += 'line-height:' + (parseInt(font_obj.font[0].size)) + 'px; ';
-			styles += '}\n';
-			styles += '.button_' + location + '_' + index + ' .hslider_button_content{ ';
-			styles += 'background-color:' + font_obj.font[0].secondary;
-			styles += '}\n';
-			styles += '.button_' + location + '_' + index + ' { ';
-			styles += 'color:' + font_obj.font[0].color + '; ';
-			styles += 'font-family:' + font_obj.font[0].family + '; ';
-			styles += 'font-size:' + font_obj.font[0].size + font_obj.font[0].sizing + '; ';
-			styles += 'font-weight:' + font_obj.font[0].weight + '; ';
-			styles += 'text-transform:' + font_obj.font[0].transform + '; ';
-			styles += '}\n';
-			if (font_obj.borderType === "rounded") {
-				styles += '.button_' + location + '_' + index + ' { ';
-				styles += '-webkit-border-radius: 200px ;';
-				styles += '-moz-border-radius: 200px ;';
-				styles += 'border-radius: 200px ;';
-				styles += 'overflow: hidden ;';
-				styles += '}\n';
-			}
-			break;
+			break;		
 	}
 
 	return styles;

@@ -240,7 +240,6 @@ body{
 .hslider_double_clamp,
 .hslider_border_button,
 .hslider_border_button_translucent,
-.hslider_full_button_bordered,
 .hslider_full_button{
 	cursor:pointer;
 }
@@ -313,9 +312,6 @@ body{
 	border:2px solid #FF0004; padding:10px 20px;
 }
 
-.hslider_full_button_bordered .hslider_button_content{
-	border:2px solid #FF0004; padding:10px 20px;
-}
 
 /* 	
 	****************************************
