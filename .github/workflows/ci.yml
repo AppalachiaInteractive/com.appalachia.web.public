@@ -35,6 +35,8 @@ jobs:
       run: |
         expect <<END
         spawn sftp ${{ secrets.FTP_USER }}@sftp.wp.com
+        expect "fingerprint:"
+        send "yes"
         expect "password:"
         send "${{ secrets.FTP_PASSWORD }}\n"
         expect "sftp>"
