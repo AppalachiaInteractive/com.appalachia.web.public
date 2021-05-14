@@ -3748,7 +3748,7 @@ function hslider_button_css(theme, font_obj, location, index) {
 			styles += 'border-color:' + font_obj.font[0].secondary;
 			styles += '}\n';
 			styles += '.button_' + location + '_' + index + ' .hslider_button_content{ ';
-			styles += 'background-color:' + hexToRgbA(font_obj.font[0].secondary, '0.5');
+			styles += 'background-color:' + hexToRgbA(font_obj.font[0].secondary, '0.66');
 			styles += '}\n';
 			styles += '.button_' + location + '_' + index + ' { ';
 			styles += 'color:' + font_obj.font[0].color + '; ';
