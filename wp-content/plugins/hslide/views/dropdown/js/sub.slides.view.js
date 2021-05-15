@@ -2822,26 +2822,6 @@ function insert_element_to_stage(type, element_obj, index) {
 
 }
 
-
-// get element edit button
-function get_element_edit_button(element_obj, index) {
-	switch (element_obj.type) {
-		case 'text':
-			return '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit text element" data-title="Text Element" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
-		case 'element':
-			return '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit image element" data-title="Element" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
-		case 'post':
-			return '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit post element" data-title="Posts" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
-		case 'video':
-			return '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit video element" data-title="Video" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
-		case 'button':
-			return '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit button element" data-title="Button Element" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
-		case 'woo':
-			return '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit woo element" data-title="Posts" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
-	}
-}
-
-
 //set draggable dimentions
 function set_drag_dimentions() {
 
@@ -2852,6 +2832,26 @@ function set_drag_dimentions() {
 	});
 
 }
+
+
+// get element edit button
+function get_element_edit_button(element_obj, index) {
+	switch (element_obj.type) {
+		case 'text':
+			return '<div class="hero_edit_item element_edit_btn" data-tooltip="Edit text element" data-title="Text Element" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
+		case 'element':
+			return '<div class="hero_edit_item element_edit_btn" data-tooltip="Edit image element" data-title="Element" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
+		case 'post':
+			return '<div class="hero_edit_item element_edit_btn" data-tooltip="Edit post element" data-title="Posts" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
+		case 'video':
+			return '<div class="hero_edit_item element_edit_btn" data-tooltip="Edit video element" data-title="Video" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
+		case 'button':
+			return '<div class="hero_edit_item element_edit_btn" data-tooltip="Edit button element" data-title="Button Element" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
+		case 'woo':
+			return '<div class="hero_edit_item element_edit_btn" data-tooltip="Edit woo element" data-title="Posts" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
+	}
+}
+
 
 //add elements to list
 function insert_element_to_list(element, index, append_type) {
