@@ -221,6 +221,7 @@ var slide_main_width;
 
 //set slide
 function set_slide(obj, index) {
+	console.log("activate_custom_popup_load");
 
 	//variables
 	slide_width = obj.slider.width;
@@ -294,12 +295,14 @@ function set_slide(obj, index) {
 
 //adjust holder height
 function adjust_holder() {
+	console.log("adjust_holder");
 	var holder_height = jQuery('.hslider_slide_main').height();
 	TweenLite.to(jQuery('.slide_holder_adjust'), 0, { height: holder_height + 60, ease: Power2.easeInOut });
 }
 
 //load slide data
 function load_slide_data(obj, index) {
+	console.log("activate_custom_popup_load");
 
 	//set delete button index
 	jQuery('.slide_delete_btn').attr('data-index', global_slide_index);
@@ -488,6 +491,7 @@ function load_slide_data(obj, index) {
 
 //toggle image video section
 function toggle_section(type) {
+	console.log("activate_custom_popup_load");
 
 	switch (type) {
 		case 'image':
@@ -508,6 +512,7 @@ function toggle_section(type) {
 
 //enable update settings
 function enable_update_settings(obj, index) {
+	console.log("activate_custom_popup_load");
 
 	var control_status = jQuery('#slide_active');
 	var control_transition = jQuery('#transition');
@@ -839,6 +844,7 @@ function populate_topbar(main_object) {
 
 //enable slide order change
 function enable_slide_order_change() {
+	console.log("enable_slide_order_change");
 
 	jQuery(".slide_items").sortable({
 		placeholder: "item_placeholder",
@@ -857,6 +863,7 @@ function enable_slide_order_change() {
 }
 
 function set_slide_order() {
+	console.log("set_slide_order");
 
 	jQuery('.top_slide_item ').each(function (index, element) {
 		var the_index = jQuery(this).data('index');
@@ -889,6 +896,7 @@ function enable_slide_item() {
 
 //slide object
 function add_slide_object() {
+	console.log("add_slide_object");
 
 	var json;
 
@@ -910,6 +918,7 @@ function add_slide_object() {
 
 //enable accordion
 function enable_accordion() {
+	console.log("enable_accordion");
 
 	jQuery('.element_edit_btn').on('click', function () {
 
@@ -934,6 +943,7 @@ function enable_accordion() {
 
 //close accordion
 function close_accordion(position) {
+	console.log("activate_custom_popup_load");
 
 	jQuery('.elememt_list_item').each(function (index, element) {
 
@@ -952,7 +962,7 @@ function close_accordion(position) {
 
 //custom popup load
 function activate_custom_popup_load() {
-
+	console.log("activate_custom_popup_load");
 	//set initial state
 	TweenLite.to(jQuery('.hero_custom_popup_holder .hero_custom_popup_inner'), 0, { ease: Power2.easeInOut });
 
@@ -1051,6 +1061,7 @@ function activate_custom_popup_load() {
 }
 
 function toggle_product_display(val) {
+	console.log("activate_custom_popup_load");
 
 	if (val === 'woo_normal_display' || typeof (val) === 'undefined') {
 		jQuery('.hslider_normal_display').show();
@@ -1065,6 +1076,7 @@ function toggle_product_display(val) {
 
 //add custom data to the popup inputs, selects etc...
 function add_custom_to_popup(html_load, the_index) {
+	console.log("activate_custom_popup_load");
 
 	switch (html_load) {
 		case 'post':
@@ -1121,6 +1133,7 @@ function add_custom_to_popup(html_load, the_index) {
 
 //set update button element data
 function add_update_data(type_to_load, action, the_index) {
+	console.log("activate_custom_popup_load");
 
 	//set add button data
 	jQuery('.element_insert_button').attr('data-element', type_to_load);
@@ -1718,6 +1731,7 @@ function add_update_data(type_to_load, action, the_index) {
 
 //enable woo loader
 function enable_woo_product_loader(element_index) {
+	console.log("activate_custom_popup_load");
 
 	//open sidebar
 	jQuery('.hslider_add_product').off().on('click', function () {
@@ -1763,6 +1777,7 @@ function enable_woo_product_loader(element_index) {
 
 //load woo sidebar data
 function load_woo_sidebar_data(category, off, idx) {
+	console.log("activate_custom_popup_load");
 
 	//load html
 	jQuery.ajax({
@@ -1785,6 +1800,7 @@ function load_woo_sidebar_data(category, off, idx) {
 
 //insert_sidebar_product_html
 function insert_sidebar_product_html(category, obj, id) {
+	console.log("activate_custom_popup_load");
 
 	//clear html
 	jQuery('.hero_custom_sidebar_products').html('');
@@ -1910,6 +1926,7 @@ function insert_sidebar_product_html(category, obj, id) {
 }
 
 function enable_add_product_btn() {
+	console.log("enable_add_product_btn");
 
 	var the_id_string = '';
 
@@ -1924,6 +1941,7 @@ function enable_add_product_btn() {
 
 //data update element object
 function json_update_element_objects(obj, index, type) {
+	console.log("activate_custom_popup_load");
 
 	switch (type) {
 		case 'text':
@@ -2139,6 +2157,7 @@ function json_update_element_objects(obj, index, type) {
 
 //set add button element data
 function add_element_data(type_to_load, action) {
+	console.log("activate_custom_popup_load");
 
 	//set add button data
 	jQuery('.element_insert_button').attr('data-element', type_to_load);
@@ -2203,6 +2222,7 @@ function add_element_data(type_to_load, action) {
 
 //data objects for each element
 function json_element_objects(type_to_add, element_object) {
+	console.log("activate_custom_popup_load");
 
 	var json;
 	var parse_string;
@@ -2290,6 +2310,7 @@ function json_element_objects(type_to_add, element_object) {
 
 //load slide elements
 function load_slide_elements(main_object) {
+	console.log("activate_custom_popup_load");
 
 	var element_count = main_object.slider.slides[global_slide_index].elements.length;
 
@@ -2341,6 +2362,7 @@ function load_slide_elements(main_object) {
 
 //load post content
 function load_post_content() {
+	console.log("load_post_content");
 
 	jQuery('.hslider_slide_holder').find('[data-type="post"]').each(function (index, element) {
 
@@ -2375,6 +2397,7 @@ function load_post_content() {
 
 //load post content
 function load_woo_content() {
+	console.log("load_woo_content");
 
 	jQuery('.hslider_slide_holder').find('[data-type="woo"]').each(function (index, element) {
 
@@ -2414,6 +2437,7 @@ function load_woo_content() {
 
 //return video html
 function insert_video_html(index) {
+	console.log("activate_custom_popup_load");
 
 	//variables
 	var html = '';
@@ -2446,6 +2470,7 @@ function insert_video_html(index) {
 
 //add post html
 function insert_post_html(post_obj, element_obj, index) {
+	console.log("activate_custom_popup_load");
 
 	if (post_obj) {
 
@@ -2544,6 +2569,7 @@ function insert_post_html(post_obj, element_obj, index) {
 
 //add product html
 function insert_woo_html(woo_obj, element_obj, index) {
+	console.log("activate_custom_popup_load");
 
 	if (woo_obj) {
 
@@ -2669,6 +2695,7 @@ function insert_woo_html(woo_obj, element_obj, index) {
 
 //add elements to stage
 function insert_element_to_stage(type, element_obj, index) {
+	console.log("activate_custom_popup_load");
 
 	var element_html = '';
 
@@ -2824,6 +2851,7 @@ function insert_element_to_stage(type, element_obj, index) {
 
 //set draggable dimentions
 function set_drag_dimentions() {
+	console.log("set_drag_dimentions");
 
 	//set tool div height
 	jQuery('.hslider_element_tools').each(function (index, element) {
@@ -2836,6 +2864,7 @@ function set_drag_dimentions() {
 
 // get element edit button
 function get_element_edit_button(element_obj, index) {
+	console.log("activate_custom_popup_load");
 
 	element_html='<div class="tools_element_edit data_popup_launch hero_edit_item" data-tooltip=';
 
@@ -2869,6 +2898,7 @@ function get_element_edit_button(element_obj, index) {
 
 //add elements to list
 function insert_element_to_list(element, index, append_type) {
+	console.log("activate_custom_popup_load");
 
 	//variables
 	var element_list_html = '';
@@ -2969,6 +2999,7 @@ function insert_element_to_list(element, index, append_type) {
 
 //enable the sorting for the elements on the stage
 function enable_sorting() {
+	console.log("enable_sorting");
 
 	jQuery("#element_list_holder").sortable({
 		placeholder: "placeholder",
@@ -2983,6 +3014,7 @@ function enable_sorting() {
 
 //set order
 function set_order() {
+	console.log("set_order");
 
 	//set positions of new order
 	var element_length = jQuery('.elememt_list_item').length;
@@ -3007,6 +3039,7 @@ function sort_items_reverse(a, b) {
 
 //delete element
 function delete_element(index, type) {
+	console.log("activate_custom_popup_load");
 
 	if (window.confirm('Are you sure you want to delete the nav item?')) {
 
@@ -3093,6 +3126,7 @@ function delete_element(index, type) {
 
 //set list item data
 function enable_list_item_data(element, index) {
+	console.log("activate_custom_popup_load");
 
 	//offset position
 	jQuery('#position_offset_x_' + index).val(element.offset_x);
@@ -3166,6 +3200,7 @@ function enable_list_item_data(element, index) {
 
 //switch duration preview
 function switch_duration_preview(element, index, delay_time, animation_time) {
+	console.log("activate_custom_popup_load");
 
 	var delay_percentage = (delay_time / main_object.slider.slides[global_slide_index].slideIdle) * 100;
 	var animation_percentage = (animation_time / main_object.slider.slides[global_slide_index].slideIdle) * 100;
@@ -3177,6 +3212,7 @@ function switch_duration_preview(element, index, delay_time, animation_time) {
 
 //enable the direction change
 function switch_direction(element, index) {
+	console.log("activate_custom_popup_load");
 
 	jQuery('.element_animate_direction_' + index + ' .hero_dropdown .hero_drop_row').on('click', function () {
 		jQuery('#element_animate_direction_' + index).trigger('change');
@@ -3200,6 +3236,7 @@ function switch_direction(element, index) {
 
 //set list item data update
 function enable_list_item_data_update(element, index) {
+	console.log("activate_custom_popup_load");
 
 	//change: positions
 	jQuery('#position_offset_x_' + index).on('change keyup', function () {
@@ -3318,6 +3355,7 @@ function enable_list_item_data_update(element, index) {
 
 //change element position on stage with a nice smooth animation
 function change_element_stage_position(index, val, direction) {
+	console.log("activate_custom_popup_load");
 
 	switch (direction) {
 		case 'x':
@@ -3332,6 +3370,7 @@ function change_element_stage_position(index, val, direction) {
 
 //get html chunks
 function get_html_chunk(type, id) {
+	console.log("activate_custom_popup_load");
 
 	//variables
 	var chunk_html = '';
@@ -3525,6 +3564,7 @@ function get_html_chunk(type, id) {
 
 //enable drag elements
 function enable_element_drag() {
+	console.log("enable_element_drag");
 
 	//variables
 	var the_slide_width = main_object.slider.width;
@@ -3594,6 +3634,7 @@ function enable_element_drag() {
 
 //get button html
 function hslider_button_html(content, theme, font_obj, location, index) {
+	console.log("activate_custom_popup_load");
 
 	var button_html = '';
 
@@ -3648,6 +3689,7 @@ function hslider_button_html(content, theme, font_obj, location, index) {
 
 //get button css
 function hslider_button_css(theme, font_obj, location, index) {
+	console.log("activate_custom_popup_load");
 
 	var styles = '';
 
