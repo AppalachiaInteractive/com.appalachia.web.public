@@ -9,10 +9,6 @@ jobs:
       uses: actions/checkout@main
       with:
         fetch-depth: 2
-    #- name: 🏗️ Checkout LFS items
-    #  run: |
-    #    git lfs pull
-    #    git status
     - name: 📂 Sync files
       uses: Automattic/FTP-Deploy-Action@3.0.1
       with:
@@ -27,23 +23,5 @@ jobs:
           YCtcKbHS+Yy4RwcO9PxZUBkeMXUrejms027bRcdVfwf55hWSD9xYEHpE\
           HupkSL4ofWs3UKeRGz+jCCzl7Nu0S6VSwK4Zzll0auHI0Hwh8WKTJbSn\
           1gxCdF93/rmP"
-    - name: 🤖 Install expect
-      run: sudo apt-get install expect
-    - name: 🙈 Update secrets - wp-content/plugins/documents-from-git/includes/config.json
-      run: sed -i 's/#{PAT_CHRISTOPHERSCHUBERT}#/${{ secrets.PAT_CHRISTOPHERSCHUBERT }}/g' wp-content/plugins/documents-from-git/includes/config.json
-    - name: 🚢 Ship it via SFTP!
-      run: |
-        expect <<END
-        spawn sftp ${{ secrets.FTP_USER }}@sftp.wp.com
-        expect "fingerprint:"
-        send "yes\n"
-        expect "password:"
-        send "${{ secrets.FTP_PASSWORD }}\n"
-        expect "sftp>"
-        send "put wp-content/plugins/documents-from-git/includes/config.json wp-content/plugins/documents-from-git/includes/config.json\n"
-        expect "sftp>"
-        send "exit\n"
-        interact
-        END
 
 
