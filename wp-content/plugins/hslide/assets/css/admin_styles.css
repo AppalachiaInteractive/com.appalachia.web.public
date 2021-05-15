@@ -229,7 +229,7 @@ input{
 		.hero_count_holder .hero_count_item .hero_count{ width:100%; margin:-3px 3px 0 4px; background-color:transparent;}
 		
 /* views */
-.hero_views{ position:relative; z-index:998; display:block; padding:20px 0 20px 17px; max-width:900px; }
+.hero_views{ position:relative; z-index:998; display:block; padding:20px 0 20px 17px; max-width:1000px; }
 	.hero_section_holder{ width:100%; display:table; padding:0 0 15px; margin:15px 0 15px; border-bottom:1px solid #efefef; clear:both }
 	
 /* input fields */
