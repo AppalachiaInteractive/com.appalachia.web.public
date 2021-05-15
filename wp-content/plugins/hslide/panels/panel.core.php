@@ -48,18 +48,18 @@
 </div>
 <div class="hero_main">
     <div class="hero_sidebar">
-        <div class="hero_sidebar_logo" onclick="window.open('http://heroplugins.com/');"></div>
+        <div class="hero_sidebar_logo"></div>
         <div class="hero_sidebar_nav"></div>
         <div class="hero_sidebar_links">
             <div class="sidebar_link_sep"></div>
             <div class="hero_sidebar_item hero_docs">
-                <div class="hero_sidebar_parent" onclick="window.open('http://heroplugins.com/');">
+                <div class="hero_sidebar_parent">
                     <div class="hero_sidebar_icon"></div>
                     <div class="hero_sidebar_label">Documentation</div>
                 </div>
 			</div>
             <div class="hero_sidebar_item hero_website">
-                <div class="hero_sidebar_parent" onclick="window.open('http://heroplugins.com/');">
+                <div class="hero_sidebar_parent">
                     <div class="hero_sidebar_icon"></div>
                     <div class="hero_sidebar_label">heroplugins.com</div>
                 </div>

@@ -5,11 +5,6 @@
 <script type="text/javascript" src="<?php echo htmlspecialchars(remove_http($_GET['v'])); ?>js/view.core.js"></script>
 
 <!--BEGIN: dashboard-->
-<div class="hero_top_dashboard">
-    <div class="hero_dashboard_intro">
-        <div class="hero_dashboard_logo"><img src="<?php echo htmlspecialchars(remove_http($_GET['p'])); ?>assets/images/admin/plugin_logo.png" /></div>
-    </div>
-</div>
 <div class="hero_top_version">
     <div class="hero_version hero_white" id="plugin_version"></div>
     <div class="hero_version_date hero_white">
@@ -33,9 +28,6 @@
         </div>
         <!--END: custom content area-->
         
-    </div>
-    <div class="promo_expand">
-        <div class="promo_holder"></div>
     </div>
 </div>
 <!--END: dashboard-->
