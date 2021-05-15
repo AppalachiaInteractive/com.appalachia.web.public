@@ -37,7 +37,6 @@
 	require_once('classes/management/deactivate_plugin.class.php');
 	require_once('classes/core/plugin_setup.class.php');
 	require_once('classes/core/checkin.class.php');
-	require_once('classes/core/promo.class.php');
 	require_once('classes/core/display.class.php');
 	require_once('classes/core/shortcode.class.php');
 	require_once('classes/core/registration.class.php');
@@ -113,9 +112,7 @@
 			$checkin = new hslide_checkin($this->plugin_basename,$this->plugin_name,$this->plugin_friendly_name,$this->api_version);
 			add_filter('pre_set_site_transient_update_plugins', array(&$checkin, 'check_in'));
 			
-			//instantiate promotions class
-			$promo = new hslide_promo($this->plugin_basename,$this->plugin_name,$this->api_version);
-			
+
 			//instantiate admin class
 			$backend = new hslide_backend(); //this instance can be used by WP for ajax implementations
 			
@@ -126,7 +123,6 @@
 			$frame_sec = new hslide_frame_sec($this->plugin_dir);
 			
 			//bind admin ajax listeners
-			add_action('wp_ajax_hslide_getPromotion', array(&$promo, 'get_promotion')); //admin: get plugin rating
 			add_action('wp_ajax_hslide_get_security_code', array(&$frame_sec, 'get_security_code')); //admin: get frame security code
 			
 			//instantiate registrations class (register all ajax hooks)
