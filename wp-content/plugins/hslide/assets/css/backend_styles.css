@@ -39,7 +39,7 @@
 
 .element_order_no{
 	position:absolute;
-	right:100px; 
+	right:150px; 
 	display:table;
 	padding:12px 0 0;
 	font-size:12px;
@@ -469,7 +469,7 @@
 		}
 	
 	.element_name{
-		width:80%; float:left; height:40px;
+		width:70%; float:left; height:40px;
 	}
 	
 		.element_name span{
@@ -481,7 +481,7 @@
 		}
 	
 	.element_edit{
-		width:15%; float:left; height:40px;
+		width:20%; float:left; height:40px;
 	}
 	
 		.element_edit > div{
