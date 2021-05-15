@@ -2861,7 +2861,7 @@ function get_element_edit_button(element_obj, index) {
 			break;
 	}
 
-	element_html+=' style="background-image:url(' + core_view_path + 'assets/images/admin/edit_icon.png)" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
+	element_html+='  data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
 
 	return element_html;
 }
