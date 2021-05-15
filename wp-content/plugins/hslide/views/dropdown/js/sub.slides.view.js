@@ -2842,22 +2842,22 @@ function get_element_edit_button(element_obj, index) {
 	switch (element_obj.type) {
 		
 		case 'text':
-			element_html += 'data-tooltip="Edit text element" data-title="Text Element"';
+			element_html += '"Edit text element" data-title="Text Element"';
 			break;
 		case 'element':
-			element_html += 'data-tooltip="Edit image element" data-title="Element"';
+			element_html += '"Edit image element" data-title="Element"';
 			break;
 		case 'post':
-			element_html += 'data-tooltip="Edit post element" data-title="Posts';
+			element_html += '"Edit post element" data-title="Posts';
 			break;
 		case 'video':
-			element_html += 'data-tooltip="Edit video element" data-title="Video"';
+			element_html += '"Edit video element" data-title="Video"';
 			break;
 		case 'button':
-			element_html += 'data-tooltip="Edit button element" data-title="Button Element"';
+			element_html += '"Edit button element" data-title="Button Element"';
 			break;
 		case 'woo':
-			element_html += 'data-tooltip="Edit woo element" data-title="Posts"';
+			element_html += '"Edit woo element" data-title="Posts"';
 			break;
 	}
 
