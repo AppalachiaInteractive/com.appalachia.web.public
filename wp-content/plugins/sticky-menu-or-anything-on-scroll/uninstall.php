@@ -1,7 +1,8 @@
 <?php
-if (!defined('WP_UNINSTALL_PLUGIN')) {
-  exit;
-}
+	if ( !defined( 'WP_UNINSTALL_PLUGIN' ) ) {
+    exit;
+  }
 
-delete_option('sticky_anything_options');
-delete_option('sticky_dismissed_notices');
+	if ( get_option( 'sticky_anything_pro_options' ) != false ) {
+		delete_option( 'sticky_anything_pro_options' );
+	}

@@ -1,0 +1,4 @@
+.smoa-visual-picker-selected {
+    outline: 3px dashed #ffc710;
+    outline-offset: -3px;
+}
