@@ -1,5 +1,6 @@
 on: push
 name: 🚀 Publish Website over SFTP
+concurrency: ${{ github.repository }} 
 jobs:
   web-deploy:
     name: 🎉 Deploy
