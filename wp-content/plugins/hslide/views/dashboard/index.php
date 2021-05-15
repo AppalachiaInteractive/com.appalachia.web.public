@@ -47,5 +47,3 @@
 <div id="map_download_iframe_holder">
 	<iframe name="map_download_iframe" width="0" height="0"></iframe>
 </div>
-
-<script type="text/javascript" src="<?php echo htmlspecialchars(remove_http($_GET['p'])); ?>assets/js/promotions_manager.js"></script>

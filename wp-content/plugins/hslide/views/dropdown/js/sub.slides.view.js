@@ -2822,6 +2822,26 @@ function insert_element_to_stage(type, element_obj, index) {
 
 }
 
+
+// get element edit button
+function get_element_edit_button(element_obj, index) {
+	switch (element_obj.type) {
+		case 'text':
+			return '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit text element" data-title="Text Element" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
+		case 'element':
+			return '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit image element" data-title="Element" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
+		case 'post':
+			return '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit post element" data-title="Posts" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
+		case 'video':
+			return '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit video element" data-title="Video" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
+		case 'button':
+			return '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit button element" data-title="Button Element" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
+		case 'woo':
+			return '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit woo element" data-title="Posts" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
+	}
+}
+
+
 //set draggable dimentions
 function set_drag_dimentions() {
 
@@ -2874,6 +2894,7 @@ function insert_element_to_list(element, index, append_type) {
 	element_list_html += '</div>';
 	element_list_html += '<div class="element_edit">';
 	element_list_html += '<div class="hero_edits rounded_20">';
+	element_list_html += get_element_edit_button(element, index);
 	element_list_html += '<div class="hero_edit_item element_edit_btn" data-tooltip="Edit slide element" style="background-image:url(' + core_view_path + 'assets/images/admin/edit_icon.png)"></div>';
 	element_list_html += '<div class="hero_edit_item" data-tooltip="Delete slide element" onclick="delete_element(' + index + ', \'' + element.type + '\');" style="background-image:url(' + core_view_path + 'assets/images/admin/delete_icon.png)"></div>';
 	element_list_html += '<div class="hero_edit_item hero_item_drag" data-tooltip="Set the order of the element" style="background-image:url(' + core_view_path + 'assets/images/admin/drag_icon.png)"></div>';
