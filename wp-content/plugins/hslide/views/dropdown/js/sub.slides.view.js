@@ -1210,6 +1210,10 @@ function add_update_data(type_to_load, action, the_index) {
 
 			//set text popup data			
 			jQuery('#element_source').val(main_object.slider.slides[global_slide_index].elements[the_index].source);
+			jQuery('#element_height_sizing').val(main_object.slider.slides[global_slide_index].elements[the_index].height_sizing);
+			jQuery('#element_height').val(main_object.slider.slides[global_slide_index].elements[the_index].height);
+			jQuery('#element_width_sizing').val(main_object.slider.slides[global_slide_index].elements[the_index].width_sizing);
+			jQuery('#element_width').val(main_object.slider.slides[global_slide_index].elements[the_index].width);
 			jQuery('#element_url').val(main_object.slider.slides[global_slide_index].elements[the_index].url);
 			jQuery('#element_alt').val(main_object.slider.slides[global_slide_index].elements[the_index].alt);
 			jQuery('#element_title').val(main_object.slider.slides[global_slide_index].elements[the_index].title);
@@ -1973,6 +1977,10 @@ function json_update_element_objects(obj, index, type) {
 
 			//set data
 			main_object.slider.slides[global_slide_index].elements[index].source = obj.element_source;
+			main_object.slider.slides[global_slide_index].elements[index].height = obj.element_height;
+			main_object.slider.slides[global_slide_index].elements[index].height_sizing = obj.element_height_sizing;
+			main_object.slider.slides[global_slide_index].elements[index].width = obj.element_width;
+			main_object.slider.slides[global_slide_index].elements[index].width_sizing = obj.element_width_sizing;
 			main_object.slider.slides[global_slide_index].elements[index].url = obj.element_url;
 			main_object.slider.slides[global_slide_index].elements[index].alt = obj.element_alt;
 			main_object.slider.slides[global_slide_index].elements[index].title = obj.element_title;
@@ -2243,7 +2251,7 @@ function json_element_objects(type_to_add, element_object) {
 
 		case 'element':
 
-			json = '{ "elementId":' + element_count + ', "order":' + element_count + ', "type":"element", "source":"' + element_object.element_source + '", "x":100, "y":100, "offset_x":0, "offset_y":0, "url":"' + element_object.element_url + '", "alt":"' + element_object.element_alt + '", "title":"' + element_object.element_title + '", "target":"' + element_object.element_target + '", "width":null, "animation":[ { "animationType":"", "animationStrength":"Strong", "animationEasing":"easeInOut", "direction":"left_right", "distance":"200", "delay":1, "duration":2, "rotation":0, "startOpacity":0, "endOpacity":1 } ] }';
+			json = '{ "elementId":' + element_count + ', "order":' + element_count + ', "type":"element", "source":"' + element_object.element_source + '", "height":200, "height-sizing":px, "width":800, "width-sizing":px, "x":0, "y":0, "offset_x":0, "offset_y":0, "url":"' + element_object.element_url + '", "alt":"' + element_object.element_alt + '", "title":"' + element_object.element_title + '", "target":"' + element_object.element_target + '", "width":null, "animation":[ { "animationType":"", "animationStrength":"Strong", "animationEasing":"easeInOut", "direction":"left_right", "distance":"200", "delay":1, "duration":2, "rotation":0, "startOpacity":0, "endOpacity":1 } ] }';
 
 			parse_string = JSON.parse(json);
 
@@ -2717,7 +2725,10 @@ function insert_element_to_stage(type, element_obj, index) {
 			break;
 		case 'element':
 			element_html += '<div class="hslider_backend_element element_draggable" data-order="' + index + '" data-index="' + index + '" id="element_' + index + '">';
-			element_html += '<img id="element_img_' + index + '" src="' + element_obj.source + '">';
+			element_html += '<img id="element_img_' + index + '" src="' + element_obj.source + '"';
+			element_html += element_obj.width_sizing !== 'none' ? 'width="' + element_obj.width + '"' : '' ;
+			element_html += element_obj.height_sizing !== 'none' ? 'height="' + element_obj.height + '"' : '' ;
+			element_html += '/>';
 			element_html += '<div class="hslider_element_tools">';
 			element_html += '<div class="hlsider_inner_tools">';
 			element_html += '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit image element" data-title="Element" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
