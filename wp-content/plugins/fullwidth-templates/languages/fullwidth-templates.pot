@@ -25,51 +25,6 @@ msgstr ""
 "X-Textdomain-Support: yes\n"
 "X-Generator: grunt-wp-i18n 1.0.3\n"
 
-#: admin/bsf-analytics/class-bsf-analytics.php:216
-#. translators: %s product name
-msgid ""
-"Want to help make <strong>%1s</strong> even more awesome? Allow us to "
-"collect non-sensitive diagnostic data and usage information. "
-msgstr ""
-
-#: admin/bsf-analytics/class-bsf-analytics.php:219
-msgid "This will be applicable for all sites from the network."
-msgstr ""
-
-#: admin/bsf-analytics/class-bsf-analytics.php:243
-#. translators: %s usage doc link
-msgid " Know More."
-msgstr ""
-
-#: admin/bsf-analytics/class-bsf-analytics.php:251
-msgid "Yes! Allow it"
-msgstr ""
-
-#: admin/bsf-analytics/class-bsf-analytics.php:260
-msgid "No Thanks"
-msgstr ""
-
-#: admin/bsf-analytics/class-bsf-analytics.php:364
-msgid "Usage Tracking"
-msgstr ""
-
-#: admin/bsf-analytics/class-bsf-analytics.php:408
-#. translators: %s Product title
-msgid "Allow %s products to track non-sensitive usage tracking data."
-msgstr ""
-
-#: admin/bsf-analytics/class-bsf-analytics.php:411
-msgid " This will be applicable for all sites from the network."
-msgstr ""
-
-#: admin/bsf-analytics/class-bsf-analytics.php:416
-msgid "Learn More."
-msgstr ""
-
-#: admin/notices/class-astra-notices.php:120
-msgid "WordPress Nonce not validated."
-msgstr ""
-
 #: class-fullwidth-page-templates.php:21
 msgid "FW No Sidebar"
 msgstr ""
