@@ -2836,20 +2836,34 @@ function set_drag_dimentions() {
 
 // get element edit button
 function get_element_edit_button(element_obj, index) {
+
+	element_html='<div class="tools_icon tools_element_edit data_popup_launch element_edit_btn" data-tooltip=';
+
 	switch (element_obj.type) {
+		
 		case 'text':
-			return '<div class="hero_edit_item element_edit_btn" data-tooltip="Edit text element" data-title="Text Element" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
+			element_html += 'data-tooltip="Edit text element" data-title="Text Element"';
+			break;
 		case 'element':
-			return '<div class="hero_edit_item element_edit_btn" data-tooltip="Edit image element" data-title="Element" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
+			element_html += 'data-tooltip="Edit image element" data-title="Element"';
+			break;
 		case 'post':
-			return '<div class="hero_edit_item element_edit_btn" data-tooltip="Edit post element" data-title="Posts" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
+			element_html += 'data-tooltip="Edit post element" data-title="Posts';
+			break;
 		case 'video':
-			return '<div class="hero_edit_item element_edit_btn" data-tooltip="Edit video element" data-title="Video" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
+			element_html += 'data-tooltip="Edit video element" data-title="Video"';
+			break;
 		case 'button':
-			return '<div class="hero_edit_item element_edit_btn" data-tooltip="Edit button element" data-title="Button Element" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
+			element_html += 'data-tooltip="Edit button element" data-title="Button Element"';
+			break;
 		case 'woo':
-			return '<div class="hero_edit_item element_edit_btn" data-tooltip="Edit woo element" data-title="Posts" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
+			element_html += 'data-tooltip="Edit woo element" data-title="Posts"';
+			break;
 	}
+
+	element_html+=' data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
+
+	return element_html;
 }
 
 
