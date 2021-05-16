@@ -479,8 +479,10 @@ function hslider_slide_content_html(element_obj) {
 		switch (element.type) {
 			case 'image':
 				content_html += '<div class="hslider_image_element hslider_element" id="hslider_element_' + element.elementId + '" data-finish="' + element.x + '" data-y="' + element.y + '">';
-				content_html += '<img src="' + element.source;
-				content_html += '" height="' + element.height + 'px" /></div>';
+				content_html += '<img src="' + element.source + '" ';
+				content_html += 'max-height="' + element.height + 'px" ';
+				content_html += 'min-height="' + element.height + 'px" ';
+				content_html += '/></div>';
 				break;
 			case 'text':
 				content_html += '<div class="hslider_text_element hslider_element" id="hslider_element_' + element.elementId + '" data-finish="' + element.x + '" data-y="' + element.y + '">' + element.content + '</div>';
