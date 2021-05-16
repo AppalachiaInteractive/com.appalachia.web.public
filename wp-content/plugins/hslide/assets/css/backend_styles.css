@@ -39,7 +39,7 @@
 
 .element_order_no{
 	position:absolute;
-	right:150px; 
+	right:125px; 
 	display:table;
 	padding:12px 0 0;
 	font-size:12px;
@@ -469,7 +469,7 @@
 		}
 	
 	.element_name{
-		width:70%; float:left; height:40px;
+		width:75%; float:left; height:40px;
 	}
 	
 		.element_name span{

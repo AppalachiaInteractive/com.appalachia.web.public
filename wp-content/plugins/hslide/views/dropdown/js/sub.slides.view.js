@@ -2252,7 +2252,7 @@ function json_element_objects(type_to_add, element_object) {
 
 		case 'element':
 
-			json = '{ "elementId":' + element_count + ', "order":' + element_count + ', "type":"element", "source":"' + element_object.element_source + '", "sizing":"100", "x":0, "y":0, "offset_x":0, "offset_y":0, "url":"' + element_object.element_url + '", "alt":"' + element_object.element_alt + '", "title":"' + element_object.element_title + '", "target":"' + element_object.element_target + '", "width":null, "animation":[ { "animationType":"", "animationStrength":"Strong", "animationEasing":"easeInOut", "direction":"left_right", "distance":"200", "delay":1, "duration":2, "rotation":0, "startOpacity":0, "endOpacity":1 } ] }';
+			json = '{ "elementId":' + element_count + ', "order":' + element_count + ', "type":"element", "source":"' + element_object.element_source + '", "sizing":800, "x":100, "y":100, "offset_x":0, "offset_y":0, "url":"' + element_object.element_url + '", "alt":"' + element_object.element_alt + '", "title":"' + element_object.element_title + '", "target":"' + element_object.element_target + '", "width":null, "animation":[ { "animationType":"", "animationStrength":"Strong", "animationEasing":"easeInOut", "direction":"left_right", "distance":"200", "delay":1, "duration":2, "rotation":0, "startOpacity":0, "endOpacity":1 } ] }';
 
 			parse_string = JSON.parse(json);
 
@@ -2726,7 +2726,7 @@ function insert_element_to_stage(type, element_obj, index) {
 			break;
 		case 'element':
 			element_html += '<div class="hslider_backend_element element_draggable" data-order="' + index + '" data-index="' + index + '" id="element_' + index + '">';
-			element_html += '<img id="element_img_' + index + '" src="' + element_obj.source + '"';
+			element_html += '<img id="element_img_' + index + '" src="' + element_obj.source + '" ';
 			element_html += 'height="' + element_obj.height + 'px"';
 			element_html += '/>';
 			element_html += '<div class="hslider_element_tools">';
