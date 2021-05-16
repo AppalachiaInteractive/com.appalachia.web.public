@@ -221,7 +221,7 @@ var slide_main_width;
 
 //set slide
 function set_slide(obj, index) {
-	console.log("activate_custom_popup_load");
+	console.log("set_slide");
 
 	//variables
 	slide_width = obj.slider.width;
@@ -302,7 +302,7 @@ function adjust_holder() {
 
 //load slide data
 function load_slide_data(obj, index) {
-	console.log("activate_custom_popup_load");
+	console.log("load_slide_data");
 
 	//set delete button index
 	jQuery('.slide_delete_btn').attr('data-index', global_slide_index);
@@ -491,7 +491,7 @@ function load_slide_data(obj, index) {
 
 //toggle image video section
 function toggle_section(type) {
-	console.log("activate_custom_popup_load");
+	console.log("toggle_section");
 
 	switch (type) {
 		case 'image':
@@ -512,7 +512,7 @@ function toggle_section(type) {
 
 //enable update settings
 function enable_update_settings(obj, index) {
-	console.log("activate_custom_popup_load");
+	console.log("enable_update_settings");
 
 	var control_status = jQuery('#slide_active');
 	var control_transition = jQuery('#transition');
@@ -943,7 +943,7 @@ function enable_accordion() {
 
 //close accordion
 function close_accordion(position) {
-	console.log("activate_custom_popup_load");
+	console.log("close_accordion");
 
 	jQuery('.elememt_list_item').each(function (index, element) {
 
@@ -1061,7 +1061,7 @@ function activate_custom_popup_load() {
 }
 
 function toggle_product_display(val) {
-	console.log("activate_custom_popup_load");
+	console.log("toggle_product_display");
 
 	if (val === 'woo_normal_display' || typeof (val) === 'undefined') {
 		jQuery('.hslider_normal_display').show();
@@ -1076,7 +1076,7 @@ function toggle_product_display(val) {
 
 //add custom data to the popup inputs, selects etc...
 function add_custom_to_popup(html_load, the_index) {
-	console.log("activate_custom_popup_load");
+	console.log("add_custom_to_popup");
 
 	switch (html_load) {
 		case 'post':
@@ -1133,7 +1133,7 @@ function add_custom_to_popup(html_load, the_index) {
 
 //set update button element data
 function add_update_data(type_to_load, action, the_index) {
-	console.log("activate_custom_popup_load");
+	console.log("add_update_data");
 
 	//set add button data
 	jQuery('.element_insert_button').attr('data-element', type_to_load);
@@ -1210,10 +1210,7 @@ function add_update_data(type_to_load, action, the_index) {
 
 			//set text popup data			
 			jQuery('#element_source').val(main_object.slider.slides[global_slide_index].elements[the_index].source);
-			jQuery('#element_height_sizing').val(main_object.slider.slides[global_slide_index].elements[the_index].height_sizing);
-			jQuery('#element_height').val(main_object.slider.slides[global_slide_index].elements[the_index].height);
-			jQuery('#element_width_sizing').val(main_object.slider.slides[global_slide_index].elements[the_index].width_sizing);
-			jQuery('#element_width').val(main_object.slider.slides[global_slide_index].elements[the_index].width);
+			jQuery('#element_sizing').val(main_object.slider.slides[global_slide_index].elements[the_index].sizing);
 			jQuery('#element_url').val(main_object.slider.slides[global_slide_index].elements[the_index].url);
 			jQuery('#element_alt').val(main_object.slider.slides[global_slide_index].elements[the_index].alt);
 			jQuery('#element_title').val(main_object.slider.slides[global_slide_index].elements[the_index].title);
@@ -1735,7 +1732,7 @@ function add_update_data(type_to_load, action, the_index) {
 
 //enable woo loader
 function enable_woo_product_loader(element_index) {
-	console.log("activate_custom_popup_load");
+	console.log("enable_woo_product_loader");
 
 	//open sidebar
 	jQuery('.hslider_add_product').off().on('click', function () {
@@ -1781,7 +1778,7 @@ function enable_woo_product_loader(element_index) {
 
 //load woo sidebar data
 function load_woo_sidebar_data(category, off, idx) {
-	console.log("activate_custom_popup_load");
+	console.log("load_woo_sidebar_data");
 
 	//load html
 	jQuery.ajax({
@@ -1804,7 +1801,7 @@ function load_woo_sidebar_data(category, off, idx) {
 
 //insert_sidebar_product_html
 function insert_sidebar_product_html(category, obj, id) {
-	console.log("activate_custom_popup_load");
+	console.log("insert_sidebar_product_html");
 
 	//clear html
 	jQuery('.hero_custom_sidebar_products').html('');
@@ -1945,7 +1942,7 @@ function enable_add_product_btn() {
 
 //data update element object
 function json_update_element_objects(obj, index, type) {
-	console.log("activate_custom_popup_load");
+	console.log("json_update_element_objects");
 
 	switch (type) {
 		case 'text':
@@ -1977,10 +1974,7 @@ function json_update_element_objects(obj, index, type) {
 
 			//set data
 			main_object.slider.slides[global_slide_index].elements[index].source = obj.element_source;
-			main_object.slider.slides[global_slide_index].elements[index].height = obj.element_height;
-			main_object.slider.slides[global_slide_index].elements[index].height_sizing = obj.element_height_sizing;
-			main_object.slider.slides[global_slide_index].elements[index].width = obj.element_width;
-			main_object.slider.slides[global_slide_index].elements[index].width_sizing = obj.element_width_sizing;
+			main_object.slider.slides[global_slide_index].elements[index].sizing = obj.element_sizing;
 			main_object.slider.slides[global_slide_index].elements[index].url = obj.element_url;
 			main_object.slider.slides[global_slide_index].elements[index].alt = obj.element_alt;
 			main_object.slider.slides[global_slide_index].elements[index].title = obj.element_title;
@@ -2165,7 +2159,7 @@ function json_update_element_objects(obj, index, type) {
 
 //set add button element data
 function add_element_data(type_to_load, action) {
-	console.log("activate_custom_popup_load");
+	console.log("add_element_data");
 
 	//set add button data
 	jQuery('.element_insert_button').attr('data-element', type_to_load);
@@ -2230,7 +2224,7 @@ function add_element_data(type_to_load, action) {
 
 //data objects for each element
 function json_element_objects(type_to_add, element_object) {
-	console.log("activate_custom_popup_load");
+	console.log("json_element_objects");
 
 	var json;
 	var parse_string;
@@ -2251,7 +2245,7 @@ function json_element_objects(type_to_add, element_object) {
 
 		case 'element':
 
-			json = '{ "elementId":' + element_count + ', "order":' + element_count + ', "type":"element", "source":"' + element_object.element_source + '", "height":"'+ element_object.element_height +'", "height_sizing":"'+ element_object.element_height_sizing +'", "width":"'+ element_object.element_width +'", "width_sizing":"'+ element_object.element_width_sizing +'", "x":0, "y":0, "offset_x":0, "offset_y":0, "url":"' + element_object.element_url + '", "alt":"' + element_object.element_alt + '", "title":"' + element_object.element_title + '", "target":"' + element_object.element_target + '", "width":null, "animation":[ { "animationType":"", "animationStrength":"Strong", "animationEasing":"easeInOut", "direction":"left_right", "distance":"200", "delay":1, "duration":2, "rotation":0, "startOpacity":0, "endOpacity":1 } ] }';
+			json = '{ "elementId":' + element_count + ', "order":' + element_count + ', "type":"element", "source":"' + element_object.element_source + '", "sizing":"100", "x":0, "y":0, "offset_x":0, "offset_y":0, "url":"' + element_object.element_url + '", "alt":"' + element_object.element_alt + '", "title":"' + element_object.element_title + '", "target":"' + element_object.element_target + '", "width":null, "animation":[ { "animationType":"", "animationStrength":"Strong", "animationEasing":"easeInOut", "direction":"left_right", "distance":"200", "delay":1, "duration":2, "rotation":0, "startOpacity":0, "endOpacity":1 } ] }';
 
 			parse_string = JSON.parse(json);
 
@@ -2318,7 +2312,7 @@ function json_element_objects(type_to_add, element_object) {
 
 //load slide elements
 function load_slide_elements(main_object) {
-	console.log("activate_custom_popup_load");
+	console.log("load_slide_elements");
 
 	var element_count = main_object.slider.slides[global_slide_index].elements.length;
 
@@ -2445,7 +2439,7 @@ function load_woo_content() {
 
 //return video html
 function insert_video_html(index) {
-	console.log("activate_custom_popup_load");
+	console.log("insert_video_html");
 
 	//variables
 	var html = '';
@@ -2478,7 +2472,7 @@ function insert_video_html(index) {
 
 //add post html
 function insert_post_html(post_obj, element_obj, index) {
-	console.log("activate_custom_popup_load");
+	console.log("insert_post_html");
 
 	if (post_obj) {
 
@@ -2577,7 +2571,7 @@ function insert_post_html(post_obj, element_obj, index) {
 
 //add product html
 function insert_woo_html(woo_obj, element_obj, index) {
-	console.log("activate_custom_popup_load");
+	console.log("insert_woo_html");
 
 	if (woo_obj) {
 
@@ -2703,7 +2697,7 @@ function insert_woo_html(woo_obj, element_obj, index) {
 
 //add elements to stage
 function insert_element_to_stage(type, element_obj, index) {
-	console.log("activate_custom_popup_load");
+	console.log("insert_element_to_stage");
 
 	var element_html = '';
 
@@ -2726,8 +2720,8 @@ function insert_element_to_stage(type, element_obj, index) {
 		case 'element':
 			element_html += '<div class="hslider_backend_element element_draggable" data-order="' + index + '" data-index="' + index + '" id="element_' + index + '">';
 			element_html += '<img id="element_img_' + index + '" src="' + element_obj.source + '"';
-			element_html += element_obj.width_sizing !== 'none' ? 'width="' + element_obj.width + element_obj.width_sizing + '"' : '' ;
-			element_html += element_obj.height_sizing !== 'none' ? 'height="' + element_obj.height + element_obj.height_sizing + '"' : '' ;
+			element_html += 'width="' + element_obj.sizing + '%"';
+			element_html += 'height="' + element_obj.sizing + '%"';
 			element_html += '/>';
 			element_html += '<div class="hslider_element_tools">';
 			element_html += '<div class="hlsider_inner_tools">';
@@ -2875,7 +2869,7 @@ function set_drag_dimentions() {
 
 // get element edit button
 function get_element_edit_button(element_obj, index) {
-	console.log("activate_custom_popup_load");
+	console.log("get_element_edit_button");
 
 	element_html='<div class="tools_element_edit data_popup_launch hero_edit_item" data-tooltip=';
 
@@ -2909,7 +2903,7 @@ function get_element_edit_button(element_obj, index) {
 
 //add elements to list
 function insert_element_to_list(element, index, append_type) {
-	console.log("activate_custom_popup_load");
+	console.log("insert_element_to_list");
 
 	//variables
 	var element_list_html = '';
@@ -3050,7 +3044,7 @@ function sort_items_reverse(a, b) {
 
 //delete element
 function delete_element(index, type) {
-	console.log("activate_custom_popup_load");
+	console.log("delete_element");
 
 	if (window.confirm('Are you sure you want to delete the nav item?')) {
 
@@ -3137,7 +3131,7 @@ function delete_element(index, type) {
 
 //set list item data
 function enable_list_item_data(element, index) {
-	console.log("activate_custom_popup_load");
+	console.log("enable_list_item_data");
 
 	//offset position
 	jQuery('#position_offset_x_' + index).val(element.offset_x);
@@ -3211,7 +3205,7 @@ function enable_list_item_data(element, index) {
 
 //switch duration preview
 function switch_duration_preview(element, index, delay_time, animation_time) {
-	console.log("activate_custom_popup_load");
+	console.log("switch_duration_preview");
 
 	var delay_percentage = (delay_time / main_object.slider.slides[global_slide_index].slideIdle) * 100;
 	var animation_percentage = (animation_time / main_object.slider.slides[global_slide_index].slideIdle) * 100;
@@ -3223,7 +3217,7 @@ function switch_duration_preview(element, index, delay_time, animation_time) {
 
 //enable the direction change
 function switch_direction(element, index) {
-	console.log("activate_custom_popup_load");
+	console.log("switch_direction");
 
 	jQuery('.element_animate_direction_' + index + ' .hero_dropdown .hero_drop_row').on('click', function () {
 		jQuery('#element_animate_direction_' + index).trigger('change');
@@ -3247,7 +3241,7 @@ function switch_direction(element, index) {
 
 //set list item data update
 function enable_list_item_data_update(element, index) {
-	console.log("activate_custom_popup_load");
+	console.log("enable_list_item_data_update");
 
 	//change: positions
 	jQuery('#position_offset_x_' + index).on('change keyup', function () {
@@ -3366,7 +3360,7 @@ function enable_list_item_data_update(element, index) {
 
 //change element position on stage with a nice smooth animation
 function change_element_stage_position(index, val, direction) {
-	console.log("activate_custom_popup_load");
+	console.log("change_element_stage_position");
 
 	switch (direction) {
 		case 'x':
@@ -3381,7 +3375,7 @@ function change_element_stage_position(index, val, direction) {
 
 //get html chunks
 function get_html_chunk(type, id) {
-	console.log("activate_custom_popup_load");
+	console.log("get_html_chunk");
 
 	//variables
 	var chunk_html = '';
@@ -3645,7 +3639,7 @@ function enable_element_drag() {
 
 //get button html
 function hslider_button_html(content, theme, font_obj, location, index) {
-	console.log("activate_custom_popup_load");
+	console.log("hslider_button_html");
 
 	var button_html = '';
 
@@ -3700,7 +3694,7 @@ function hslider_button_html(content, theme, font_obj, location, index) {
 
 //get button css
 function hslider_button_css(theme, font_obj, location, index) {
-	console.log("activate_custom_popup_load");
+	console.log("hslider_button_css");
 
 	var styles = '';
 

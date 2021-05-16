@@ -480,8 +480,8 @@ function hslider_slide_content_html(element_obj) {
 			case 'image':
 				content_html += '<div class="hslider_image_element hslider_element" id="hslider_element_' + element.elementId + '" data-finish="' + element.x + '" data-y="' + element.y + '">';
 				content_html += '<img src="' + element.source;
-				element_html += element_obj.width_sizing !== 'none' ? 'width="' + element_obj.width + element_obj.width_sizing + '"' : '' ;
-				element_html += element_obj.height_sizing !== 'none' ? 'height="' + element_obj.height + element_obj.height_sizing + '"' : ''  ;
+				element_html += 'width="' + element_obj.sizing + '%"';
+				element_html += 'height="' + element_obj.sizing + '%"';
 				element_html += '/></div>';
 				break;
 			case 'text':
