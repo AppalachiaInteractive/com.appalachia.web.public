@@ -1217,7 +1217,7 @@ function add_update_data(type_to_load, action, the_index) {
 
 			//set text popup data			
 			jQuery('#element_source').val(main_object.slider.slides[global_slide_index].elements[the_index].source);
-			jQuery('#element_height').val(main_object.slider.slides[global_slide_index].elements[the_index].height);
+			jQuery('#element_width').val(main_object.slider.slides[global_slide_index].elements[the_index].width);
 			jQuery('#element_url').val(main_object.slider.slides[global_slide_index].elements[the_index].url);
 			jQuery('#element_alt').val(main_object.slider.slides[global_slide_index].elements[the_index].alt);
 			jQuery('#element_title').val(main_object.slider.slides[global_slide_index].elements[the_index].title);
@@ -1981,7 +1981,7 @@ function json_update_element_objects(obj, index, type) {
 
 			//set data
 			main_object.slider.slides[global_slide_index].elements[index].source = obj.element_source;
-			main_object.slider.slides[global_slide_index].elements[index].height = obj.element_height;
+			main_object.slider.slides[global_slide_index].elements[index].width = obj.element_width;
 			main_object.slider.slides[global_slide_index].elements[index].url = obj.element_url;
 			main_object.slider.slides[global_slide_index].elements[index].alt = obj.element_alt;
 			main_object.slider.slides[global_slide_index].elements[index].title = obj.element_title;
@@ -2727,8 +2727,7 @@ function insert_element_to_stage(type, element, index) {
 		case 'element':
 			element_html += '<div class="hslider_backend_element element_draggable" data-order="' + index + '" data-index="' + index + '" id="element_' + index + '">';
 			element_html += '<img id="element_img_' + index + '" src="' + element.source + '" ';
-			element_html += 'max-height="' + element.height + 'px" ';
-			element_html += 'min-height="' + element.height + 'px" ';
+			element_html += 'width="' + element.width + 'px" ';
 			element_html += '/>';
 			element_html += '<div class="hslider_element_tools">';
 			element_html += '<div class="hlsider_inner_tools">';
