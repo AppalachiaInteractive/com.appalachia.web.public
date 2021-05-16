@@ -2877,7 +2877,7 @@ function set_drag_dimentions() {
 function get_element_edit_button(element_obj, index) {
 	console.log("get_element_edit_button");
 
-	element_html='<div class="tools_element_edit data_popup_launch hero_edit_item" data-tooltip=';
+	element_html='<div class="tools_icon tools_element_edit data_popup_launch hero_edit_item" data-tooltip=';
 
 	switch (element_obj.type) {
 		
