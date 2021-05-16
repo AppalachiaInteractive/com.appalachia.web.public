@@ -2251,7 +2251,7 @@ function json_element_objects(type_to_add, element_object) {
 
 		case 'element':
 
-			json = '{ "elementId":' + element_count + ', "order":' + element_count + ', "type":"element", "source":"' + element_object.element_source + '", "height":200, "height-sizing":px, "width":800, "width-sizing":px, "x":0, "y":0, "offset_x":0, "offset_y":0, "url":"' + element_object.element_url + '", "alt":"' + element_object.element_alt + '", "title":"' + element_object.element_title + '", "target":"' + element_object.element_target + '", "width":null, "animation":[ { "animationType":"", "animationStrength":"Strong", "animationEasing":"easeInOut", "direction":"left_right", "distance":"200", "delay":1, "duration":2, "rotation":0, "startOpacity":0, "endOpacity":1 } ] }';
+			json = '{ "elementId":' + element_count + ', "order":' + element_count + ', "type":"element", "source":"' + element_object.element_source + '", "height":"'+ element_object.element_height +'", "height_sizing":"'+ element_object.element_height_sizing +'", "width":"'+ element_object.element_width +'", "width_sizing":"'+ element_object.element_width_sizing +'", "x":0, "y":0, "offset_x":0, "offset_y":0, "url":"' + element_object.element_url + '", "alt":"' + element_object.element_alt + '", "title":"' + element_object.element_title + '", "target":"' + element_object.element_target + '", "width":null, "animation":[ { "animationType":"", "animationStrength":"Strong", "animationEasing":"easeInOut", "direction":"left_right", "distance":"200", "delay":1, "duration":2, "rotation":0, "startOpacity":0, "endOpacity":1 } ] }';
 
 			parse_string = JSON.parse(json);
 
@@ -2726,8 +2726,8 @@ function insert_element_to_stage(type, element_obj, index) {
 		case 'element':
 			element_html += '<div class="hslider_backend_element element_draggable" data-order="' + index + '" data-index="' + index + '" id="element_' + index + '">';
 			element_html += '<img id="element_img_' + index + '" src="' + element_obj.source + '"';
-			element_html += element_obj.width_sizing !== 'none' ? 'width="' + element_obj.width + '"' : '' ;
-			element_html += element_obj.height_sizing !== 'none' ? 'height="' + element_obj.height + '"' : '' ;
+			element_html += element_obj.width_sizing !== 'none' ? 'width="' + element_obj.width + element_obj.width_sizing + '"' : '' ;
+			element_html += element_obj.height_sizing !== 'none' ? 'height="' + element_obj.height + element_obj.height_sizing + '"' : '' ;
 			element_html += '/>';
 			element_html += '<div class="hslider_element_tools">';
 			element_html += '<div class="hlsider_inner_tools">';
