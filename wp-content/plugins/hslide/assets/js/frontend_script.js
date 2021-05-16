@@ -1717,7 +1717,9 @@ function hslider_slide_content_html(element_obj, slide_index, unique_name) {
                     link_start = 'a href="' + element.url + '" target="' + element.target + '" title="' + element.title + '"';
                     link_end = 'a';
                 }
-                content_html += '<' + link_start + ' class="hslider_image_element hslider_element" data-para-offset="' + element.offset_x + '" data-element-type="' + element.type + '" id="hslider_element_' + element.elementId + '" data-finish="' + element.x + '" data-y="' + element.y + '"><img src="' + element.source + '" /></' + link_end + '>';
+                content_html += '<' + link_start + ' class="hslider_image_element hslider_element" data-para-offset="' + element.offset_x + '" data-element-type="' + element.type + '" id="hslider_element_' + element.elementId + '" data-finish="' + element.x + '" data-y="' + element.y + '">';
+                content_html += '<img src="' + element.source;
+				element_html += '" height="' + element.height + 'px" /></' + link_end + '>';
                 break;
             case 'text':
                 if (element.url !== '') {
