@@ -2703,7 +2703,7 @@ function insert_woo_html(woo_obj, element_obj, index) {
 }
 
 //add elements to stage
-function insert_element_to_stage(type, element_obj, index) {
+function insert_element_to_stage(type, element, index) {
 	console.log("insert_element_to_stage");
 
 	var element_html = '';
@@ -2711,14 +2711,14 @@ function insert_element_to_stage(type, element_obj, index) {
 	jQuery('.nothing_found').remove();
 
 	//add element
-	switch (element_obj.type) {
+	switch (element.type) {
 		case 'text':
 			element_html += '<div class="hslider_backend_element element_draggable" data-order="' + index + '" data-index="' + index + '" id="element_' + index + '">';
-			element_html += element_obj.content;
+			element_html += element.content;
 			element_html += '<div class="hslider_element_tools">';
 			element_html += '<div class="hlsider_inner_tools">';
-			element_html += '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit text element" data-title="Text Element" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
-			element_html += '<div class="tools_icon tools_element_delete" data-tooltip="Delete element" onclick="delete_element(' + index + ', \'' + element_obj.type + '\');"></div>';
+			element_html += '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit text element" data-title="Text Element" data-load="' + element.type + '" data-action="update" data-index="' + index + '"></div>';
+			element_html += '<div class="tools_icon tools_element_delete" data-tooltip="Delete element" onclick="delete_element(' + index + ', \'' + element.type + '\');"></div>';
 			element_html += '<div class="tools_icon tools_element_move" data-tooltip="Move element"></div>';
 			element_html += '</div>';
 			element_html += '</div>';
@@ -2726,25 +2726,26 @@ function insert_element_to_stage(type, element_obj, index) {
 			break;
 		case 'element':
 			element_html += '<div class="hslider_backend_element element_draggable" data-order="' + index + '" data-index="' + index + '" id="element_' + index + '">';
-			element_html += '<img id="element_img_' + index + '" src="' + element_obj.source + '" ';
-			element_html += 'height="' + element_obj.height + 'px"';
+			element_html += '<img id="element_img_' + index + '" src="' + element.source + '" ';
+			element_html += 'max-height="' + element.height + 'px" ';
+			element_html += 'min-height="' + element.height + 'px" ';
 			element_html += '/>';
 			element_html += '<div class="hslider_element_tools">';
 			element_html += '<div class="hlsider_inner_tools">';
-			element_html += '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit image element" data-title="Element" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
-			element_html += '<div class="tools_icon tools_element_delete" data-tooltip="Delete element" onclick="delete_element(' + index + ', \'' + element_obj.type + '\');"></div>';
+			element_html += '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit image element" data-title="Element" data-load="' + element.type + '" data-action="update" data-index="' + index + '"></div>';
+			element_html += '<div class="tools_icon tools_element_delete" data-tooltip="Delete element" onclick="delete_element(' + index + ', \'' + element.type + '\');"></div>';
 			element_html += '<div class="tools_icon tools_element_move" data-tooltip="Move element"></div>';
 			element_html += '</div>';
 			element_html += '</div>';
 			element_html += '</div>';
 			break;
 		case 'post':
-			element_html += '<div class="hslider_backend_element element_draggable" data-type="' + element_obj.type + '" data-order="' + index + '" data-index="' + index + '" id="element_' + index + '">';
+			element_html += '<div class="hslider_backend_element element_draggable" data-type="' + element.type + '" data-order="' + index + '" data-index="' + index + '" id="element_' + index + '">';
 			element_html += '<div class="hslider_post_back_holder"></div>';
 			element_html += '<div class="hslider_element_tools">';
 			element_html += '<div class="hlsider_inner_tools">';
-			element_html += '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit post element" data-title="Posts" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
-			element_html += '<div class="tools_icon tools_element_delete" data-tooltip="Delete element" onclick="delete_element(' + index + ', \'' + element_obj.type + '\');"></div>';
+			element_html += '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit post element" data-title="Posts" data-load="' + element.type + '" data-action="update" data-index="' + index + '"></div>';
+			element_html += '<div class="tools_icon tools_element_delete" data-tooltip="Delete element" onclick="delete_element(' + index + ', \'' + element.type + '\');"></div>';
 			element_html += '<div class="tools_icon tools_element_move" data-tooltip="Move element"></div>';
 			element_html += '</div>';
 			element_html += '</div>';
@@ -2755,8 +2756,8 @@ function insert_element_to_stage(type, element_obj, index) {
 			element_html += '<div class="hslider_video_holder">' + insert_video_html(index) + '</div>';
 			element_html += '<div class="hslider_element_tools">';
 			element_html += '<div class="hlsider_inner_tools">';
-			element_html += '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit video element" data-title="Video" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
-			element_html += '<div class="tools_icon tools_element_delete" data-tooltip="Delete element" onclick="delete_element(' + index + ', \'' + element_obj.type + '\');"></div>';
+			element_html += '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit video element" data-title="Video" data-load="' + element.type + '" data-action="update" data-index="' + index + '"></div>';
+			element_html += '<div class="tools_icon tools_element_delete" data-tooltip="Delete element" onclick="delete_element(' + index + ', \'' + element.type + '\');"></div>';
 			element_html += '<div class="tools_icon tools_element_move" data-tooltip="Move element"></div>';
 			element_html += '</div>';
 			element_html += '</div>';
@@ -2765,25 +2766,25 @@ function insert_element_to_stage(type, element_obj, index) {
 		case 'button':
 			element_html += '<div class="hslider_backend_element element_draggable" data-order="' + index + '" data-index="' + index + '" id="element_' + index + '">';
 			element_html += '<div class="hslider_button_holder" id="stage_button_' + index + '">';
-			element_html += hslider_button_html(element_obj.content, element_obj.theme, element_obj, 'stage', index);
-			element_html += '<style type="text/css" id="example_styles">' + hslider_button_css(element_obj.theme, element_obj, 'stage', index) + '</style>';
+			element_html += hslider_button_html(element.content, element.theme, element, 'stage', index);
+			element_html += '<style type="text/css" id="example_styles">' + hslider_button_css(element.theme, element, 'stage', index) + '</style>';
 			element_html += '</div>';
 			element_html += '<div class="hslider_element_tools">';
 			element_html += '<div class="hlsider_inner_tools">';
-			element_html += '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit button element" data-title="Button Element" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
-			element_html += '<div class="tools_icon tools_element_delete" data-tooltip="Delete element" onclick="delete_element(' + index + ', \'' + element_obj.type + '\');"></div>';
+			element_html += '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit button element" data-title="Button Element" data-load="' + element.type + '" data-action="update" data-index="' + index + '"></div>';
+			element_html += '<div class="tools_icon tools_element_delete" data-tooltip="Delete element" onclick="delete_element(' + index + ', \'' + element.type + '\');"></div>';
 			element_html += '<div class="tools_icon tools_element_move" data-tooltip="Move element"></div>';
 			element_html += '</div>';
 			element_html += '</div>';
 			element_html += '</div>';
 			break;
 		case 'woo':
-			element_html += '<div class="hslider_backend_element element_draggable" data-type="' + element_obj.type + '" data-order="' + index + '" data-index="' + index + '" id="element_' + index + '">';
+			element_html += '<div class="hslider_backend_element element_draggable" data-type="' + element.type + '" data-order="' + index + '" data-index="' + index + '" id="element_' + index + '">';
 			element_html += '<div class="hslider_product_back_holder"></div>';
 			element_html += '<div class="hslider_element_tools">';
 			element_html += '<div class="hlsider_inner_tools">';
-			element_html += '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit woo element" data-title="Posts" data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
-			element_html += '<div class="tools_icon tools_element_delete" data-tooltip="Delete element" onclick="delete_element(' + index + ', \'' + element_obj.type + '\');"></div>';
+			element_html += '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit woo element" data-title="Posts" data-load="' + element.type + '" data-action="update" data-index="' + index + '"></div>';
+			element_html += '<div class="tools_icon tools_element_delete" data-tooltip="Delete element" onclick="delete_element(' + index + ', \'' + element.type + '\');"></div>';
 			element_html += '<div class="tools_icon tools_element_move" data-tooltip="Move element"></div>';
 			element_html += '</div>';
 			element_html += '</div>';
@@ -2794,60 +2795,60 @@ function insert_element_to_stage(type, element_obj, index) {
 	jQuery('.hslider_slide_holder').append(element_html);
 
 	//add element style
-	switch (element_obj.type) {
+	switch (element.type) {
 		case 'text':
 			jQuery('#element_' + index).css({
-				'color': element_obj.font[0].color,
-				'font-family': element_obj.font[0].family,
-				'font-weight': element_obj.font[0].weight,
-				'font-size': element_obj.font[0].size + element_obj.font[0].sizing,
-				'text-align': element_obj.font[0].align,
-				'font-style': element_obj.font[0].fontStyle,
-				'letter-spacing': element_obj.font[0].letterSpacing,
-				'left': element_obj.x + 'px',
-				'top': element_obj.y + 'px',
-				'z-index': element_obj.order + '!important',
-				'line-height': (parseInt(element_obj.font[0].size) + 7) + element_obj.font[0].sizing,
-				'width': element_obj.width + 'px'
+				'color': element.font[0].color,
+				'font-family': element.font[0].family,
+				'font-weight': element.font[0].weight,
+				'font-size': element.font[0].size + element.font[0].sizing,
+				'text-align': element.font[0].align,
+				'font-style': element.font[0].fontStyle,
+				'letter-spacing': element.font[0].letterSpacing,
+				'left': element.x + 'px',
+				'top': element.y + 'px',
+				'z-index': element.order + '!important',
+				'line-height': (parseInt(element.font[0].size) + 7) + element.font[0].sizing,
+				'width': element.width + 'px'
 			});
 			break;
 		case 'element':
 			jQuery('#element_' + index).css({
-				'left': element_obj.x + 'px',
-				'top': element_obj.y + 'px',
-				'z-index': element_obj.order
+				'left': element.x + 'px',
+				'top': element.y + 'px',
+				'z-index': element.order
 			});
 			//for images check that it has loaded then enable the drag function
 			jQuery("#element_img_" + index).on('load', function () {
 				set_drag_dimentions();
-			}).attr('src', element_obj.source);
+			}).attr('src', element.source);
 			break;
 		case 'post':
 			jQuery('#element_' + index).css({
-				'left': element_obj.x + 'px',
-				'top': element_obj.y + 'px',
-				'z-index': element_obj.order
+				'left': element.x + 'px',
+				'top': element.y + 'px',
+				'z-index': element.order
 			});
 			break;
 		case 'video':
 			jQuery('#element_' + index).css({
-				'left': element_obj.x + 'px',
-				'top': element_obj.y + 'px',
-				'z-index': element_obj.order
+				'left': element.x + 'px',
+				'top': element.y + 'px',
+				'z-index': element.order
 			});
 			break;
 		case 'button':
 			jQuery('#element_' + index).css({
-				'left': element_obj.x + 'px',
-				'top': element_obj.y + 'px',
-				'z-index': element_obj.order
+				'left': element.x + 'px',
+				'top': element.y + 'px',
+				'z-index': element.order
 			});
 			break;
 		case 'woo':
 			jQuery('#element_' + index).css({
-				'left': element_obj.x + 'px',
-				'top': element_obj.y + 'px',
-				'z-index': element_obj.order
+				'left': element.x + 'px',
+				'top': element.y + 'px',
+				'z-index': element.order
 			});
 			break;
 	}
