@@ -535,7 +535,7 @@
 /* SLIDE BUILDER SANDBOX */
 
 .hslider_sandbox{
-	width:100%; display:table; padding:20px 0;
+	width:100%; display:table; padding-top:20px;
 }
 
 	.hslider_ux_holder{
