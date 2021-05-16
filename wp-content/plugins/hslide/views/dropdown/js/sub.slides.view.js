@@ -273,9 +273,11 @@ function set_slide(obj, index) {
 		bounds: ".hslider_zoom_holder",
 		throwProps: false,
 		onDragStart: function () {
+			console.log("hslider_zoom_drag.onDragStart");
 			TweenLite.to(jQuery('.hslider_zoom_line'), 0.5, { backgroundColor: '#5BC0DE', ease: Power2.easeInOut });
 		},
 		onDrag: function () {
+			console.log("hslider_zoom_drag.onDrag");
 			var pos = jQuery('.hslider_zoom_drag').position();
 			var percentage = ((pos.left) + 15) / 300;
 			//set global zoom val 
@@ -285,6 +287,7 @@ function set_slide(obj, index) {
 			jQuery('.hslider_slide_main').height((slide_height * percentage));
 		},
 		onDragEnd: function () {
+			console.log("hslider_zoom_drag.onDragEnd");
 			TweenLite.to(jQuery('.hslider_zoom_line'), 0.5, { backgroundColor: '#CCC', ease: Power2.easeInOut });
 		}
 	});
@@ -921,6 +924,7 @@ function enable_accordion() {
 	console.log("enable_accordion");
 
 	jQuery('.element_edit_btn').on('click', function () {
+		console.log("enable_accordion.element_edit_btn.click");
 
 		//variables
 		var item_height = jQuery(this).parents('.elememt_list_item').children('.element_settings').height();
@@ -968,6 +972,7 @@ function activate_custom_popup_load() {
 
 	//open popup
 	jQuery('.data_popup_launch').off().on('click', function () {
+		console.log("activate_custom_popup_load.data_popup_launch.click");
 
 		//check what action is being applied
 		var action = jQuery(this).attr('data-action');
@@ -1046,6 +1051,7 @@ function activate_custom_popup_load() {
 			switch_components();
 
 		}).fail(function () {
+			console.log("activate_custom_popup_load.data_popup_launch.FAILURE");
 			//page error
 		});
 
@@ -1053,6 +1059,7 @@ function activate_custom_popup_load() {
 
 	//close popup
 	jQuery('.hero_custom_close').off().on('click', function () {
+		console.log("activate_custom_popup_load.hero_custom_close.click");
 		TweenLite.to(jQuery('.hero_custom_popup_holder'), 0, { opacity: 0, ease: Power2.easeInOut, onComplete: custom_popup_none });
 		TweenLite.to(jQuery('.hero_custom_popup_inner'), 0, { opacity: 0, ease: Power2.easeInOut });
 		jQuery('.hero_custom_sidebar_close').trigger('click');
