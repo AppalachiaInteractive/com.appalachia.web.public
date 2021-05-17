@@ -10,6 +10,7 @@ var menu_config;
 var menu_icon_path = 'assets/icons/';
 var save_required = false;
 var header_loaded_watch = false;
+var header_loading_watch = false;
 var header_loaded_timer;
 var cur_sub_view;
 
@@ -205,6 +206,7 @@ function load_core_view(key, id, title, viewpath, json, callback, header, show_s
 		lock_core_view_reload(id);
 		var check = check_save_required();
 		header_loaded_watch = false;
+		header_loading_watch = false;
 		var allow_nav = true;
 		if (save_required) {
 			var allow_nav = confirm('Please note that you have unsaved data. If you leave this page, you will lose all changes that took place after your last save. Click OK to leave this page and CANCEL to stay on this page.');
@@ -272,6 +274,7 @@ function extract_json_object(json) {
 function manual_load_view(core_view_id) {
 	clearTimeout(header_loaded_timer);
 	jQuery('.hero_viewport').append('<div class="loader"><div>loading view...</div></div>');
+	
 	if (header_loaded_watch) {
 		//get menu key
 		var key;
@@ -282,8 +285,10 @@ function manual_load_view(core_view_id) {
 			}
 		});
 		header_loaded_watch = false;
+		header_loading_watch = false;
 		load_view_submenu(key, 0);
-	} else {
+	} else if (!header_loading_watch) {
+		header_loading_watch = true;
 		header_loaded_timer = setTimeout(function () {
 			manual_load_view(core_view_id);
 		}, 100);
@@ -370,6 +375,7 @@ function reload_sub_view(id, viewpath, view) {
 //generate view header
 function generate_view_header(key, show_save) {
 	header_loaded_watch = false;
+	header_loading_watch = false;
 	var header_html = '';
 	header_html += '<div class="hero_top">';
 	header_html += '<div class="hero_top_menu">';
@@ -402,6 +408,7 @@ function generate_view_header(key, show_save) {
 	header_html += '</div>';
 	jQuery('.hero_viewport').before(header_html);
 	header_loaded_watch = true;
+	header_loading_watch = true;
 	set_current_header_label(menu_object[key].header.header_label, menu_object[key].header.header_title);
 }
 //set header label and title
