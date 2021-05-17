@@ -3406,7 +3406,7 @@ function get_html_chunk(type, id) {
 			chunk_html += '</div>';
 			chunk_html += '<div class="hero_col_2">';
 			chunk_html += '<div class="size_12">Distance</div>';
-			chunk_html += '<input type="text" data-size="lrg" data-hero_type="px" maxlength="4" id="element_animate_distance_' + id + '" name="element_animate_distance_' + id + '">';
+			chunk_html += '<input type="text" data-size="lrg" data-hero_type="px" maxlength="5" id="element_animate_distance_' + id + '" name="element_animate_distance_' + id + '">';
 			chunk_html += '</div>';
 			chunk_html += '<div class="hero_col_1" style="width:8%">';
 			chunk_html += '<div class="size_12" data-tooltip="This is the start rotation of your element">Rotation</div>';
@@ -3474,11 +3474,11 @@ function get_html_chunk(type, id) {
 			chunk_html += '<div class="element_settings_holder">';
 			chunk_html += '<div class="hero_col_6">';
 			chunk_html += '<div class="size_12">End position: Horizontal</div>';
-			chunk_html += '<input type="text" data-size="lrg" data-hero_type="px" class="hero_int_only" maxlength="4" id="position_x_' + id + '" name="position_x_' + id + '">';
+			chunk_html += '<input type="text" data-size="lrg" data-hero_type="px" class="hero_int_only" maxlength="5" id="position_x_' + id + '" name="position_x_' + id + '">';
 			chunk_html += '</div>';
 			chunk_html += '<div class="hero_col_6">';
 			chunk_html += '<div class="size_12">End position: Vertical</div>';
-			chunk_html += '<input type="text" data-size="lrg" data-hero_type="px" class="hero_int_only" maxlength="4" id="position_y_' + id + '" name="position_y_' + id + '">';
+			chunk_html += '<input type="text" data-size="lrg" data-hero_type="px" class="hero_int_only" maxlength="5" id="position_y_' + id + '" name="position_y_' + id + '">';
 			chunk_html += '</div>';
 			chunk_html += '</div>';
 			chunk_html += '</div>';
@@ -3490,11 +3490,11 @@ function get_html_chunk(type, id) {
 			chunk_html += '<div class="hero_col_6">';
 			//hslider_disable_input
 			chunk_html += '<div class="size_12 parallax_sub_heading">Start position: Horizontal</div>';
-			chunk_html += '<input type="text" data-size="lrg" data-hero_type="px" class="hero_int_only switch_for_parallax" maxlength="4" id="position_offset_x_' + id + '" name="position_offset_x_' + id + '">';
+			chunk_html += '<input type="text" data-size="lrg" data-hero_type="px" class="hero_int_only switch_for_parallax" maxlength="5" id="position_offset_x_' + id + '" name="position_offset_x_' + id + '">';
 			chunk_html += '</div>';
 			chunk_html += '<div class="hero_col_6">';
 			chunk_html += '<div class="size_12">Start position: Vertical</div>';
-			chunk_html += '<input type="text" data-size="lrg" data-hero_type="px" class="hero_int_only switch_for_parallax2" maxlength="4" id="position_offset_y_' + id + '" name="position_offset_y_' + id + '">';
+			chunk_html += '<input type="text" data-size="lrg" data-hero_type="px" class="hero_int_only switch_for_parallax2" maxlength="5" id="position_offset_y_' + id + '" name="position_offset_y_' + id + '">';
 			chunk_html += '</div>';
 			chunk_html += '</div>';
 			chunk_html += '</div>';
