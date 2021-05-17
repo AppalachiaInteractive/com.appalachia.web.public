@@ -1992,8 +1992,6 @@ function json_update_element_objects(obj, index, type) {
 
 			//insert updated element to stage
 			insert_element_to_stage(type, main_object.slider.slides[global_slide_index].elements[index], index, "hlsider_inner_tools");
-			insert_element_to_stage(type, main_object.slider.slides[global_slide_index].elements[index], index, "hlsider_inner_tools_left");
-			insert_element_to_stage(type, main_object.slider.slides[global_slide_index].elements[index], index, "hlsider_inner_tools_right");
 
 			break;
 		case 'post':
@@ -2064,8 +2062,6 @@ function json_update_element_objects(obj, index, type) {
 
 			//insert updated element to stage
 			insert_element_to_stage(type, main_object.slider.slides[global_slide_index].elements[index], index, "hlsider_inner_tools");
-			insert_element_to_stage(type, main_object.slider.slides[global_slide_index].elements[index], index, "hlsider_inner_tools_left");
-			insert_element_to_stage(type, main_object.slider.slides[global_slide_index].elements[index], index, "hlsider_inner_tools_right");
 
 			break;
 		case 'button':
@@ -2334,8 +2330,6 @@ function load_slide_elements(main_object) {
 		jQuery(main_object.slider.slides[global_slide_index].elements).each(function (index, element) {
 			
 			insert_element_to_stage(element.type, element, index, "hlsider_inner_tools");
-			insert_element_to_stage(element.type, element, index, "hlsider_inner_tools_left");
-			insert_element_to_stage(element.type, element, index, "hlsider_inner_tools_right");
 
 			insert_element_to_list(element, index, 'append');
 
@@ -3064,8 +3058,6 @@ function delete_element(index, type) {
 			jQuery(main_object.slider.slides[global_slide_index].elements).each(function (index, element) {
 				insert_element_to_list(element, index, 'append');
 				insert_element_to_stage(element.type, main_object.slider.slides[global_slide_index].elements[index], index, "hlsider_inner_tools");
-				insert_element_to_stage(element.type, main_object.slider.slides[global_slide_index].elements[index], index, "hlsider_inner_tools_left");
-				insert_element_to_stage(element.type, main_object.slider.slides[global_slide_index].elements[index], index, "hlsider_inner_tools_right");
 				load_post_content();
 				load_woo_content();
 			});
@@ -3551,7 +3543,7 @@ function enable_element_drag() {
 		Draggable.create(jQuery(this), {
 			type: "x,y",
 			trigger: jQuery(this).children('.hslider_element_tools')
-				.children('.hlsider_inner_tools, .hlsider_inner_tools_left, .hlsider_inner_tools_right')
+				.children('.hlsider_inner_tools')
 				.children('.tools_element_move'),
 			edgeResistance: 1,
 			onDragStart: function () {
