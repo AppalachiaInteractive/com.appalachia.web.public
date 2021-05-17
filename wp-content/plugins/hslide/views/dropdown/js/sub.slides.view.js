@@ -2872,41 +2872,6 @@ function set_drag_dimentions() {
 
 }
 
-
-// get element edit button
-function get_element_edit_button(element_obj, index) {
-	console.log("get_element_edit_button");
-
-	element_html='<div class="tools_element_edit data_popup_launch hero_edit_item" data-tooltip=';
-
-	switch (element_obj.type) {
-		
-		case 'text':
-			element_html += '"Edit text element" data-title="Text Element"';
-			break;
-		case 'element':
-			element_html += '"Edit image element" data-title="Element"';
-			break;
-		case 'post':
-			element_html += '"Edit post element" data-title="Posts';
-			break;
-		case 'video':
-			element_html += '"Edit video element" data-title="Video"';
-			break;
-		case 'button':
-			element_html += '"Edit button element" data-title="Button Element"';
-			break;
-		case 'woo':
-			element_html += '"Edit woo element" data-title="Posts"';
-			break;
-	}
-
-	element_html+='  data-load="' + element_obj.type + '" data-action="update" data-index="' + index + '"></div>';
-
-	return element_html;
-}
-
-
 //add elements to list
 function insert_element_to_list(element, index, append_type) {
 	console.log("insert_element_to_list");
@@ -2949,7 +2914,6 @@ function insert_element_to_list(element, index, append_type) {
 	element_list_html += '</div>';
 	element_list_html += '<div class="element_edit">';
 	element_list_html += '<div class="hero_edits rounded_20">';
-	element_list_html += get_element_edit_button(element, index);
 	element_list_html += '<div class="hero_edit_item element_edit_btn" data-tooltip="Edit slide element" style="background-image:url(' + core_view_path + 'assets/images/admin/edit_icon.png)"></div>';
 	element_list_html += '<div class="hero_edit_item" data-tooltip="Delete slide element" onclick="delete_element(' + index + ', \'' + element.type + '\');" style="background-image:url(' + core_view_path + 'assets/images/admin/delete_icon.png)"></div>';
 	element_list_html += '<div class="hero_edit_item hero_item_drag" data-tooltip="Set the order of the element" style="background-image:url(' + core_view_path + 'assets/images/admin/drag_icon.png)"></div>';
