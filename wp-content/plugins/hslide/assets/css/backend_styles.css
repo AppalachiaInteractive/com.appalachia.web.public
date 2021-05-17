@@ -272,7 +272,7 @@
 }
 
 	.hlsider_inner_tools{
-		display:table; background-color:#FFF; padding:0 5px; position:absolute; font-size:11px; left:50%; top:5%; width:130px; height:50px; margin-left:-35px; margin-top:-10px; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px;
+		display:table; background-color:#FFF; padding:0 5px; position:absolute; font-size:11px; left:50%; top:5%; width:130px; min-height:30px; height:50px; margin-left:-35px; margin-top:-10px; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px;
 	}
 
 	.hlsider_inner_tools .tools_icon{
