@@ -1974,7 +1974,7 @@ function json_update_element_objects(obj, index, type) {
 			jQuery("#element_" + index).remove();
 
 			//insert updated element to stage
-			insert_element_to_stage(type, main_object.slider.slides[global_slide_index].elements[index], index);
+			insert_element_to_stage(type, main_object.slider.slides[global_slide_index].elements[index], index, "hlsider_inner_tools");
 
 			break;
 		case 'element':
@@ -1991,7 +1991,9 @@ function json_update_element_objects(obj, index, type) {
 			jQuery("#element_" + index).remove();
 
 			//insert updated element to stage
-			insert_element_to_stage(type, main_object.slider.slides[global_slide_index].elements[index], index);
+			insert_element_to_stage(type, main_object.slider.slides[global_slide_index].elements[index], index, "hlsider_inner_tools");
+			insert_element_to_stage(type, main_object.slider.slides[global_slide_index].elements[index], index, "hlsider_inner_tools_left");
+			insert_element_to_stage(type, main_object.slider.slides[global_slide_index].elements[index], index, "hlsider_inner_tools_right");
 
 			break;
 		case 'post':
@@ -2037,7 +2039,7 @@ function json_update_element_objects(obj, index, type) {
 			jQuery("#element_" + index).remove();
 
 			//insert updated element to stage
-			insert_element_to_stage(type, main_object.slider.slides[global_slide_index].elements[index], index);
+			insert_element_to_stage(type, main_object.slider.slides[global_slide_index].elements[index], index, "hlsider_inner_tools");
 
 			//reload data
 			load_post_content();
@@ -2061,7 +2063,9 @@ function json_update_element_objects(obj, index, type) {
 			jQuery("#element_" + index).remove();
 
 			//insert updated element to stage
-			insert_element_to_stage(type, main_object.slider.slides[global_slide_index].elements[index], index);
+			insert_element_to_stage(type, main_object.slider.slides[global_slide_index].elements[index], index, "hlsider_inner_tools");
+			insert_element_to_stage(type, main_object.slider.slides[global_slide_index].elements[index], index, "hlsider_inner_tools_left");
+			insert_element_to_stage(type, main_object.slider.slides[global_slide_index].elements[index], index, "hlsider_inner_tools_right");
 
 			break;
 		case 'button':
@@ -2089,7 +2093,7 @@ function json_update_element_objects(obj, index, type) {
 			jQuery("#element_" + index).remove();
 
 			//insert updated element to stage
-			insert_element_to_stage(type, main_object.slider.slides[global_slide_index].elements[index], index);
+			insert_element_to_stage(type, main_object.slider.slides[global_slide_index].elements[index], index, "hlsider_inner_tools");
 
 			break;
 		case 'woo':
@@ -2328,32 +2332,13 @@ function load_slide_elements(main_object) {
 		main_object.slider.slides[global_slide_index].elements.sort(sort_items_reverse);
 		//looop through all the elements
 		jQuery(main_object.slider.slides[global_slide_index].elements).each(function (index, element) {
-			switch (element.type) {
-				case 'text':
-					insert_element_to_stage(element.type, element, index);
-					insert_element_to_list(element, index, 'append');
-					break;
-				case 'element':
-					insert_element_to_stage(element.type, element, index);
-					insert_element_to_list(element, index, 'append');
-					break;
-				case 'post':
-					insert_element_to_stage(element.type, element, index);
-					insert_element_to_list(element, index, 'append');
-					break;
-				case 'video':
-					insert_element_to_stage(element.type, element, index);
-					insert_element_to_list(element, index, 'append');
-					break;
-				case 'button':
-					insert_element_to_stage(element.type, element, index);
-					insert_element_to_list(element, index, 'append');
-					break;
-				case 'woo':
-					insert_element_to_stage(element.type, element, index);
-					insert_element_to_list(element, index, 'append');
-					break;
-			}
+			
+			insert_element_to_stage(element.type, element, index, "hlsider_inner_tools");
+			insert_element_to_stage(element.type, element, index, "hlsider_inner_tools_left");
+			insert_element_to_stage(element.type, element, index, "hlsider_inner_tools_right");
+
+			insert_element_to_list(element, index, 'append');
+
 		});
 		set_order();
 		load_post_content();
@@ -2703,7 +2688,7 @@ function insert_woo_html(woo_obj, element_obj, index) {
 }
 
 //add elements to stage
-function insert_element_to_stage(type, element, index) {
+function insert_element_to_stage(type, element, index, section) {
 	console.log("insert_element_to_stage");
 
 	var element_html = '';
@@ -2716,7 +2701,7 @@ function insert_element_to_stage(type, element, index) {
 			element_html += '<div class="hslider_backend_element element_draggable" data-order="' + index + '" data-index="' + index + '" id="element_' + index + '">';
 			element_html += element.content;
 			element_html += '<div class="hslider_element_tools">';
-			element_html += '<div class="hlsider_inner_tools">';
+			element_html += '<div class="' + section + '">';
 			element_html += '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit text element" data-title="Text Element" data-load="' + element.type + '" data-action="update" data-index="' + index + '"></div>';
 			element_html += '<div class="tools_icon tools_element_delete" data-tooltip="Delete element" onclick="delete_element(' + index + ', \'' + element.type + '\');"></div>';
 			element_html += '<div class="tools_icon tools_element_move" data-tooltip="Move element"></div>';
@@ -2730,7 +2715,7 @@ function insert_element_to_stage(type, element, index) {
 			element_html += 'width="' + element.width + 'px" ';
 			element_html += '/>';
 			element_html += '<div class="hslider_element_tools">';
-			element_html += '<div class="hlsider_inner_tools">';
+			element_html += '<div class="' + section + '">';
 			element_html += '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit image element" data-title="Element" data-load="' + element.type + '" data-action="update" data-index="' + index + '"></div>';
 			element_html += '<div class="tools_icon tools_element_delete" data-tooltip="Delete element" onclick="delete_element(' + index + ', \'' + element.type + '\');"></div>';
 			element_html += '<div class="tools_icon tools_element_move" data-tooltip="Move element"></div>';
@@ -2742,7 +2727,7 @@ function insert_element_to_stage(type, element, index) {
 			element_html += '<div class="hslider_backend_element element_draggable" data-type="' + element.type + '" data-order="' + index + '" data-index="' + index + '" id="element_' + index + '">';
 			element_html += '<div class="hslider_post_back_holder"></div>';
 			element_html += '<div class="hslider_element_tools">';
-			element_html += '<div class="hlsider_inner_tools">';
+			element_html += '<div class="' + section + '">';
 			element_html += '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit post element" data-title="Posts" data-load="' + element.type + '" data-action="update" data-index="' + index + '"></div>';
 			element_html += '<div class="tools_icon tools_element_delete" data-tooltip="Delete element" onclick="delete_element(' + index + ', \'' + element.type + '\');"></div>';
 			element_html += '<div class="tools_icon tools_element_move" data-tooltip="Move element"></div>';
@@ -2754,7 +2739,7 @@ function insert_element_to_stage(type, element, index) {
 			element_html += '<div class="hslider_backend_element element_draggable" data-order="' + index + '" data-index="' + index + '" id="element_' + index + '">';
 			element_html += '<div class="hslider_video_holder">' + insert_video_html(index) + '</div>';
 			element_html += '<div class="hslider_element_tools">';
-			element_html += '<div class="hlsider_inner_tools">';
+			element_html += '<div class="' + section + '">';
 			element_html += '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit video element" data-title="Video" data-load="' + element.type + '" data-action="update" data-index="' + index + '"></div>';
 			element_html += '<div class="tools_icon tools_element_delete" data-tooltip="Delete element" onclick="delete_element(' + index + ', \'' + element.type + '\');"></div>';
 			element_html += '<div class="tools_icon tools_element_move" data-tooltip="Move element"></div>';
@@ -2769,7 +2754,7 @@ function insert_element_to_stage(type, element, index) {
 			element_html += '<style type="text/css" id="example_styles">' + hslider_button_css(element.theme, element, 'stage', index) + '</style>';
 			element_html += '</div>';
 			element_html += '<div class="hslider_element_tools">';
-			element_html += '<div class="hlsider_inner_tools">';
+			element_html += '<div class="' + section + '">';
 			element_html += '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit button element" data-title="Button Element" data-load="' + element.type + '" data-action="update" data-index="' + index + '"></div>';
 			element_html += '<div class="tools_icon tools_element_delete" data-tooltip="Delete element" onclick="delete_element(' + index + ', \'' + element.type + '\');"></div>';
 			element_html += '<div class="tools_icon tools_element_move" data-tooltip="Move element"></div>';
@@ -2781,7 +2766,7 @@ function insert_element_to_stage(type, element, index) {
 			element_html += '<div class="hslider_backend_element element_draggable" data-type="' + element.type + '" data-order="' + index + '" data-index="' + index + '" id="element_' + index + '">';
 			element_html += '<div class="hslider_product_back_holder"></div>';
 			element_html += '<div class="hslider_element_tools">';
-			element_html += '<div class="hlsider_inner_tools">';
+			element_html += '<div class="' + section + '">';
 			element_html += '<div class="tools_icon tools_element_edit data_popup_launch" data-tooltip="Edit woo element" data-title="Posts" data-load="' + element.type + '" data-action="update" data-index="' + index + '"></div>';
 			element_html += '<div class="tools_icon tools_element_delete" data-tooltip="Delete element" onclick="delete_element(' + index + ', \'' + element.type + '\');"></div>';
 			element_html += '<div class="tools_icon tools_element_move" data-tooltip="Move element"></div>';
@@ -3078,7 +3063,9 @@ function delete_element(index, type) {
 			main_object.slider.slides[global_slide_index].elements.sort(sort_items_reverse);
 			jQuery(main_object.slider.slides[global_slide_index].elements).each(function (index, element) {
 				insert_element_to_list(element, index, 'append');
-				insert_element_to_stage(element.type, main_object.slider.slides[global_slide_index].elements[index], index);
+				insert_element_to_stage(element.type, main_object.slider.slides[global_slide_index].elements[index], index, "hlsider_inner_tools");
+				insert_element_to_stage(element.type, main_object.slider.slides[global_slide_index].elements[index], index, "hlsider_inner_tools_left");
+				insert_element_to_stage(element.type, main_object.slider.slides[global_slide_index].elements[index], index, "hlsider_inner_tools_right");
 				load_post_content();
 				load_woo_content();
 			});
@@ -3563,7 +3550,9 @@ function enable_element_drag() {
 
 		Draggable.create(jQuery(this), {
 			type: "x,y",
-			trigger: jQuery(this).children('.hslider_element_tools').children('.hlsider_inner_tools').children('.tools_element_move'),
+			trigger: jQuery(this).children('.hslider_element_tools')
+				.children('.hlsider_inner_tools, .hlsider_inner_tools_left, .hlsider_inner_tools_right')
+				.children('.tools_element_move'),
 			edgeResistance: 1,
 			onDragStart: function () {
 				//start
