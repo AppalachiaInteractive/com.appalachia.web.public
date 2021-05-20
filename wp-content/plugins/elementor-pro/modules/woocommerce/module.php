@@ -100,7 +100,7 @@ class Module extends Module_Base {
 		$module = Plugin::elementor()->dynamic_tags;
 
 		$module->register_group( self::WOOCOMMERCE_GROUP, [
-			'title' => __( 'WooCommerce', 'elementor-pro' ),
+			'title' => esc_html__( 'WooCommerce', 'elementor-pro' ),
 		] );
 
 		foreach ( $tags as $tag ) {
@@ -296,16 +296,16 @@ class Module extends Module_Base {
 			},
 			'fields' => [
 				self::OPTION_NAME_USE_MINI_CART => [
-					'label' => __( 'Mini Cart Template', 'elementor-pro' ),
+					'label' => esc_html__( 'Mini Cart Template', 'elementor-pro' ),
 					'field_args' => [
 						'type' => 'select',
 						'std' => 'initial',
 						'options' => [
 							'initial' => '', // Relevant until either menu-cart widget is used or option is explicitly set to 'no'.
-							'no' => __( 'Disable', 'elementor-pro' ),
-							'yes' => __( 'Enable', 'elementor-pro' ),
+							'no' => esc_html__( 'Disable', 'elementor-pro' ),
+							'yes' => esc_html__( 'Enable', 'elementor-pro' ),
 						],
-						'desc' => __( 'Set to `Disable` in order to use your Theme\'s or WooCommerce\'s mini-cart template instead of Elementor\'s.', 'elementor-pro' ),
+						'desc' => esc_html__( 'Set to `Disable` in order to use your Theme\'s or WooCommerce\'s mini-cart template instead of Elementor\'s.', 'elementor-pro' ),
 					],
 				],
 			],

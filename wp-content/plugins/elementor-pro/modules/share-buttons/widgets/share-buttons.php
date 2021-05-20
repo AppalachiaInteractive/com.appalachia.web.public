@@ -57,7 +57,7 @@ class Share_Buttons extends Base_Widget {
 	}
 
 	public function get_title() {
-		return __( 'Share Buttons', 'elementor-pro' );
+		return esc_html__( 'Share Buttons', 'elementor-pro' );
 	}
 
 	public function get_icon() {
@@ -72,7 +72,7 @@ class Share_Buttons extends Base_Widget {
 		$this->start_controls_section(
 			'section_buttons_content',
 			[
-				'label' => __( 'Share Buttons', 'elementor-pro' ),
+				'label' => esc_html__( 'Share Buttons', 'elementor-pro' ),
 			]
 		);
 
@@ -85,7 +85,7 @@ class Share_Buttons extends Base_Widget {
 		$repeater->add_control(
 			'button',
 			[
-				'label' => __( 'Network', 'elementor-pro' ),
+				'label' => esc_html__( 'Network', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => array_reduce( $networks_names, function( $options, $network_name ) use ( $networks ) {
 					$options[ $network_name ] = $networks[ $network_name ]['title'];
@@ -99,7 +99,7 @@ class Share_Buttons extends Base_Widget {
 		$repeater->add_control(
 			'text',
 			[
-				'label' => __( 'Custom Label', 'elementor-pro' ),
+				'label' => esc_html__( 'Custom Label', 'elementor-pro' ),
 				'type' => Controls_Manager::TEXT,
 			]
 		);
@@ -127,7 +127,7 @@ class Share_Buttons extends Base_Widget {
 		$this->add_control(
 			'view',
 			[
-				'label' => __( 'View', 'elementor-pro' ),
+				'label' => esc_html__( 'View', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
 					'icon-text' => 'Icon & Text',
@@ -144,10 +144,10 @@ class Share_Buttons extends Base_Widget {
 		$this->add_control(
 			'show_label',
 			[
-				'label' => __( 'Label', 'elementor-pro' ),
+				'label' => esc_html__( 'Label', 'elementor-pro' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'elementor-pro' ),
-				'label_off' => __( 'Hide', 'elementor-pro' ),
+				'label_on' => esc_html__( 'Show', 'elementor-pro' ),
+				'label_off' => esc_html__( 'Hide', 'elementor-pro' ),
 				'default' => 'yes',
 				'condition' => [
 					'view' => 'icon-text',
@@ -158,14 +158,14 @@ class Share_Buttons extends Base_Widget {
 		$this->add_control(
 			'skin',
 			[
-				'label' => __( 'Skin', 'elementor-pro' ),
+				'label' => esc_html__( 'Skin', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'gradient' => __( 'Gradient', 'elementor-pro' ),
-					'minimal' => __( 'Minimal', 'elementor-pro' ),
-					'framed' => __( 'Framed', 'elementor-pro' ),
-					'boxed' => __( 'Boxed Icon', 'elementor-pro' ),
-					'flat' => __( 'Flat', 'elementor-pro' ),
+					'gradient' => esc_html__( 'Gradient', 'elementor-pro' ),
+					'minimal' => esc_html__( 'Minimal', 'elementor-pro' ),
+					'framed' => esc_html__( 'Framed', 'elementor-pro' ),
+					'boxed' => esc_html__( 'Boxed Icon', 'elementor-pro' ),
+					'flat' => esc_html__( 'Flat', 'elementor-pro' ),
 				],
 				'default' => 'gradient',
 				'prefix_class' => 'elementor-share-buttons--skin-',
@@ -175,12 +175,12 @@ class Share_Buttons extends Base_Widget {
 		$this->add_control(
 			'shape',
 			[
-				'label' => __( 'Shape', 'elementor-pro' ),
+				'label' => esc_html__( 'Shape', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'square' => __( 'Square', 'elementor-pro' ),
-					'rounded' => __( 'Rounded', 'elementor-pro' ),
-					'circle' => __( 'Circle', 'elementor-pro' ),
+					'square' => esc_html__( 'Square', 'elementor-pro' ),
+					'rounded' => esc_html__( 'Rounded', 'elementor-pro' ),
+					'circle' => esc_html__( 'Circle', 'elementor-pro' ),
 				],
 				'default' => 'square',
 				'prefix_class' => 'elementor-share-buttons--shape-',
@@ -190,7 +190,7 @@ class Share_Buttons extends Base_Widget {
 		$this->add_responsive_control(
 			'columns',
 			[
-				'label' => __( 'Columns', 'elementor-pro' ),
+				'label' => esc_html__( 'Columns', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => '0',
 				'options' => [
@@ -209,23 +209,23 @@ class Share_Buttons extends Base_Widget {
 		$this->add_responsive_control(
 			'alignment',
 			[
-				'label' => __( 'Alignment', 'elementor-pro' ),
+				'label' => esc_html__( 'Alignment', 'elementor-pro' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'elementor-pro' ),
+						'title' => esc_html__( 'Left', 'elementor-pro' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'elementor-pro' ),
+						'title' => esc_html__( 'Center', 'elementor-pro' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'elementor-pro' ),
+						'title' => esc_html__( 'Right', 'elementor-pro' ),
 						'icon' => 'eicon-text-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justify', 'elementor-pro' ),
+						'title' => esc_html__( 'Justify', 'elementor-pro' ),
 						'icon' => 'eicon-text-align-justify',
 					],
 				],
@@ -248,11 +248,11 @@ class Share_Buttons extends Base_Widget {
 		$this->add_control(
 			'share_url_type',
 			[
-				'label' => __( 'Target URL', 'elementor-pro' ),
+				'label' => esc_html__( 'Target URL', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'current_page' => __( 'Current Page', 'elementor-pro' ),
-					'custom' => __( 'Custom', 'elementor-pro' ),
+					'current_page' => esc_html__( 'Current Page', 'elementor-pro' ),
+					'custom' => esc_html__( 'Custom', 'elementor-pro' ),
 				],
 				'default' => 'current_page',
 				'separator' => 'before',
@@ -262,10 +262,10 @@ class Share_Buttons extends Base_Widget {
 		$this->add_control(
 			'share_url',
 			[
-				'label' => __( 'Link', 'elementor-pro' ),
+				'label' => esc_html__( 'Link', 'elementor-pro' ),
 				'type' => Controls_Manager::URL,
 				'options' => false,
-				'placeholder' => __( 'https://your-link.com', 'elementor-pro' ),
+				'placeholder' => esc_html__( 'https://your-link.com', 'elementor-pro' ),
 				'condition' => [
 					'share_url_type' => 'custom',
 				],
@@ -279,7 +279,7 @@ class Share_Buttons extends Base_Widget {
 		$this->start_controls_section(
 			'section_buttons_style',
 			[
-				'label' => __( 'Share Buttons', 'elementor-pro' ),
+				'label' => esc_html__( 'Share Buttons', 'elementor-pro' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -287,7 +287,7 @@ class Share_Buttons extends Base_Widget {
 		$this->add_responsive_control(
 			'column_gap',
 			[
-				'label' => __( 'Columns Gap', 'elementor-pro' ),
+				'label' => esc_html__( 'Columns Gap', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 10,
@@ -303,7 +303,7 @@ class Share_Buttons extends Base_Widget {
 		$this->add_responsive_control(
 			'row_gap',
 			[
-				'label' => __( 'Rows Gap', 'elementor-pro' ),
+				'label' => esc_html__( 'Rows Gap', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 10,
@@ -319,7 +319,7 @@ class Share_Buttons extends Base_Widget {
 		$this->add_responsive_control(
 			'button_size',
 			[
-				'label' => __( 'Button Size', 'elementor-pro' ),
+				'label' => esc_html__( 'Button Size', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -337,7 +337,7 @@ class Share_Buttons extends Base_Widget {
 		$this->add_responsive_control(
 			'icon_size',
 			[
-				'label' => __( 'Icon Size', 'elementor-pro' ),
+				'label' => esc_html__( 'Icon Size', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'em' => [
@@ -372,7 +372,7 @@ class Share_Buttons extends Base_Widget {
 		$this->add_responsive_control(
 			'button_height',
 			[
-				'label' => __( 'Button Height', 'elementor-pro' ),
+				'label' => esc_html__( 'Button Height', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'em' => [
@@ -404,7 +404,7 @@ class Share_Buttons extends Base_Widget {
 		$this->add_responsive_control(
 			'border_size',
 			[
-				'label' => __( 'Border Size', 'elementor-pro' ),
+				'label' => esc_html__( 'Border Size', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', 'em' ],
 				'default' => [
@@ -432,11 +432,11 @@ class Share_Buttons extends Base_Widget {
 		$this->add_control(
 			'color_source',
 			[
-				'label' => __( 'Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Color', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'official' => __( 'Official', 'elementor-pro' ),
-					'custom' => __( 'Custom', 'elementor-pro' ),
+					'official' => esc_html__( 'Official', 'elementor-pro' ),
+					'custom' => esc_html__( 'Custom', 'elementor-pro' ),
 				],
 				'default' => 'official',
 				'prefix_class' => 'elementor-share-buttons--color-',
@@ -456,14 +456,14 @@ class Share_Buttons extends Base_Widget {
 		$this->start_controls_tab(
 			'tab_button_normal',
 			[
-				'label' => __( 'Normal', 'elementor-pro' ),
+				'label' => esc_html__( 'Normal', 'elementor-pro' ),
 			]
 		);
 
 		$this->add_control(
 			'primary_color',
 			[
-				'label' => __( 'Primary Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Primary Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -481,7 +481,7 @@ class Share_Buttons extends Base_Widget {
 		$this->add_control(
 			'secondary_color',
 			[
-				'label' => __( 'Secondary Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Secondary Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}}.elementor-share-buttons--skin-flat .elementor-share-btn__icon,
@@ -503,14 +503,14 @@ class Share_Buttons extends Base_Widget {
 		$this->start_controls_tab(
 			'tab_button_hover',
 			[
-				'label' => __( 'Hover', 'elementor-pro' ),
+				'label' => esc_html__( 'Hover', 'elementor-pro' ),
 			]
 		);
 
 		$this->add_control(
 			'primary_color_hover',
 			[
-				'label' => __( 'Primary Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Primary Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}}.elementor-share-buttons--skin-flat .elementor-share-btn:hover,
@@ -527,7 +527,7 @@ class Share_Buttons extends Base_Widget {
 		$this->add_control(
 			'secondary_color_hover',
 			[
-				'label' => __( 'Secondary Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Secondary Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}}.elementor-share-buttons--skin-flat .elementor-share-btn:hover .elementor-share-btn__icon,
@@ -557,7 +557,7 @@ class Share_Buttons extends Base_Widget {
 		$this->add_control(
 			'text_padding',
 			[
-				'label' => __( 'Text Padding', 'elementor-pro' ),
+				'label' => esc_html__( 'Text Padding', 'elementor-pro' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -606,7 +606,7 @@ class Share_Buttons extends Base_Widget {
 								<i class="<?php echo self::get_network_class( $network_name ); ?>"
 								   aria-hidden="true"></i>
 								<span
-									class="elementor-screen-only"><?php echo sprintf( __( 'Share on %s', 'elementor-pro' ), $network_name ); ?></span>
+									class="elementor-screen-only"><?php echo sprintf( esc_html__( 'Share on %s', 'elementor-pro' ), $network_name ); ?></span>
 							</span>
 							<?php endif; ?>
 							<?php if ( $show_text ) : ?>

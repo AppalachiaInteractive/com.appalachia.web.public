@@ -17,7 +17,7 @@ class Shortcode {
 	}
 
 	public function admin_columns_headers( $defaults ) {
-		$defaults['shortcode'] = __( 'Shortcode', 'elementor-pro' );
+		$defaults['shortcode'] = esc_html__( 'Shortcode', 'elementor-pro' );
 
 		return $defaults;
 	}

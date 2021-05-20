@@ -132,7 +132,7 @@ class Component extends Module_Base {
 	}
 
 	private function get_title() {
-		return __( 'Submissions', 'elementor-pro' );
+		return esc_html__( 'Submissions', 'elementor-pro' );
 	}
 
 	/**

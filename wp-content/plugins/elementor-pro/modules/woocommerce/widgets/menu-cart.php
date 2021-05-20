@@ -18,7 +18,7 @@ class Menu_Cart extends Base_Widget {
 	}
 
 	public function get_title() {
-		return __( 'Menu Cart', 'elementor-pro' );
+		return esc_html__( 'Menu Cart', 'elementor-pro' );
 	}
 
 	public function get_icon() {
@@ -34,25 +34,25 @@ class Menu_Cart extends Base_Widget {
 		$this->start_controls_section(
 			'section_menu_icon_content',
 			[
-				'label' => __( 'Menu Icon', 'elementor-pro' ),
+				'label' => esc_html__( 'Menu Icon', 'elementor-pro' ),
 			]
 		);
 
 		$this->add_control(
 			'icon',
 			[
-				'label' => __( 'Icon', 'elementor-pro' ),
+				'label' => esc_html__( 'Icon', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'cart-light' => __( 'Cart', 'elementor-pro' ) . ' ' . __( 'Light', 'elementor-pro' ),
-					'cart-medium' => __( 'Cart', 'elementor-pro' ) . ' ' . __( 'Medium', 'elementor-pro' ),
-					'cart-solid' => __( 'Cart', 'elementor-pro' ) . ' ' . __( 'Solid', 'elementor-pro' ),
-					'basket-light' => __( 'Basket', 'elementor-pro' ) . ' ' . __( 'Light', 'elementor-pro' ),
-					'basket-medium' => __( 'Basket', 'elementor-pro' ) . ' ' . __( 'Medium', 'elementor-pro' ),
-					'basket-solid' => __( 'Basket', 'elementor-pro' ) . ' ' . __( 'Solid', 'elementor-pro' ),
-					'bag-light' => __( 'Bag', 'elementor-pro' ) . ' ' . __( 'Light', 'elementor-pro' ),
-					'bag-medium' => __( 'Bag', 'elementor-pro' ) . ' ' . __( 'Medium', 'elementor-pro' ),
-					'bag-solid' => __( 'Bag', 'elementor-pro' ) . ' ' . __( 'Solid', 'elementor-pro' ),
+					'cart-light' => esc_html__( 'Cart', 'elementor-pro' ) . ' ' . esc_html__( 'Light', 'elementor-pro' ),
+					'cart-medium' => esc_html__( 'Cart', 'elementor-pro' ) . ' ' . esc_html__( 'Medium', 'elementor-pro' ),
+					'cart-solid' => esc_html__( 'Cart', 'elementor-pro' ) . ' ' . esc_html__( 'Solid', 'elementor-pro' ),
+					'basket-light' => esc_html__( 'Basket', 'elementor-pro' ) . ' ' . esc_html__( 'Light', 'elementor-pro' ),
+					'basket-medium' => esc_html__( 'Basket', 'elementor-pro' ) . ' ' . esc_html__( 'Medium', 'elementor-pro' ),
+					'basket-solid' => esc_html__( 'Basket', 'elementor-pro' ) . ' ' . esc_html__( 'Solid', 'elementor-pro' ),
+					'bag-light' => esc_html__( 'Bag', 'elementor-pro' ) . ' ' . esc_html__( 'Light', 'elementor-pro' ),
+					'bag-medium' => esc_html__( 'Bag', 'elementor-pro' ) . ' ' . esc_html__( 'Medium', 'elementor-pro' ),
+					'bag-solid' => esc_html__( 'Bag', 'elementor-pro' ) . ' ' . esc_html__( 'Solid', 'elementor-pro' ),
 				],
 				'default' => 'cart-medium',
 				'prefix_class' => 'toggle-icon--',
@@ -62,12 +62,12 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'items_indicator',
 			[
-				'label' => __( 'Items Indicator', 'elementor-pro' ),
+				'label' => esc_html__( 'Items Indicator', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'none' => __( 'None', 'elementor-pro' ),
-					'bubble' => __( 'Bubble', 'elementor-pro' ),
-					'plain' => __( 'Plain', 'elementor-pro' ),
+					'none' => esc_html__( 'None', 'elementor-pro' ),
+					'bubble' => esc_html__( 'Bubble', 'elementor-pro' ),
+					'plain' => esc_html__( 'Plain', 'elementor-pro' ),
 				],
 				'prefix_class' => 'elementor-menu-cart--items-indicator-',
 				'default' => 'bubble',
@@ -77,10 +77,10 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'hide_empty_indicator',
 			[
-				'label' => __( 'Hide Empty', 'elementor-pro' ),
+				'label' => esc_html__( 'Hide Empty', 'elementor-pro' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Yes', 'elementor-pro' ),
-				'label_off' => __( 'No', 'elementor-pro' ),
+				'label_on' => esc_html__( 'Yes', 'elementor-pro' ),
+				'label_off' => esc_html__( 'No', 'elementor-pro' ),
 				'return_value' => 'hide',
 				'prefix_class' => 'elementor-menu-cart--empty-indicator-',
 				'condition' => [
@@ -92,10 +92,10 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'show_subtotal',
 			[
-				'label' => __( 'Subtotal', 'elementor-pro' ),
+				'label' => esc_html__( 'Subtotal', 'elementor-pro' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'elementor-pro' ),
-				'label_off' => __( 'Hide', 'elementor-pro' ),
+				'label_on' => esc_html__( 'Show', 'elementor-pro' ),
+				'label_off' => esc_html__( 'Hide', 'elementor-pro' ),
 				'return_value' => 'yes',
 				'default' => 'yes',
 				'prefix_class' => 'elementor-menu-cart--show-subtotal-',
@@ -105,19 +105,19 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'alignment',
 			[
-				'label' => __( 'Alignment', 'elementor-pro' ),
+				'label' => esc_html__( 'Alignment', 'elementor-pro' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'elementor-pro' ),
+						'title' => esc_html__( 'Left', 'elementor-pro' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'elementor-pro' ),
+						'title' => esc_html__( 'Center', 'elementor-pro' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'elementor-pro' ),
+						'title' => esc_html__( 'Right', 'elementor-pro' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -132,19 +132,19 @@ class Menu_Cart extends Base_Widget {
 		$this->start_controls_section(
 			'section_toggle_style',
 			[
-				'label' => __( 'Menu Icon', 'elementor-pro' ),
+				'label' => esc_html__( 'Menu Icon', 'elementor-pro' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
 
 		$this->start_controls_tabs( 'toggle_button_colors' );
 
-		$this->start_controls_tab( 'toggle_button_normal_colors', [ 'label' => __( 'Normal', 'elementor-pro' ) ] );
+		$this->start_controls_tab( 'toggle_button_normal_colors', [ 'label' => esc_html__( 'Normal', 'elementor-pro' ) ] );
 
 		$this->add_control(
 			'toggle_button_text_color',
 			[
-				'label' => __( 'Text Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Text Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-menu-cart__toggle .elementor-button' => 'color: {{VALUE}}',
@@ -155,7 +155,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'toggle_button_icon_color',
 			[
-				'label' => __( 'Icon Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Icon Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-menu-cart__toggle .elementor-button-icon' => 'color: {{VALUE}}',
@@ -166,7 +166,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'toggle_button_background_color',
 			[
-				'label' => __( 'Background Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Background Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-menu-cart__toggle .elementor-button' => 'background-color: {{VALUE}}',
@@ -177,7 +177,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'toggle_button_border_color',
 			[
-				'label' => __( 'Border Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Border Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-menu-cart__toggle .elementor-button' => 'border-color: {{VALUE}}',
@@ -187,12 +187,12 @@ class Menu_Cart extends Base_Widget {
 
 		$this->end_controls_tab();
 
-		$this->start_controls_tab( 'toggle_button_hover_colors', [ 'label' => __( 'Hover', 'elementor-pro' ) ] );
+		$this->start_controls_tab( 'toggle_button_hover_colors', [ 'label' => esc_html__( 'Hover', 'elementor-pro' ) ] );
 
 		$this->add_control(
 			'toggle_button_hover_text_color',
 			[
-				'label' => __( 'Text Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Text Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-menu-cart__toggle .elementor-button:hover' => 'color: {{VALUE}}',
@@ -203,7 +203,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'toggle_button_hover_icon_color',
 			[
-				'label' => __( 'Icon Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Icon Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-menu-cart__toggle .elementor-button:hover .elementor-button-icon' => 'color: {{VALUE}}',
@@ -214,7 +214,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'toggle_button_hover_background_color',
 			[
-				'label' => __( 'Background Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Background Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-menu-cart__toggle .elementor-button:hover' => 'background-color: {{VALUE}}',
@@ -225,7 +225,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'toggle_button_hover_border_color',
 			[
-				'label' => __( 'Border Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Border Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-menu-cart__toggle .elementor-button:hover' => 'border-color: {{VALUE}}',
@@ -240,7 +240,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'toggle_button_border_width',
 			[
-				'label' => __( 'Border Width', 'elementor-pro' ),
+				'label' => esc_html__( 'Border Width', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -258,7 +258,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'toggle_button_border_radius',
 			[
-				'label' => __( 'Border Radius', 'elementor-pro' ),
+				'label' => esc_html__( 'Border Radius', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -290,7 +290,7 @@ class Menu_Cart extends Base_Widget {
 			'heading_icon_style',
 			[
 				'type' => Controls_Manager::HEADING,
-				'label' => __( 'Icon', 'elementor-pro' ),
+				'label' => esc_html__( 'Icon', 'elementor-pro' ),
 				'separator' => 'before',
 			]
 		);
@@ -298,7 +298,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'toggle_icon_size',
 			[
-				'label' => __( 'Size', 'elementor-pro' ),
+				'label' => esc_html__( 'Size', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -316,7 +316,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'toggle_icon_spacing',
 			[
-				'label' => __( 'Spacing', 'elementor-pro' ),
+				'label' => esc_html__( 'Spacing', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -335,7 +335,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_responsive_control(
 			'toggle_button_padding',
 			[
-				'label' => __( 'Padding', 'elementor-pro' ),
+				'label' => esc_html__( 'Padding', 'elementor-pro' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em' ],
 				'selectors' => [
@@ -348,7 +348,7 @@ class Menu_Cart extends Base_Widget {
 			'items_indicator_style',
 			[
 				'type' => Controls_Manager::HEADING,
-				'label' => __( 'Items Indicator', 'elementor-pro' ),
+				'label' => esc_html__( 'Items Indicator', 'elementor-pro' ),
 				'separator' => 'before',
 				'condition' => [
 					'items_indicator!' => 'none',
@@ -358,7 +358,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'items_indicator_text_color',
 			[
-				'label' => __( 'Text Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Text Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-menu-cart__toggle .elementor-button-icon[data-counter]:before' => 'color: {{VALUE}}',
@@ -372,7 +372,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'items_indicator_background_color',
 			[
-				'label' => __( 'Background Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Background Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-menu-cart__toggle .elementor-button-icon[data-counter]:before' => 'background-color: {{VALUE}}',
@@ -386,7 +386,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'items_indicator_distance',
 			[
-				'label' => __( 'Distance', 'elementor-pro' ),
+				'label' => esc_html__( 'Distance', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'unit' => 'em',
@@ -412,7 +412,7 @@ class Menu_Cart extends Base_Widget {
 		$this->start_controls_section(
 			'section_cart_style',
 			[
-				'label' => __( 'Cart', 'elementor-pro' ),
+				'label' => esc_html__( 'Cart', 'elementor-pro' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -420,10 +420,10 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'show_divider',
 			[
-				'label' => __( 'Divider', 'elementor-pro' ),
+				'label' => esc_html__( 'Divider', 'elementor-pro' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'elementor-pro' ),
-				'label_off' => __( 'Hide', 'elementor-pro' ),
+				'label_on' => esc_html__( 'Show', 'elementor-pro' ),
+				'label_off' => esc_html__( 'Hide', 'elementor-pro' ),
 				'return_value' => 'yes',
 				'default' => 'yes',
 				'prefix_class' => 'elementor-menu-cart--show-divider-',
@@ -433,10 +433,10 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'show_remove_icon',
 			[
-				'label' => __( 'Remove Item Icon', 'elementor-pro' ),
+				'label' => esc_html__( 'Remove Item Icon', 'elementor-pro' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'elementor-pro' ),
-				'label_off' => __( 'Hide', 'elementor-pro' ),
+				'label_on' => esc_html__( 'Show', 'elementor-pro' ),
+				'label_off' => esc_html__( 'Hide', 'elementor-pro' ),
 				'return_value' => 'yes',
 				'default' => 'yes',
 				'prefix_class' => 'elementor-menu-cart--show-remove-button-',
@@ -447,7 +447,7 @@ class Menu_Cart extends Base_Widget {
 			'heading_subtotal_style',
 			[
 				'type' => Controls_Manager::HEADING,
-				'label' => __( 'Subtotal', 'elementor-pro' ),
+				'label' => esc_html__( 'Subtotal', 'elementor-pro' ),
 				'separator' => 'before',
 			]
 		);
@@ -455,7 +455,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'subtotal_color',
 			[
-				'label' => __( 'Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-menu-cart__subtotal' => 'color: {{VALUE}}',
@@ -477,7 +477,7 @@ class Menu_Cart extends Base_Widget {
 		$this->start_controls_section(
 			'section_product_tabs_style',
 			[
-				'label' => __( 'Products', 'elementor-pro' ),
+				'label' => esc_html__( 'Products', 'elementor-pro' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -486,7 +486,7 @@ class Menu_Cart extends Base_Widget {
 			'heading_product_title_style',
 			[
 				'type' => Controls_Manager::HEADING,
-				'label' => __( 'Product Title', 'elementor-pro' ),
+				'label' => esc_html__( 'Product Title', 'elementor-pro' ),
 				'separator' => 'before',
 			]
 		);
@@ -494,7 +494,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'product_title_color',
 			[
-				'label' => __( 'Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-menu-cart__product-name, {{WRAPPER}} .elementor-menu-cart__product-name a' => 'color: {{VALUE}}',
@@ -518,7 +518,7 @@ class Menu_Cart extends Base_Widget {
 			'heading_product_price_style',
 			[
 				'type' => Controls_Manager::HEADING,
-				'label' => __( 'Product Price', 'elementor-pro' ),
+				'label' => esc_html__( 'Product Price', 'elementor-pro' ),
 				'separator' => 'before',
 			]
 		);
@@ -526,7 +526,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'product_price_color',
 			[
-				'label' => __( 'Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-menu-cart__product-price' => 'color: {{VALUE}}',
@@ -550,7 +550,7 @@ class Menu_Cart extends Base_Widget {
 			'heading_product_divider_style',
 			[
 				'type' => Controls_Manager::HEADING,
-				'label' => __( 'Divider', 'elementor-pro' ),
+				'label' => esc_html__( 'Divider', 'elementor-pro' ),
 				'separator' => 'before',
 			]
 		);
@@ -558,15 +558,15 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'divider_style',
 			[
-				'label' => __( 'Style', 'elementor-pro' ),
+				'label' => esc_html__( 'Style', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'' => __( 'None', 'elementor-pro' ),
-					'solid' => __( 'Solid', 'elementor-pro' ),
-					'double' => __( 'Double', 'elementor-pro' ),
-					'dotted' => __( 'Dotted', 'elementor-pro' ),
-					'dashed' => __( 'Dashed', 'elementor-pro' ),
-					'groove' => __( 'Groove', 'elementor-pro' ),
+					'' => esc_html__( 'None', 'elementor-pro' ),
+					'solid' => esc_html__( 'Solid', 'elementor-pro' ),
+					'double' => esc_html__( 'Double', 'elementor-pro' ),
+					'dotted' => esc_html__( 'Dotted', 'elementor-pro' ),
+					'dashed' => esc_html__( 'Dashed', 'elementor-pro' ),
+					'groove' => esc_html__( 'Groove', 'elementor-pro' ),
 				],
 				'selectors' => [
 					'{{WRAPPER}} .elementor-menu-cart__product, {{WRAPPER}} .elementor-menu-cart__subtotal' => 'border-bottom-style: {{VALUE}}',
@@ -577,7 +577,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'divider_color',
 			[
-				'label' => __( 'Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-menu-cart__product, {{WRAPPER}} .elementor-menu-cart__subtotal' => 'border-color: {{VALUE}}',
@@ -588,7 +588,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'divider_width',
 			[
-				'label' => __( 'Weight', 'elementor-pro' ),
+				'label' => esc_html__( 'Weight', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -605,7 +605,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_responsive_control(
 			'divider_gap',
 			[
-				'label' => __( 'Spacing', 'elementor-pro' ),
+				'label' => esc_html__( 'Spacing', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -625,7 +625,7 @@ class Menu_Cart extends Base_Widget {
 		$this->start_controls_section(
 			'section_style_buttons',
 			[
-				'label' => __( 'Buttons', 'elementor-pro' ),
+				'label' => esc_html__( 'Buttons', 'elementor-pro' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -633,11 +633,11 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'buttons_layout',
 			[
-				'label' => __( 'Layout', 'elementor-pro' ),
+				'label' => esc_html__( 'Layout', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'inline' => __( 'Inline', 'elementor-pro' ),
-					'stacked' => __( 'Stacked', 'elementor-pro' ),
+					'inline' => esc_html__( 'Inline', 'elementor-pro' ),
+					'stacked' => esc_html__( 'Stacked', 'elementor-pro' ),
 				],
 				'default' => 'inline',
 				'prefix_class' => 'elementor-menu-cart--buttons-',
@@ -647,7 +647,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'space_between_buttons',
 			[
-				'label' => __( 'Space Between', 'elementor-pro' ),
+				'label' => esc_html__( 'Space Between', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -676,7 +676,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'button_border_radius',
 			[
-				'label' => __( 'Border Radius', 'elementor-pro' ),
+				'label' => esc_html__( 'Border Radius', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -694,7 +694,7 @@ class Menu_Cart extends Base_Widget {
 			'heading_view_cart_button_style',
 			[
 				'type' => Controls_Manager::HEADING,
-				'label' => __( 'View Cart', 'elementor-pro' ),
+				'label' => esc_html__( 'View Cart', 'elementor-pro' ),
 				'separator' => 'before',
 			]
 		);
@@ -702,7 +702,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'view_cart_button_text_color',
 			[
-				'label' => __( 'Text Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Text Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-button--view-cart' => 'color: {{VALUE}};',
@@ -713,7 +713,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'view_cart_button_background_color',
 			[
-				'label' => __( 'Background Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Background Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-button--view-cart' => 'background-color: {{VALUE}};',
@@ -733,7 +733,7 @@ class Menu_Cart extends Base_Widget {
 			'heading_checkout_button_style',
 			[
 				'type' => Controls_Manager::HEADING,
-				'label' => __( 'Checkout', 'elementor-pro' ),
+				'label' => esc_html__( 'Checkout', 'elementor-pro' ),
 				'separator' => 'before',
 			]
 		);
@@ -741,7 +741,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'checkout_button_text_color',
 			[
-				'label' => __( 'Text Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Text Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-button--checkout' => 'color: {{VALUE}};',
@@ -752,7 +752,7 @@ class Menu_Cart extends Base_Widget {
 		$this->add_control(
 			'checkout_button_background_color',
 			[
-				'label' => __( 'Background Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Background Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-button--checkout' => 'background-color: {{VALUE}};',

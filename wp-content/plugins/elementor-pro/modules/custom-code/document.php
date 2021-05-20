@@ -20,7 +20,7 @@ class Document extends Theme_Document {
 	}
 
 	public static function get_title() {
-		return __( 'Custom Code', 'elementor-pro' );
+		return esc_html__( 'Custom Code', 'elementor-pro' );
 	}
 
 	public function get_name() {

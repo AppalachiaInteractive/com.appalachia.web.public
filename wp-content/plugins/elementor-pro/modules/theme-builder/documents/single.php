@@ -12,7 +12,11 @@ class Single extends Single_Base {
 	}
 
 	public static function get_title() {
-		return __( 'Single', 'elementor-pro' );
+		return esc_html__( 'Single', 'elementor-pro' );
+	}
+
+	public static function get_plural_title() {
+		return esc_html__( 'Singles', 'elementor-pro' );
 	}
 
 	protected function get_remote_library_config() {

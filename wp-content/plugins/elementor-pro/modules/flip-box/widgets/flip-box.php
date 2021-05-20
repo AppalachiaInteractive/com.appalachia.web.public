@@ -23,7 +23,7 @@ class Flip_Box extends Base_Widget {
 	}
 
 	public function get_title() {
-		return __( 'Flip Box', 'elementor-pro' );
+		return esc_html__( 'Flip Box', 'elementor-pro' );
 	}
 
 	public function get_icon() {
@@ -35,30 +35,30 @@ class Flip_Box extends Base_Widget {
 		$this->start_controls_section(
 			'section_side_a_content',
 			[
-				'label' => __( 'Front', 'elementor-pro' ),
+				'label' => esc_html__( 'Front', 'elementor-pro' ),
 			]
 		);
 
 		$this->start_controls_tabs( 'side_a_content_tabs' );
 
-		$this->start_controls_tab( 'side_a_content_tab', [ 'label' => __( 'Content', 'elementor-pro' ) ] );
+		$this->start_controls_tab( 'side_a_content_tab', [ 'label' => esc_html__( 'Content', 'elementor-pro' ) ] );
 
 		$this->add_control(
 			'graphic_element',
 			[
-				'label' => __( 'Graphic Element', 'elementor-pro' ),
+				'label' => esc_html__( 'Graphic Element', 'elementor-pro' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'none' => [
-						'title' => __( 'None', 'elementor-pro' ),
+						'title' => esc_html__( 'None', 'elementor-pro' ),
 						'icon' => 'eicon-ban',
 					],
 					'image' => [
-						'title' => __( 'Image', 'elementor-pro' ),
+						'title' => esc_html__( 'Image', 'elementor-pro' ),
 						'icon' => 'fa fa-picture-o',
 					],
 					'icon' => [
-						'title' => __( 'Icon', 'elementor-pro' ),
+						'title' => esc_html__( 'Icon', 'elementor-pro' ),
 						'icon' => 'eicon-star',
 					],
 				],
@@ -69,7 +69,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'image',
 			[
-				'label' => __( 'Choose Image', 'elementor-pro' ),
+				'label' => esc_html__( 'Choose Image', 'elementor-pro' ),
 				'type' => Controls_Manager::MEDIA,
 				'default' => [
 					'url' => Utils::get_placeholder_image_src(),
@@ -97,7 +97,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'selected_icon',
 			[
-				'label' => __( 'Icon', 'elementor-pro' ),
+				'label' => esc_html__( 'Icon', 'elementor-pro' ),
 				'type' => Controls_Manager::ICONS,
 				'fa4compatibility' => 'icon',
 				'default' => [
@@ -113,12 +113,12 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'icon_view',
 			[
-				'label' => __( 'View', 'elementor-pro' ),
+				'label' => esc_html__( 'View', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'default' => __( 'Default', 'elementor-pro' ),
-					'stacked' => __( 'Stacked', 'elementor-pro' ),
-					'framed' => __( 'Framed', 'elementor-pro' ),
+					'default' => esc_html__( 'Default', 'elementor-pro' ),
+					'stacked' => esc_html__( 'Stacked', 'elementor-pro' ),
+					'framed' => esc_html__( 'Framed', 'elementor-pro' ),
 				],
 				'default' => 'default',
 				'condition' => [
@@ -130,11 +130,11 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'icon_shape',
 			[
-				'label' => __( 'Shape', 'elementor-pro' ),
+				'label' => esc_html__( 'Shape', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'circle' => __( 'Circle', 'elementor-pro' ),
-					'square' => __( 'Square', 'elementor-pro' ),
+					'circle' => esc_html__( 'Circle', 'elementor-pro' ),
+					'square' => esc_html__( 'Square', 'elementor-pro' ),
 				],
 				'default' => 'circle',
 				'condition' => [
@@ -147,10 +147,10 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'title_text_a',
 			[
-				'label' => __( 'Title & Description', 'elementor-pro' ),
+				'label' => esc_html__( 'Title & Description', 'elementor-pro' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'This is the heading', 'elementor-pro' ),
-				'placeholder' => __( 'Enter your title', 'elementor-pro' ),
+				'default' => esc_html__( 'This is the heading', 'elementor-pro' ),
+				'placeholder' => esc_html__( 'Enter your title', 'elementor-pro' ),
 				'dynamic' => [
 					'active' => true,
 				],
@@ -162,10 +162,10 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'description_text_a',
 			[
-				'label' => __( 'Description', 'elementor-pro' ),
+				'label' => esc_html__( 'Description', 'elementor-pro' ),
 				'type' => Controls_Manager::TEXTAREA,
-				'default' => __( 'Lorem ipsum dolor sit amet consectetur adipiscing elit dolor', 'elementor-pro' ),
-				'placeholder' => __( 'Enter your description', 'elementor-pro' ),
+				'default' => esc_html__( 'Lorem ipsum dolor sit amet consectetur adipiscing elit dolor', 'elementor-pro' ),
+				'placeholder' => esc_html__( 'Enter your description', 'elementor-pro' ),
 				'separator' => 'none',
 				'dynamic' => [
 					'active' => true,
@@ -177,7 +177,7 @@ class Flip_Box extends Base_Widget {
 
 		$this->end_controls_tab();
 
-		$this->start_controls_tab( 'side_a_background_tab', [ 'label' => __( 'Background', 'elementor-pro' ) ] );
+		$this->start_controls_tab( 'side_a_background_tab', [ 'label' => esc_html__( 'Background', 'elementor-pro' ) ] );
 
 		$this->add_group_control(
 			Group_Control_Background::get_type(),
@@ -191,7 +191,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'background_overlay_a',
 			[
-				'label' => __( 'Background Overlay', 'elementor-pro' ),
+				'label' => esc_html__( 'Background Overlay', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -218,10 +218,10 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'background_overlay_a_blend_mode',
 			[
-				'label' => __( 'Blend Mode', 'elementor-pro' ),
+				'label' => esc_html__( 'Blend Mode', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'' => __( 'Normal', 'elementor-pro' ),
+					'' => esc_html__( 'Normal', 'elementor-pro' ),
 					'multiply' => 'Multiply',
 					'screen' => 'Screen',
 					'overlay' => 'Overlay',
@@ -253,21 +253,21 @@ class Flip_Box extends Base_Widget {
 		$this->start_controls_section(
 			'section_side_b_content',
 			[
-				'label' => __( 'Back', 'elementor-pro' ),
+				'label' => esc_html__( 'Back', 'elementor-pro' ),
 			]
 		);
 
 		$this->start_controls_tabs( 'side_b_content_tabs' );
 
-		$this->start_controls_tab( 'side_b_content_tab', [ 'label' => __( 'Content', 'elementor-pro' ) ] );
+		$this->start_controls_tab( 'side_b_content_tab', [ 'label' => esc_html__( 'Content', 'elementor-pro' ) ] );
 
 		$this->add_control(
 			'title_text_b',
 			[
-				'label' => __( 'Title & Description', 'elementor-pro' ),
+				'label' => esc_html__( 'Title & Description', 'elementor-pro' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'This is the heading', 'elementor-pro' ),
-				'placeholder' => __( 'Enter your title', 'elementor-pro' ),
+				'default' => esc_html__( 'This is the heading', 'elementor-pro' ),
+				'placeholder' => esc_html__( 'Enter your title', 'elementor-pro' ),
 				'dynamic' => [
 					'active' => true,
 				],
@@ -278,10 +278,10 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'description_text_b',
 			[
-				'label' => __( 'Description', 'elementor-pro' ),
+				'label' => esc_html__( 'Description', 'elementor-pro' ),
 				'type' => Controls_Manager::TEXTAREA,
-				'default' => __( 'Lorem ipsum dolor sit amet consectetur adipiscing elit dolor', 'elementor-pro' ),
-				'placeholder' => __( 'Enter your description', 'elementor-pro' ),
+				'default' => esc_html__( 'Lorem ipsum dolor sit amet consectetur adipiscing elit dolor', 'elementor-pro' ),
+				'placeholder' => esc_html__( 'Enter your description', 'elementor-pro' ),
 				'separator' => 'none',
 				'dynamic' => [
 					'active' => true,
@@ -294,9 +294,9 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'button_text',
 			[
-				'label' => __( 'Button Text', 'elementor-pro' ),
+				'label' => esc_html__( 'Button Text', 'elementor-pro' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Click Here', 'elementor-pro' ),
+				'default' => esc_html__( 'Click Here', 'elementor-pro' ),
 				'dynamic' => [
 					'active' => true,
 				],
@@ -307,23 +307,23 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'link',
 			[
-				'label' => __( 'Link', 'elementor-pro' ),
+				'label' => esc_html__( 'Link', 'elementor-pro' ),
 				'type' => Controls_Manager::URL,
 				'dynamic' => [
 					'active' => true,
 				],
-				'placeholder' => __( 'https://your-link.com', 'elementor-pro' ),
+				'placeholder' => esc_html__( 'https://your-link.com', 'elementor-pro' ),
 			]
 		);
 
 		$this->add_control(
 			'link_click',
 			[
-				'label' => __( 'Apply Link On', 'elementor-pro' ),
+				'label' => esc_html__( 'Apply Link On', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'box' => __( 'Whole Box', 'elementor-pro' ),
-					'button' => __( 'Button Only', 'elementor-pro' ),
+					'box' => esc_html__( 'Whole Box', 'elementor-pro' ),
+					'button' => esc_html__( 'Button Only', 'elementor-pro' ),
 				],
 				'default' => 'button',
 				'condition' => [
@@ -334,7 +334,7 @@ class Flip_Box extends Base_Widget {
 
 		$this->end_controls_tab();
 
-		$this->start_controls_tab( 'side_b_background_tab', [ 'label' => __( 'Background', 'elementor-pro' ) ] );
+		$this->start_controls_tab( 'side_b_background_tab', [ 'label' => esc_html__( 'Background', 'elementor-pro' ) ] );
 
 		$this->add_group_control(
 			Group_Control_Background::get_type(),
@@ -348,7 +348,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'background_overlay_b',
 			[
-				'label' => __( 'Background Overlay', 'elementor-pro' ),
+				'label' => esc_html__( 'Background Overlay', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -375,10 +375,10 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'background_overlay_b_blend_mode',
 			[
-				'label' => __( 'Blend Mode', 'elementor-pro' ),
+				'label' => esc_html__( 'Blend Mode', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'' => __( 'Normal', 'elementor-pro' ),
+					'' => esc_html__( 'Normal', 'elementor-pro' ),
 					'multiply' => 'Multiply',
 					'screen' => 'Screen',
 					'overlay' => 'Overlay',
@@ -410,14 +410,14 @@ class Flip_Box extends Base_Widget {
 		$this->start_controls_section(
 			'section_box_settings',
 			[
-				'label' => __( 'Settings', 'elementor-pro' ),
+				'label' => esc_html__( 'Settings', 'elementor-pro' ),
 			]
 		);
 
 		$this->add_responsive_control(
 			'height',
 			[
-				'label' => __( 'Height', 'elementor-pro' ),
+				'label' => esc_html__( 'Height', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -439,7 +439,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'border_radius',
 			[
-				'label' => __( 'Border Radius', 'elementor-pro' ),
+				'label' => esc_html__( 'Border Radius', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -458,7 +458,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'flip_effect',
 			[
-				'label' => __( 'Flip Effect', 'elementor-pro' ),
+				'label' => esc_html__( 'Flip Effect', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'flip',
 				'options' => [
@@ -476,14 +476,14 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'flip_direction',
 			[
-				'label' => __( 'Flip Direction', 'elementor-pro' ),
+				'label' => esc_html__( 'Flip Direction', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'up',
 				'options' => [
-					'left' => __( 'Left', 'elementor-pro' ),
-					'right' => __( 'Right', 'elementor-pro' ),
-					'up' => __( 'Up', 'elementor-pro' ),
-					'down' => __( 'Down', 'elementor-pro' ),
+					'left' => esc_html__( 'Left', 'elementor-pro' ),
+					'right' => esc_html__( 'Right', 'elementor-pro' ),
+					'up' => esc_html__( 'Up', 'elementor-pro' ),
+					'down' => esc_html__( 'Down', 'elementor-pro' ),
 				],
 				'condition' => [
 					'flip_effect!' => [
@@ -499,10 +499,10 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'flip_3d',
 			[
-				'label' => __( '3D Depth', 'elementor-pro' ),
+				'label' => esc_html__( '3D Depth', 'elementor-pro' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'On', 'elementor-pro' ),
-				'label_off' => __( 'Off', 'elementor-pro' ),
+				'label_on' => esc_html__( 'On', 'elementor-pro' ),
+				'label_off' => esc_html__( 'Off', 'elementor-pro' ),
 				'return_value' => 'elementor-flip-box--3d',
 				'default' => '',
 				'prefix_class' => '',
@@ -517,7 +517,7 @@ class Flip_Box extends Base_Widget {
 		$this->start_controls_section(
 			'section_style_a',
 			[
-				'label' => __( 'Front', 'elementor-pro' ),
+				'label' => esc_html__( 'Front', 'elementor-pro' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -525,7 +525,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_responsive_control(
 			'padding_a',
 			[
-				'label' => __( 'Padding', 'elementor-pro' ),
+				'label' => esc_html__( 'Padding', 'elementor-pro' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -537,19 +537,19 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'alignment_a',
 			[
-				'label' => __( 'Alignment', 'elementor-pro' ),
+				'label' => esc_html__( 'Alignment', 'elementor-pro' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'elementor-pro' ),
+						'title' => esc_html__( 'Left', 'elementor-pro' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'elementor-pro' ),
+						'title' => esc_html__( 'Center', 'elementor-pro' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'elementor-pro' ),
+						'title' => esc_html__( 'Right', 'elementor-pro' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -563,19 +563,19 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'vertical_position_a',
 			[
-				'label' => __( 'Vertical Position', 'elementor-pro' ),
+				'label' => esc_html__( 'Vertical Position', 'elementor-pro' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'top' => [
-						'title' => __( 'Top', 'elementor-pro' ),
+						'title' => esc_html__( 'Top', 'elementor-pro' ),
 						'icon' => 'eicon-v-align-top',
 					],
 					'middle' => [
-						'title' => __( 'Middle', 'elementor-pro' ),
+						'title' => esc_html__( 'Middle', 'elementor-pro' ),
 						'icon' => 'eicon-v-align-middle',
 					],
 					'bottom' => [
-						'title' => __( 'Bottom', 'elementor-pro' ),
+						'title' => esc_html__( 'Bottom', 'elementor-pro' ),
 						'icon' => 'eicon-v-align-bottom',
 					],
 				],
@@ -604,7 +604,7 @@ class Flip_Box extends Base_Widget {
 			'heading_image_style',
 			[
 				'type' => Controls_Manager::HEADING,
-				'label' => __( 'Image', 'elementor-pro' ),
+				'label' => esc_html__( 'Image', 'elementor-pro' ),
 				'condition' => [
 					'graphic_element' => 'image',
 				],
@@ -615,7 +615,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'image_spacing',
 			[
-				'label' => __( 'Spacing', 'elementor-pro' ),
+				'label' => esc_html__( 'Spacing', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -635,7 +635,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'image_width',
 			[
-				'label' => __( 'Size', 'elementor-pro' ) . ' (%)',
+				'label' => esc_html__( 'Size', 'elementor-pro' ) . ' (%)',
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ '%' ],
 				'default' => [
@@ -659,7 +659,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'image_opacity',
 			[
-				'label' => __( 'Opacity', 'elementor-pro' ),
+				'label' => esc_html__( 'Opacity', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 1,
@@ -695,7 +695,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'image_border_radius',
 			[
-				'label' => __( 'Border Radius', 'elementor-pro' ),
+				'label' => esc_html__( 'Border Radius', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -716,7 +716,7 @@ class Flip_Box extends Base_Widget {
 			'heading_icon_style',
 			[
 				'type' => Controls_Manager::HEADING,
-				'label' => __( 'Icon', 'elementor-pro' ),
+				'label' => esc_html__( 'Icon', 'elementor-pro' ),
 				'condition' => [
 					'graphic_element' => 'icon',
 				],
@@ -727,7 +727,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'icon_spacing',
 			[
-				'label' => __( 'Spacing', 'elementor-pro' ),
+				'label' => esc_html__( 'Spacing', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -747,7 +747,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'icon_primary_color',
 			[
-				'label' => __( 'Primary Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Primary Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -765,7 +765,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'icon_secondary_color',
 			[
-				'label' => __( 'Secondary Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Secondary Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'condition' => [
@@ -784,7 +784,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'icon_size',
 			[
-				'label' => __( 'Icon Size', 'elementor-pro' ),
+				'label' => esc_html__( 'Icon Size', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -805,7 +805,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'icon_padding',
 			[
-				'label' => __( 'Icon Padding', 'elementor-pro' ),
+				'label' => esc_html__( 'Icon Padding', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-icon' => 'padding: {{SIZE}}{{UNIT}};',
@@ -826,7 +826,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'icon_rotate',
 			[
-				'label' => __( 'Icon Rotate', 'elementor-pro' ),
+				'label' => esc_html__( 'Icon Rotate', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 0,
@@ -845,7 +845,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'icon_border_width',
 			[
-				'label' => __( 'Border Width', 'elementor-pro' ),
+				'label' => esc_html__( 'Border Width', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-icon' => 'border-width: {{SIZE}}{{UNIT}}',
@@ -860,7 +860,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'icon_border_radius',
 			[
-				'label' => __( 'Border Radius', 'elementor-pro' ),
+				'label' => esc_html__( 'Border Radius', 'elementor-pro' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -877,7 +877,7 @@ class Flip_Box extends Base_Widget {
 			'heading_title_style_a',
 			[
 				'type' => Controls_Manager::HEADING,
-				'label' => __( 'Title', 'elementor-pro' ),
+				'label' => esc_html__( 'Title', 'elementor-pro' ),
 				'separator' => 'before',
 				'condition' => [
 					'title_text_a!' => '',
@@ -888,7 +888,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'title_spacing_a',
 			[
-				'label' => __( 'Spacing', 'elementor-pro' ),
+				'label' => esc_html__( 'Spacing', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -909,7 +909,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'title_color_a',
 			[
-				'label' => __( 'Text Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Text Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-flip-box__front .elementor-flip-box__layer__title' => 'color: {{VALUE}}',
@@ -939,7 +939,7 @@ class Flip_Box extends Base_Widget {
 			'heading_description_style_a',
 			[
 				'type' => Controls_Manager::HEADING,
-				'label' => __( 'Description', 'elementor-pro' ),
+				'label' => esc_html__( 'Description', 'elementor-pro' ),
 				'separator' => 'before',
 				'condition' => [
 					'description_text_a!' => '',
@@ -950,7 +950,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'description_color_a',
 			[
-				'label' => __( 'Text Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Text Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-flip-box__front .elementor-flip-box__layer__description' => 'color: {{VALUE}}',
@@ -981,7 +981,7 @@ class Flip_Box extends Base_Widget {
 		$this->start_controls_section(
 			'section_style_b',
 			[
-				'label' => __( 'Back', 'elementor-pro' ),
+				'label' => esc_html__( 'Back', 'elementor-pro' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -989,7 +989,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_responsive_control(
 			'padding_b',
 			[
-				'label' => __( 'Padding', 'elementor-pro' ),
+				'label' => esc_html__( 'Padding', 'elementor-pro' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -1001,19 +1001,19 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'alignment_b',
 			[
-				'label' => __( 'Alignment', 'elementor-pro' ),
+				'label' => esc_html__( 'Alignment', 'elementor-pro' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'elementor-pro' ),
+						'title' => esc_html__( 'Left', 'elementor-pro' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'elementor-pro' ),
+						'title' => esc_html__( 'Center', 'elementor-pro' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'elementor-pro' ),
+						'title' => esc_html__( 'Right', 'elementor-pro' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -1028,19 +1028,19 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'vertical_position_b',
 			[
-				'label' => __( 'Vertical Position', 'elementor-pro' ),
+				'label' => esc_html__( 'Vertical Position', 'elementor-pro' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'top' => [
-						'title' => __( 'Top', 'elementor-pro' ),
+						'title' => esc_html__( 'Top', 'elementor-pro' ),
 						'icon' => 'eicon-v-align-top',
 					],
 					'middle' => [
-						'title' => __( 'Middle', 'elementor-pro' ),
+						'title' => esc_html__( 'Middle', 'elementor-pro' ),
 						'icon' => 'eicon-v-align-middle',
 					],
 					'bottom' => [
-						'title' => __( 'Bottom', 'elementor-pro' ),
+						'title' => esc_html__( 'Bottom', 'elementor-pro' ),
 						'icon' => 'eicon-v-align-bottom',
 					],
 				],
@@ -1069,7 +1069,7 @@ class Flip_Box extends Base_Widget {
 			'heading_title_style_b',
 			[
 				'type' => Controls_Manager::HEADING,
-				'label' => __( 'Title', 'elementor-pro' ),
+				'label' => esc_html__( 'Title', 'elementor-pro' ),
 				'separator' => 'before',
 				'condition' => [
 					'title_text_b!' => '',
@@ -1080,7 +1080,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'title_spacing_b',
 			[
-				'label' => __( 'Spacing', 'elementor-pro' ),
+				'label' => esc_html__( 'Spacing', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -1100,7 +1100,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'title_color_b',
 			[
-				'label' => __( 'Text Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Text Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-flip-box__back .elementor-flip-box__layer__title' => 'color: {{VALUE}}',
@@ -1130,7 +1130,7 @@ class Flip_Box extends Base_Widget {
 			'heading_description_style_b',
 			[
 				'type' => Controls_Manager::HEADING,
-				'label' => __( 'Description', 'elementor-pro' ),
+				'label' => esc_html__( 'Description', 'elementor-pro' ),
 				'separator' => 'before',
 				'condition' => [
 					'description_text_b!' => '',
@@ -1141,7 +1141,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'description_spacing_b',
 			[
-				'label' => __( 'Spacing', 'elementor-pro' ),
+				'label' => esc_html__( 'Spacing', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -1162,7 +1162,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'description_color_b',
 			[
-				'label' => __( 'Text Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Text Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-flip-box__back .elementor-flip-box__layer__description' => 'color: {{VALUE}}',
@@ -1192,7 +1192,7 @@ class Flip_Box extends Base_Widget {
 			'heading_button',
 			[
 				'type' => Controls_Manager::HEADING,
-				'label' => __( 'Button', 'elementor-pro' ),
+				'label' => esc_html__( 'Button', 'elementor-pro' ),
 				'separator' => 'before',
 				'condition' => [
 					'button_text!' => '',
@@ -1203,15 +1203,15 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'button_size',
 			[
-				'label' => __( 'Size', 'elementor-pro' ),
+				'label' => esc_html__( 'Size', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'sm',
 				'options' => [
-					'xs' => __( 'Extra Small', 'elementor-pro' ),
-					'sm' => __( 'Small', 'elementor-pro' ),
-					'md' => __( 'Medium', 'elementor-pro' ),
-					'lg' => __( 'Large', 'elementor-pro' ),
-					'xl' => __( 'Extra Large', 'elementor-pro' ),
+					'xs' => esc_html__( 'Extra Small', 'elementor-pro' ),
+					'sm' => esc_html__( 'Small', 'elementor-pro' ),
+					'md' => esc_html__( 'Medium', 'elementor-pro' ),
+					'lg' => esc_html__( 'Large', 'elementor-pro' ),
+					'xl' => esc_html__( 'Extra Large', 'elementor-pro' ),
 				],
 				'condition' => [
 					'button_text!' => '',
@@ -1237,7 +1237,7 @@ class Flip_Box extends Base_Widget {
 
 		$this->start_controls_tab( 'normal',
 			[
-				'label' => __( 'Normal', 'elementor-pro' ),
+				'label' => esc_html__( 'Normal', 'elementor-pro' ),
 				'condition' => [
 					'button_text!' => '',
 				],
@@ -1247,7 +1247,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'button_text_color',
 			[
-				'label' => __( 'Text Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Text Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-flip-box__button' => 'color: {{VALUE}};',
@@ -1255,13 +1255,17 @@ class Flip_Box extends Base_Widget {
 			]
 		);
 
-		$this->add_control(
-			'button_background_color',
+		$this->add_group_control(
+			Group_Control_Background::get_type(),
 			[
-				'label' => __( 'Background Color', 'elementor-pro' ),
-				'type' => Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .elementor-flip-box__button' => 'background-color: {{VALUE}};',
+				'name' => 'button_background',
+				'types' => [ 'classic', 'gradient' ],
+				'exclude' => [ 'image' ],
+				'selector' => '{{WRAPPER}} .elementor-flip-box__button',
+				'fields_options' => [
+					'background' => [
+						'default' => 'classic',
+					],
 				],
 			]
 		);
@@ -1269,7 +1273,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'button_border_color',
 			[
-				'label' => __( 'Border Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Border Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-flip-box__button' => 'border-color: {{VALUE}};',
@@ -1282,7 +1286,7 @@ class Flip_Box extends Base_Widget {
 		$this->start_controls_tab(
 			'hover',
 			[
-				'label' => __( 'Hover', 'elementor-pro' ),
+				'label' => esc_html__( 'Hover', 'elementor-pro' ),
 				'condition' => [
 					'button_text!' => '',
 				],
@@ -1292,7 +1296,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'button_hover_text_color',
 			[
-				'label' => __( 'Text Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Text Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-flip-box__button:hover' => 'color: {{VALUE}};',
@@ -1300,13 +1304,17 @@ class Flip_Box extends Base_Widget {
 			]
 		);
 
-		$this->add_control(
-			'button_hover_background_color',
+		$this->add_group_control(
+			Group_Control_Background::get_type(),
 			[
-				'label' => __( 'Background Color', 'elementor-pro' ),
-				'type' => Controls_Manager::COLOR,
-				'selectors' => [
-					'{{WRAPPER}} .elementor-flip-box__button:hover' => 'background-color: {{VALUE}};',
+				'name' => 'button_hover_background',
+				'types' => [ 'classic', 'gradient' ],
+				'exclude' => [ 'image' ],
+				'selector' => '{{WRAPPER}} .elementor-flip-box__button:hover',
+				'fields_options' => [
+					'background' => [
+						'default' => 'classic',
+					],
 				],
 			]
 		);
@@ -1314,7 +1322,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'button_hover_border_color',
 			[
-				'label' => __( 'Border Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Border Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-flip-box__button:hover' => 'border-color: {{VALUE}};',
@@ -1329,7 +1337,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'button_border_width',
 			[
-				'label' => __( 'Border Width', 'elementor-pro' ),
+				'label' => esc_html__( 'Border Width', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -1350,7 +1358,7 @@ class Flip_Box extends Base_Widget {
 		$this->add_control(
 			'button_border_radius',
 			[
-				'label' => __( 'Border Radius', 'elementor-pro' ),
+				'label' => esc_html__( 'Border Radius', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [

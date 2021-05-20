@@ -25,7 +25,11 @@ class Product extends Single_Base {
 	}
 
 	public static function get_title() {
-		return __( 'Single Product', 'elementor-pro' );
+		return esc_html__( 'Single Product', 'elementor-pro' );
+	}
+
+	public static function get_plural_title() {
+		return esc_html__( 'Single Products', 'elementor-pro' );
 	}
 
 	protected static function get_site_editor_icon() {
@@ -34,9 +38,9 @@ class Product extends Single_Base {
 
 	protected static function get_site_editor_tooltip_data() {
 		return [
-			'title' => __( 'What is a Single Product Template?', 'elementor-pro' ),
-			'content' => __( 'A single product template allows you to easily design the layout and style of WooCommerce single product pages, and apply that template to various conditions that you assign.', 'elementor-pro' ),
-			'tip' => __( 'You can create multiple single product templates, and assign each to different types of products, enabling a custom design for each group of similar products.', 'elementor-pro' ),
+			'title' => esc_html__( 'What is a Single Product Template?', 'elementor-pro' ),
+			'content' => esc_html__( 'A single product template allows you to easily design the layout and style of WooCommerce single product pages, and apply that template to various conditions that you assign.', 'elementor-pro' ),
+			'tip' => esc_html__( 'You can create multiple single product templates, and assign each to different types of products, enabling a custom design for each group of similar products.', 'elementor-pro' ),
 			'docs' => 'https://go.elementor.com/app-theme-builder-product',
 			'video_url' => 'https://www.youtube.com/embed/PjhoB1RWkBM',
 		];
@@ -137,12 +141,12 @@ class Product extends Single_Base {
 	protected static function get_editor_panel_categories() {
 		$categories = [
 			'woocommerce-elements-single' => [
-				'title' => __( 'Product', 'elementor-pro' ),
+				'title' => esc_html__( 'Product', 'elementor-pro' ),
 
 			],
 			// Move to top as active.
 			'woocommerce-elements' => [
-				'title' => __( 'WooCommerce', 'elementor-pro' ),
+				'title' => esc_html__( 'WooCommerce', 'elementor-pro' ),
 				'active' => true,
 			],
 		];

@@ -34,7 +34,7 @@ class Paypal_Button extends Payment_Button {
 	}
 
 	public function get_title() {
-		return __( 'PayPal Button', 'elementor-pro' );
+		return esc_html__( 'PayPal Button', 'elementor-pro' );
 	}
 
 	public function get_icon() {
@@ -43,10 +43,6 @@ class Paypal_Button extends Payment_Button {
 
 	public function get_keywords() {
 		return [ 'paypal', 'payment', 'sell', 'donate' ];
-	}
-
-	public function get_categories() {
-		return [ 'pro-elements' ];
 	}
 
 	protected function get_merchant_name() {
@@ -223,19 +219,19 @@ class Paypal_Button extends Payment_Button {
 		$this->start_controls_section(
 			'section_account',
 			[
-				'label' => __( 'Pricing & Payments', 'elementor-pro' ),
+				'label' => esc_html__( 'Pricing & Payments', 'elementor-pro' ),
 			]
 		);
 
 		$this->add_control(
 			'merchant_account',
 			[
-				'label' => __( 'Merchant Account', 'elementor-pro' ),
+				'label' => esc_html__( 'Merchant Account', 'elementor-pro' ),
 				'type' => Controls_Manager::HIDDEN,
 				'default' => self::API_TYPE_SIMPLE,
 				'options' => [
-					self::API_TYPE_SIMPLE => __( 'Default (Simple)', 'elementor-pro' ),
-					self::API_TYPE_ADVANCED => __( 'Custom (Advanced)', 'elementor-pro' ),
+					self::API_TYPE_SIMPLE => esc_html__( 'Default (Simple)', 'elementor-pro' ),
+					self::API_TYPE_ADVANCED => esc_html__( 'Custom (Advanced)', 'elementor-pro' ),
 				],
 				'frontend_available' => true,
 			]
@@ -244,12 +240,12 @@ class Paypal_Button extends Payment_Button {
 		$this->add_control(
 			'email',
 			[
-				'label' => __( 'PayPal Account', 'elementor-pro' ),
+				'label' => esc_html__( 'PayPal Account', 'elementor-pro' ),
 				'type' => Controls_Manager::TEXT,
 				'dynamic' => [
 					'active' => true,
 				],
-				'description' => __( 'Transactions made through your PayPal button will be registered under this account.', 'elementor-pro' ),
+				'description' => esc_html__( 'Transactions made through your PayPal button will be registered under this account.', 'elementor-pro' ),
 				'label_block' => true,
 				'condition' => [
 					'merchant_account' => self::API_TYPE_SIMPLE,
@@ -261,7 +257,7 @@ class Paypal_Button extends Payment_Button {
 		$this->add_control(
 			'sdk_token',
 			[
-				'label' => __( 'SDK Token', 'elementor-pro' ),
+				'label' => esc_html__( 'SDK Token', 'elementor-pro' ),
 				'type' => Controls_Manager::TEXT,
 				'dynamic' => [
 					'active' => true,
@@ -283,17 +279,35 @@ class Paypal_Button extends Payment_Button {
 		$this->add_control(
 			'sandbox_email',
 			[
-				'label' => __( 'Sandbox Email Account', 'elementor-pro' ),
+				'label' => esc_html__( 'Sandbox Email Account', 'elementor-pro' ),
 				'type' => Controls_Manager::TEXT,
 				'dynamic' => [
 					'active' => true,
 				],
-				'description' => __( 'This is the address given to you by PayPal when you set up a sandbox with your developer account. You can use the sandbox to test your purchase flow.', 'elementor-pro' ),
+				'description' => esc_html__( 'This is the address given to you by PayPal when you set up a sandbox with your developer account. You can use the sandbox to test your purchase flow.', 'elementor-pro' ),
 				'label_block' => true,
 				'condition' => [
 					'sandbox_mode' => 'yes',
 				],
 			]
 		);
+	}
+
+	// This widget extends the button core widget and therefore needs to overwrite the widget-base core CSS config.
+	public function get_css_config() {
+		$widget_name = 'payments';
+
+		$direction = is_rtl() ? '-rtl' : '';
+
+		$css_file_path = 'css/widget-' . $widget_name . $direction . '.min.css';
+
+		return [
+			'key' => $widget_name,
+			'version' => ELEMENTOR_PRO_VERSION,
+			'file_path' => ELEMENTOR_PRO_ASSETS_PATH . $css_file_path,
+			'data' => [
+				'file_url' => ELEMENTOR_PRO_ASSETS_URL . $css_file_path,
+			],
+		];
 	}
 }

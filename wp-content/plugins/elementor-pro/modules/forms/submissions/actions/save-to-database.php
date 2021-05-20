@@ -20,7 +20,7 @@ class Save_To_Database extends Action_Base {
 	}
 
 	public function get_label() {
-		return __( 'Collect Submissions', 'elementor-pro' );
+		return esc_html__( 'Collect Submissions', 'elementor-pro' );
 	}
 
 	public function register_settings_section( $widget ) {

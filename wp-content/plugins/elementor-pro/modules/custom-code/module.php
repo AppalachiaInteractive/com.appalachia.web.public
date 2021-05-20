@@ -109,9 +109,9 @@ class Module extends Module_Base {
 		$labels = [
 			'name' => _x( 'Custom code', 'Template Library', 'elementor-pro' ),
 			'singular_name' => _x( 'Custom code', 'Template Library', 'elementor-pro' ),
-			'add_new' => __( 'Add new', 'elementor-pro' ),
-			'add_new_item' => __( 'New code', 'elementor-pro' ),
-			'edit_item' => __( 'Edit code', 'elementor-pro' ),
+			'add_new' => esc_html__( 'Add new', 'elementor-pro' ),
+			'add_new_item' => esc_html__( 'New code', 'elementor-pro' ),
+			'edit_item' => esc_html__( 'Edit code', 'elementor-pro' ),
 		];
 
 		register_post_type( self::CPT, [
@@ -156,7 +156,7 @@ class Module extends Module_Base {
 					__( 'Custom code submitted.', 'elementor-pro' ),
 					sprintf(
 						__( 'Custom code scheduled for: %1$s.', 'elementor-pro' ),
-						'<strong>' . date_i18n( __( 'M j, Y @ G:i', 'elementor-pro' ), strtotime( $post->post_date ) ) . '</strong>'
+						'<strong>' . date_i18n( esc_html__( 'M j, Y @ G:i', 'elementor-pro' ), strtotime( $post->post_date ) ) . '</strong>'
 					),
 					__( 'Custom code draft updated.', 'elementor-pro' ),
 				];
@@ -320,7 +320,7 @@ class Module extends Module_Base {
 			return $source->maybe_render_blank_state( $which, [
 				'post_type' => self::DOCUMENT_TYPE,
 				'cpt' => self::CPT,
-				'description' => __( 'Add pixels, meta tags and any other scripts to your site.<br /><a target="_blank" href="https://go.elementor.com/wp-dash-custom-code">Learn more about adding custom code</a>', 'elementor-pro' ),
+				'description' => esc_html__( 'Add pixels, meta tags and any other scripts to your site.<br /><a target="_blank" href="https://go.elementor.com/wp-dash-custom-code">Learn more about adding custom code</a>', 'elementor-pro' ),
 				'href' => esc_url( admin_url( '/post-new.php?post_type=' . self::CPT ) ),
 			] );
 		}
@@ -328,9 +328,9 @@ class Module extends Module_Base {
 
 	private function manage_posts_columns( $columns ) {
 		$new = [
-			self::ADDITIONAL_COLUMN_INSTANCES => __( 'Instances', 'elementor-pro' ),
-			Custom_Code_Metabox::FIELD_LOCATION => __( 'Location', 'elementor-pro' ),
-			Custom_Code_Metabox::FIELD_PRIORITY => __( 'Priority', 'elementor-pro' ),
+			self::ADDITIONAL_COLUMN_INSTANCES => esc_html__( 'Instances', 'elementor-pro' ),
+			Custom_Code_Metabox::FIELD_LOCATION => esc_html__( 'Location', 'elementor-pro' ),
+			Custom_Code_Metabox::FIELD_PRIORITY => esc_html__( 'Priority', 'elementor-pro' ),
 		];
 
 		// Insert after 'author'.

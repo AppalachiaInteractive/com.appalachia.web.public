@@ -17,7 +17,7 @@ class Template extends Base_Widget {
 	}
 
 	public function get_title() {
-		return __( 'Template', 'elementor-pro' );
+		return esc_html__( 'Template', 'elementor-pro' );
 	}
 
 	public function get_icon() {
@@ -36,7 +36,7 @@ class Template extends Base_Widget {
 		$this->start_controls_section(
 			'section_template',
 			[
-				'label' => __( 'Template', 'elementor-pro' ),
+				'label' => esc_html__( 'Template', 'elementor-pro' ),
 			]
 		);
 
@@ -47,7 +47,7 @@ class Template extends Base_Widget {
 		$this->add_control(
 			'template_id',
 			[
-				'label' => __( 'Choose Template', 'elementor-pro' ),
+				'label' => esc_html__( 'Choose Template', 'elementor-pro' ),
 				'type' => QueryControlModule::QUERY_CONTROL_ID,
 				'label_block' => true,
 				'autocomplete' => [

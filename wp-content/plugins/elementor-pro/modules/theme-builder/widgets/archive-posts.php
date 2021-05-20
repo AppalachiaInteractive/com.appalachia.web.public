@@ -23,7 +23,7 @@ class Archive_Posts extends Posts_Base {
 	}
 
 	public function get_title() {
-		return __( 'Archive Posts', 'elementor-pro' );
+		return esc_html__( 'Archive Posts', 'elementor-pro' );
 	}
 
 	public function get_icon() {
@@ -63,16 +63,16 @@ class Archive_Posts extends Posts_Base {
 		$this->start_controls_section(
 			'section_advanced',
 			[
-				'label' => __( 'Advanced', 'elementor-pro' ),
+				'label' => esc_html__( 'Advanced', 'elementor-pro' ),
 			]
 		);
 
 		$this->add_control(
 			'nothing_found_message',
 			[
-				'label' => __( 'Nothing Found Message', 'elementor-pro' ),
+				'label' => esc_html__( 'Nothing Found Message', 'elementor-pro' ),
 				'type' => Controls_Manager::TEXTAREA,
-				'default' => __( 'It seems we can\'t find what you\'re looking for.', 'elementor-pro' ),
+				'default' => esc_html__( 'It seems we can\'t find what you\'re looking for.', 'elementor-pro' ),
 				'dynamic' => [
 					'active' => true,
 				],
@@ -85,7 +85,7 @@ class Archive_Posts extends Posts_Base {
 			'section_nothing_found_style',
 			[
 				'tab' => Controls_Manager::TAB_STYLE,
-				'label' => __( 'Nothing Found Message', 'elementor-pro' ),
+				'label' => esc_html__( 'Nothing Found Message', 'elementor-pro' ),
 				'condition' => [
 					'nothing_found_message!' => '',
 				],
@@ -95,7 +95,7 @@ class Archive_Posts extends Posts_Base {
 		$this->add_control(
 			'nothing_found_color',
 			[
-				'label' => __( 'Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'global' => [
 					'default' => Global_Colors::COLOR_TEXT,

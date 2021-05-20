@@ -17,7 +17,7 @@ class Code_Highlight extends Base_Widget {
 	}
 
 	public function get_title() {
-		return __( 'Code Highlight', 'elementor-pro' );
+		return esc_html__( 'Code Highlight', 'elementor-pro' );
 	}
 
 	public function get_icon() {
@@ -62,11 +62,21 @@ class Code_Highlight extends Base_Widget {
 		return array_keys( $depends );
 	}
 
+	public function get_css_config() {
+		// This widget is loading its own CSS using get_style_depends.
+		return [
+			'key' => $this->get_group_name(),
+			'version' => ELEMENTOR_PRO_VERSION,
+			'file_path' => '',
+			'data' => [],
+		];
+	}
+
 	protected function register_controls() {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Code Highlight', 'elementor-pro' ),
+				'label' => esc_html__( 'Code Highlight', 'elementor-pro' ),
 			]
 		);
 
@@ -113,7 +123,7 @@ class Code_Highlight extends Base_Widget {
 		$this->add_control(
 			'language',
 			[
-				'label' => __( 'Language', 'elementor-pro' ),
+				'label' => esc_html__( 'Language', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT2,
 				'multiple' => false,
 				'options' => apply_filters( 'elementor_pro/code_highlight/languages', $language_option ),
@@ -124,7 +134,7 @@ class Code_Highlight extends Base_Widget {
 		$this->add_control(
 			'code',
 			[
-				'label' => __( 'Code', 'elementor-pro' ),
+				'label' => esc_html__( 'Code', 'elementor-pro' ),
 				'type' => Controls_Manager::CODE,
 				'default' => 'console.log( \'Code is Poetry\' );',
 				'dynamic' => [
@@ -139,7 +149,7 @@ class Code_Highlight extends Base_Widget {
 		$this->add_control(
 			'line_numbers',
 			[
-				'label' => __( 'Line Numbers', 'elementor-pro' ),
+				'label' => esc_html__( 'Line Numbers', 'elementor-pro' ),
 				'type' => Controls_Manager::SWITCHER,
 				'return_value' => 'line-numbers',
 				'default' => 'line-numbers',
@@ -149,10 +159,10 @@ class Code_Highlight extends Base_Widget {
 		$this->add_control(
 			'copy_to_clipboard',
 			[
-				'label' => __( 'Copy to Clipboard', 'elementor-pro' ),
+				'label' => esc_html__( 'Copy to Clipboard', 'elementor-pro' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'On', 'elementor-pro' ),
-				'label_off' => __( 'Off', 'elementor-pro' ),
+				'label_on' => esc_html__( 'On', 'elementor-pro' ),
+				'label_off' => esc_html__( 'Off', 'elementor-pro' ),
 				'return_value' => 'copy-to-clipboard',
 				'default' => 'copy-to-clipboard',
 			]
@@ -161,7 +171,7 @@ class Code_Highlight extends Base_Widget {
 		$this->add_control(
 			'highlight_lines',
 			[
-				'label' => __( 'Highlight Lines', 'elementor-pro' ),
+				'label' => esc_html__( 'Highlight Lines', 'elementor-pro' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => '',
 				'placeholder' => '1, 3-6',
@@ -171,10 +181,10 @@ class Code_Highlight extends Base_Widget {
 		$this->add_control(
 			'word_wrap',
 			[
-				'label' => __( 'Word Wrap', 'elementor-pro' ),
+				'label' => esc_html__( 'Word Wrap', 'elementor-pro' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'On', 'elementor-pro' ),
-				'label_off' => __( 'Off', 'elementor-pro' ),
+				'label_on' => esc_html__( 'On', 'elementor-pro' ),
+				'label_off' => esc_html__( 'Off', 'elementor-pro' ),
 				'return_value' => 'word-wrap',
 				'default' => '',
 			]
@@ -183,7 +193,7 @@ class Code_Highlight extends Base_Widget {
 		$this->add_control(
 			'theme',
 			[
-				'label' => __( 'Theme', 'elementor-pro' ),
+				'label' => esc_html__( 'Theme', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'default',
 				'options' => [
@@ -201,7 +211,7 @@ class Code_Highlight extends Base_Widget {
 		$this->add_responsive_control(
 			'height',
 			[
-				'label' => __( 'Height', 'elementor-pro' ),
+				'label' => esc_html__( 'Height', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', 'vh', 'em' ],
 				'range' => [
@@ -223,7 +233,7 @@ class Code_Highlight extends Base_Widget {
 		$this->add_responsive_control(
 			'font_size',
 			[
-				'label' => __( 'Font Size', 'elementor-pro' ),
+				'label' => esc_html__( 'Font Size', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', 'em', 'rem', 'vw' ],
 				'range' => [

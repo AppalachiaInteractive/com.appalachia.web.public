@@ -101,7 +101,7 @@ class Elementor_Library extends \WP_Widget {
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'template_id' ) ); ?>"><?php esc_attr_e( 'Choose Template', 'elementor-pro' ); ?>:</label>
 			<select class="widefat elementor-widget-template-select" id="<?php echo esc_attr( $this->get_field_id( 'template_id' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'template_id' ) ); ?>">
-				<option value="">— <?php _e( 'Select', 'elementor-pro' ); ?> —</option>
+				<option value="">— <?php echo esc_html__( 'Select', 'elementor-pro' ); ?> —</option>
 				<?php
 				foreach ( $templates as $template ) :
 					$selected = selected( $template['template_id'], $instance['template_id'] );
@@ -122,7 +122,7 @@ class Elementor_Library extends \WP_Widget {
 			}
 			?>
 			<a target="_blank" class="elementor-edit-template"<?php echo $style; ?> href="<?php echo esc_url( add_query_arg( 'elementor', '', get_permalink( $instance['template_id'] ) ) ); ?>">
-				<i class="eicon-pencil"></i> <?php echo __( 'Edit Template', 'elementor-pro' ); ?>
+				<i class="eicon-pencil"></i> <?php echo esc_html__( 'Edit Template', 'elementor-pro' ); ?>
 			</a>
 		</p>
 		<?php

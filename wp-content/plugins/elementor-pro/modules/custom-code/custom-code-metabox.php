@@ -46,17 +46,17 @@ class Custom_Code_Metabox extends Assets_Base {
 
 	public function get_location_labels() {
 		return [
-			self::OPTION_LOCATION_HEAD => __( 'Head', 'elementor-pro' ),
-			self::OPTION_LOCATION_BODY_START => __( 'Body Start', 'elementor-pro' ),
-			self::OPTION_LOCATION_BODY_END => __( 'Body End', 'elementor-pro' ),
+			self::OPTION_LOCATION_HEAD => esc_html__( 'Head', 'elementor-pro' ),
+			self::OPTION_LOCATION_BODY_START => esc_html__( 'Body Start', 'elementor-pro' ),
+			self::OPTION_LOCATION_BODY_END => esc_html__( 'Body End', 'elementor-pro' ),
 		];
 	}
 
 	public function get_location_options() {
 		return [
-			self::OPTION_LOCATION_HEAD => __( '<head>', 'elementor-pro' ),
-			self::OPTION_LOCATION_BODY_START => __( '<body> - Start', 'elementor-pro' ),
-			self::OPTION_LOCATION_BODY_END => __( '<body> - End', 'elementor-pro' ),
+			self::OPTION_LOCATION_HEAD => esc_html__( '<head>', 'elementor-pro' ),
+			self::OPTION_LOCATION_BODY_START => esc_html__( '<body> - Start', 'elementor-pro' ),
+			self::OPTION_LOCATION_BODY_END => esc_html__( '<body> - End', 'elementor-pro' ),
 		];
 	}
 
@@ -135,16 +135,16 @@ class Custom_Code_Metabox extends Assets_Base {
 			[
 				'id' => self::FIELD_LOCATION,
 				'field_type' => 'select',
-				'label' => __( 'Location', 'elementor-pro' ) . ':',
+				'label' => esc_html__( 'Location', 'elementor-pro' ) . ':',
 				'options' => $this->get_location_options(),
-				'info' => __( 'Define where the Custom Code will appear', 'elementor-pro' ),
+				'info' => esc_html__( 'Define where the Custom Code will appear', 'elementor-pro' ),
 			],
 			[
 				'id' => self::FIELD_PRIORITY,
 				'field_type' => 'select',
-				'label' => __( 'Priority', 'elementor-pro' ) . ':',
+				'label' => esc_html__( 'Priority', 'elementor-pro' ) . ':',
 				'options' => $this->get_priority_options(),
-				'info' => __( 'Define in which order the Custom Code will appear', 'elementor-pro' ),
+				'info' => esc_html__( 'Define in which order the Custom Code will appear', 'elementor-pro' ),
 			],
 			[
 				'id' => 'close-div-placement',
@@ -344,7 +344,7 @@ class Custom_Code_Metabox extends Assets_Base {
 			?>
 			<div class="misc-pub-section misc-pub-post-conditions">
 				<i class="dashicons dashicons-networking" aria-hidden="true"></i>
-				<?php echo __( 'Conditions:', 'elementor-pro' ); ?>
+				<?php echo esc_html__( 'Conditions:', 'elementor-pro' ); ?>
 				<span class="post-conditions"></span>
 			</div>
 			<?php

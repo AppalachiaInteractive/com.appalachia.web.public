@@ -46,31 +46,32 @@ class Module extends Module_Base {
 		$element->add_control(
 			'sticky',
 			[
-				'label' => __( 'Sticky', 'elementor-pro' ),
+				'label' => esc_html__( 'Sticky', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'' => __( 'None', 'elementor-pro' ),
-					'top' => __( 'Top', 'elementor-pro' ),
-					'bottom' => __( 'Bottom', 'elementor-pro' ),
+					'' => esc_html__( 'None', 'elementor-pro' ),
+					'top' => esc_html__( 'Top', 'elementor-pro' ),
+					'bottom' => esc_html__( 'Bottom', 'elementor-pro' ),
 				],
 				'separator' => 'before',
 				'render_type' => 'none',
 				'frontend_available' => true,
+				'assets' => $this->get_asset_conditions_data(),
 			]
 		);
 
 		$element->add_control(
 			'sticky_on',
 			[
-				'label' => __( 'Sticky On', 'elementor-pro' ),
+				'label' => esc_html__( 'Sticky On', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT2,
 				'multiple' => true,
 				'label_block' => true,
 				'default' => [ 'desktop', 'tablet', 'mobile' ],
 				'options' => [
-					'desktop' => __( 'Desktop', 'elementor-pro' ),
-					'tablet' => __( 'Tablet', 'elementor-pro' ),
-					'mobile' => __( 'Mobile', 'elementor-pro' ),
+					'desktop' => esc_html__( 'Desktop', 'elementor-pro' ),
+					'tablet' => esc_html__( 'Tablet', 'elementor-pro' ),
+					'mobile' => esc_html__( 'Mobile', 'elementor-pro' ),
 				],
 				'condition' => [
 					'sticky!' => '',
@@ -83,7 +84,7 @@ class Module extends Module_Base {
 		$element->add_control(
 			'sticky_offset',
 			[
-				'label' => __( 'Offset', 'elementor-pro' ),
+				'label' => esc_html__( 'Offset', 'elementor-pro' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 0,
 				'min' => 0,
@@ -100,7 +101,7 @@ class Module extends Module_Base {
 		$element->add_control(
 			'sticky_effects_offset',
 			[
-				'label' => __( 'Effects Offset', 'elementor-pro' ),
+				'label' => esc_html__( 'Effects Offset', 'elementor-pro' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => 0,
 				'min' => 0,
@@ -136,7 +137,7 @@ class Module extends Module_Base {
 			$element->add_control(
 				'sticky_parent',
 				[
-					'label' => __( 'Stay In Column', 'elementor-pro' ),
+					'label' => esc_html__( 'Stay In Column', 'elementor-pro' ),
 					'type' => Controls_Manager::SWITCHER,
 					'condition' => $conditions,
 					'render_type' => 'none',
@@ -151,6 +152,25 @@ class Module extends Module_Base {
 				'type' => Controls_Manager::DIVIDER,
 			]
 		);
+	}
+
+	private function get_asset_conditions_data() {
+		return [
+			'scripts' => [
+				[
+					'name' => 'e-sticky',
+					'conditions' => [
+						'terms' => [
+							[
+								'name' => 'sticky',
+								'operator' => '!==',
+								'value' => '',
+							],
+						],
+					],
+				],
+			],
+		];
 	}
 
 	private function add_actions() {

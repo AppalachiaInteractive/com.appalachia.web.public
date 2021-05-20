@@ -13,7 +13,7 @@ class Product_Terms extends Base_Tag {
 	}
 
 	public function get_title() {
-		return __( 'Product Terms', 'elementor-pro' );
+		return esc_html__( 'Product Terms', 'elementor-pro' );
 	}
 
 	protected function register_advanced_section() {
@@ -22,7 +22,7 @@ class Product_Terms extends Base_Tag {
 		$this->update_control(
 			'before',
 			[
-				'default' => __( 'Categories', 'elementor-pro' ) . ': ',
+				'default' => esc_html__( 'Categories', 'elementor-pro' ) . ': ',
 			]
 		);
 	}
@@ -44,7 +44,7 @@ class Product_Terms extends Base_Tag {
 		$this->add_control(
 			'taxonomy',
 			[
-				'label' => __( 'Taxonomy', 'elementor-pro' ),
+				'label' => esc_html__( 'Taxonomy', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => $options,
 				'default' => 'product_cat',
@@ -54,7 +54,7 @@ class Product_Terms extends Base_Tag {
 		$this->add_control(
 			'separator',
 			[
-				'label' => __( 'Separator', 'elementor-pro' ),
+				'label' => esc_html__( 'Separator', 'elementor-pro' ),
 				'type' => Controls_Manager::TEXT,
 				'default' => ', ',
 			]

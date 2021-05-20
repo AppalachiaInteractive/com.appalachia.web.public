@@ -83,14 +83,14 @@ if ( empty( $cart_items ) ) { ?>
 	</div>
 
 	<div class="elementor-menu-cart__subtotal">
-		<strong><?php echo __( 'Subtotal', 'woocommerce' ); // phpcs:ignore WordPress.WP.I18n ?>:</strong> <?php echo WC()->cart->get_cart_subtotal(); ?>
+		<strong><?php echo esc_html__( 'Subtotal', 'woocommerce' ); // phpcs:ignore WordPress.WP.I18n ?>:</strong> <?php echo WC()->cart->get_cart_subtotal(); ?>
 	</div>
 	<div class="elementor-menu-cart__footer-buttons">
 		<a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="elementor-button elementor-button--view-cart elementor-size-md">
-			<span class="elementor-button-text"><?php echo __( 'View cart', 'woocommerce' ); // phpcs:ignore WordPress.WP.I18n ?></span>
+			<span class="elementor-button-text"><?php echo esc_html__( 'View cart', 'woocommerce' ); // phpcs:ignore WordPress.WP.I18n ?></span>
 		</a>
 		<a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="elementor-button elementor-button--checkout elementor-size-md">
-			<span class="elementor-button-text"><?php echo __( 'Checkout', 'woocommerce' ); // phpcs:ignore WordPress.WP.I18n ?></span>
+			<span class="elementor-button-text"><?php echo esc_html__( 'Checkout', 'woocommerce' ); // phpcs:ignore WordPress.WP.I18n ?></span>
 		</a>
 	</div>
 	<?php

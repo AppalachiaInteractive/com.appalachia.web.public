@@ -38,7 +38,7 @@ class Editor extends App {
 		$settings = [
 			'i18n' => [
 				// 'edit_element' is here for Backwards Compatibility for Elementor Pro versions <3.1.0
-				'edit_element' => __( 'Edit %s', 'elementor-pro' ),
+				'edit_element' => esc_html__( 'Edit %s', 'elementor-pro' ),
 			],
 			'isActive' => License_API::is_license_active(),
 			'urls' => [
@@ -93,7 +93,7 @@ class Editor extends App {
 
 		$settings['elementPromotionURL'] = $connect_url;
 		$settings['dynamicPromotionURL'] = $connect_url;
-		$settings['i18n']['see_it_in_action'] = __( 'Activate License', 'elementor-pro' );
+		$settings['i18n']['see_it_in_action'] = esc_html__( 'Activate License', 'elementor-pro' );
 
 		return $settings;
 	}

@@ -26,11 +26,11 @@ abstract class Form_Base extends Base_Widget {
 
 	public static function get_button_sizes() {
 		return [
-			'xs' => __( 'Extra Small', 'elementor-pro' ),
-			'sm' => __( 'Small', 'elementor-pro' ),
-			'md' => __( 'Medium', 'elementor-pro' ),
-			'lg' => __( 'Large', 'elementor-pro' ),
-			'xl' => __( 'Extra Large', 'elementor-pro' ),
+			'xs' => esc_html__( 'Extra Small', 'elementor-pro' ),
+			'sm' => esc_html__( 'Small', 'elementor-pro' ),
+			'md' => esc_html__( 'Medium', 'elementor-pro' ),
+			'lg' => esc_html__( 'Large', 'elementor-pro' ),
+			'xl' => esc_html__( 'Extra Large', 'elementor-pro' ),
 		];
 	}
 

@@ -2,7 +2,7 @@
 namespace ElementorPro\Modules\Forms\Submissions\Export;
 
 use Elementor\Core\Base\Base_Object;
-use ElementorPro\Core\Utils\Collection;
+use Elementor\Core\Utils\Collection;
 use ElementorPro\Modules\Forms\Submissions\Database\Entities\Form_Snapshot;
 use ElementorPro\Modules\Forms\Submissions\Database\Query;
 use ElementorPro\Modules\Forms\Submissions\Database\Repositories\Form_Snapshot_Repository;
@@ -85,13 +85,13 @@ class CSV_Export extends Base_Object {
 	 */
 	private function get_headers() {
 		$base_headers = [
-			'1_form_name' => __( 'Form Name (ID)', 'elementor-pro' ),
-			'2_id' => __( 'Submission ID', 'elementor-pro' ),
-			'3_created_at' => __( 'Created At', 'elementor-pro' ),
-			'4_user_id' => __( 'User ID', 'elementor-pro' ),
-			'5_user_agent' => __( 'User Agent', 'elementor-pro' ),
-			'6_user_ip' => __( 'User IP', 'elementor-pro' ),
-			'7_referrer' => __( 'Referrer', 'elementor-pro' ),
+			'1_form_name' => esc_html__( 'Form Name (ID)', 'elementor-pro' ),
+			'2_id' => esc_html__( 'Submission ID', 'elementor-pro' ),
+			'3_created_at' => esc_html__( 'Created At', 'elementor-pro' ),
+			'4_user_id' => esc_html__( 'User ID', 'elementor-pro' ),
+			'5_user_agent' => esc_html__( 'User Agent', 'elementor-pro' ),
+			'6_user_ip' => esc_html__( 'User IP', 'elementor-pro' ),
+			'7_referrer' => esc_html__( 'Referrer', 'elementor-pro' ),
 		];
 
 		$labels_dictionary = $this->get_form_labels_dictionary();

@@ -11,7 +11,7 @@ class Product_Short_Description extends Base_Tag {
 	}
 
 	public function get_title() {
-		return __( 'Product Short Description', 'elementor-pro' );
+		return esc_html__( 'Product Short Description', 'elementor-pro' );
 	}
 
 	public function render() {

@@ -11,7 +11,7 @@ class Product_Title extends Base_Tag {
 	}
 
 	public function get_title() {
-		return __( 'Product Title', 'elementor-pro' );
+		return esc_html__( 'Product Title', 'elementor-pro' );
 	}
 
 	public function render() {

@@ -22,7 +22,7 @@ class Skin_Classic extends Skin_Base {
 	}
 
 	public function get_title() {
-		return __( 'Classic', 'elementor-pro' );
+		return esc_html__( 'Classic', 'elementor-pro' );
 	}
 
 	protected function _register_controls_actions() {
@@ -35,7 +35,7 @@ class Skin_Classic extends Skin_Base {
 		$this->add_control(
 			'columns',
 			[
-				'label' => __( 'Columns', 'elementor-pro' ),
+				'label' => esc_html__( 'Columns', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
 					'1' => '1',

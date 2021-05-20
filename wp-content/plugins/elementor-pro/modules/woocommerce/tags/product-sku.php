@@ -11,7 +11,7 @@ class Product_SKU extends Base_Tag {
 	}
 
 	public function get_title() {
-		return __( 'Product SKU', 'elementor-pro' );
+		return esc_html__( 'Product SKU', 'elementor-pro' );
 	}
 
 	public function render() {

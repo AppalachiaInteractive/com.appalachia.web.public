@@ -52,12 +52,12 @@ class API {
 
 		$response_code = wp_remote_retrieve_response_code( $response );
 		if ( 200 !== (int) $response_code ) {
-			return new \WP_Error( $response_code, __( 'HTTP Error', 'elementor-pro' ) );
+			return new \WP_Error( $response_code, esc_html__( 'HTTP Error', 'elementor-pro' ) );
 		}
 
 		$data = json_decode( wp_remote_retrieve_body( $response ), true );
 		if ( empty( $data ) || ! is_array( $data ) ) {
-			return new \WP_Error( 'no_json', __( 'An error occurred, please try again', 'elementor-pro' ) );
+			return new \WP_Error( 'no_json', esc_html__( 'An error occurred, please try again', 'elementor-pro' ) );
 		}
 
 		return $data;
@@ -207,7 +207,7 @@ class API {
 			];
 
 			if ( self::is_request_running( 'get_version' ) ) {
-				return new \WP_Error( __( 'Another check is in progress.', 'elementor-pro' ) );
+				return new \WP_Error( esc_html__( 'Another check is in progress.', 'elementor-pro' ) );
 			}
 
 			$info_data = self::remote_post( $body_args );
@@ -254,12 +254,12 @@ class API {
 		}
 
 		if ( 200 !== $response_code ) {
-			return new \WP_Error( $response_code, __( 'HTTP Error', 'elementor-pro' ) );
+			return new \WP_Error( $response_code, esc_html__( 'HTTP Error', 'elementor-pro' ) );
 		}
 
 		$data = json_decode( wp_remote_retrieve_body( $response ), true );
 		if ( empty( $data ) || ! is_array( $data ) ) {
-			return new \WP_Error( 'no_json', __( 'An error occurred, please try again', 'elementor-pro' ) );
+			return new \WP_Error( 'no_json', esc_html__( 'An error occurred, please try again', 'elementor-pro' ) );
 		}
 
 		return $data['package_url'];
@@ -291,12 +291,12 @@ class API {
 		}
 
 		if ( 200 !== $response_code ) {
-			return new \WP_Error( $response_code, __( 'HTTP Error', 'elementor-pro' ) );
+			return new \WP_Error( $response_code, esc_html__( 'HTTP Error', 'elementor-pro' ) );
 		}
 
 		$data = json_decode( wp_remote_retrieve_body( $response ), true );
 		if ( empty( $data ) || ! is_array( $data ) ) {
-			return new \WP_Error( 'no_json', __( 'An error occurred, please try again', 'elementor-pro' ) );
+			return new \WP_Error( 'no_json', esc_html__( 'An error occurred, please try again', 'elementor-pro' ) );
 		}
 
 		return $data['versions'];
@@ -304,11 +304,11 @@ class API {
 
 	public static function get_errors() {
 		return [
-			'no_activations_left' => sprintf( __( '<strong>You have no more activations left.</strong> <a href="%s" target="_blank">Please upgrade to a more advanced license</a> (you\'ll only need to cover the difference).', 'elementor-pro' ), 'https://go.elementor.com/upgrade/' ),
-			'expired' => sprintf( __( '<strong>Your License Has Expired.</strong> <a href="%s" target="_blank">Renew your license today</a> to keep getting feature updates, premium support and unlimited access to the template library.', 'elementor-pro' ), 'https://go.elementor.com/renew/' ),
-			'missing' => __( 'Your license is missing. Please check your key again.', 'elementor-pro' ),
-			'revoked' => __( '<strong>Your license key has been cancelled</strong> (most likely due to a refund request). Please consider acquiring a new license.', 'elementor-pro' ),
-			'key_mismatch' => __( 'Your license is invalid for this domain. Please check your key again.', 'elementor-pro' ),
+			'no_activations_left' => sprintf( esc_html__( '<strong>You have no more activations left.</strong> <a href="%s" target="_blank">Please upgrade to a more advanced license</a> (you\'ll only need to cover the difference).', 'elementor-pro' ), 'https://go.elementor.com/upgrade/' ),
+			'expired' => sprintf( esc_html__( '<strong>Your License Has Expired.</strong> <a href="%s" target="_blank">Renew your license today</a> to keep getting feature updates, premium support and unlimited access to the template library.', 'elementor-pro' ), 'https://go.elementor.com/renew/' ),
+			'missing' => esc_html__( 'Your license is missing. Please check your key again.', 'elementor-pro' ),
+			'revoked' => esc_html__( '<strong>Your license key has been cancelled</strong> (most likely due to a refund request). Please consider acquiring a new license.', 'elementor-pro' ),
+			'key_mismatch' => esc_html__( 'Your license is invalid for this domain. Please check your key again.', 'elementor-pro' ),
 		];
 	}
 
@@ -318,7 +318,7 @@ class API {
 		if ( isset( $errors[ $error ] ) ) {
 			$error_msg = $errors[ $error ];
 		} else {
-			$error_msg = __( 'An error occurred. Please check your internet connection and try again. If the problem persists, contact our support.', 'elementor-pro' ) . ' (' . $error . ')';
+			$error_msg = esc_html__( 'An error occurred. Please check your internet connection and try again. If the problem persists, contact our support.', 'elementor-pro' ) . ' (' . $error . ')';
 		}
 
 		return $error_msg;

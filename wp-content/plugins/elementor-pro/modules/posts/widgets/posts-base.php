@@ -40,21 +40,21 @@ abstract class Posts_Base extends Base_Widget {
 		$this->start_controls_section(
 			'section_pagination',
 			[
-				'label' => __( 'Pagination', 'elementor-pro' ),
+				'label' => esc_html__( 'Pagination', 'elementor-pro' ),
 			]
 		);
 
 		$this->add_control(
 			'pagination_type',
 			[
-				'label' => __( 'Pagination', 'elementor-pro' ),
+				'label' => esc_html__( 'Pagination', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => '',
 				'options' => [
-					'' => __( 'None', 'elementor-pro' ),
-					'numbers' => __( 'Numbers', 'elementor-pro' ),
-					'prev_next' => __( 'Previous/Next', 'elementor-pro' ),
-					'numbers_and_prev_next' => __( 'Numbers', 'elementor-pro' ) . ' + ' . __( 'Previous/Next', 'elementor-pro' ),
+					'' => esc_html__( 'None', 'elementor-pro' ),
+					'numbers' => esc_html__( 'Numbers', 'elementor-pro' ),
+					'prev_next' => esc_html__( 'Previous/Next', 'elementor-pro' ),
+					'numbers_and_prev_next' => esc_html__( 'Numbers', 'elementor-pro' ) . ' + ' . esc_html__( 'Previous/Next', 'elementor-pro' ),
 				],
 			]
 		);
@@ -62,7 +62,7 @@ abstract class Posts_Base extends Base_Widget {
 		$this->add_control(
 			'pagination_page_limit',
 			[
-				'label' => __( 'Page Limit', 'elementor-pro' ),
+				'label' => esc_html__( 'Page Limit', 'elementor-pro' ),
 				'default' => '5',
 				'condition' => [
 					'pagination_type!' => '',
@@ -73,7 +73,7 @@ abstract class Posts_Base extends Base_Widget {
 		$this->add_control(
 			'pagination_numbers_shorten',
 			[
-				'label' => __( 'Shorten', 'elementor-pro' ),
+				'label' => esc_html__( 'Shorten', 'elementor-pro' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => '',
 				'condition' => [
@@ -88,8 +88,8 @@ abstract class Posts_Base extends Base_Widget {
 		$this->add_control(
 			'pagination_prev_label',
 			[
-				'label' => __( 'Previous Label', 'elementor-pro' ),
-				'default' => __( '&laquo; Previous', 'elementor-pro' ),
+				'label' => esc_html__( 'Previous Label', 'elementor-pro' ),
+				'default' => esc_html__( '&laquo; Previous', 'elementor-pro' ),
 				'condition' => [
 					'pagination_type' => [
 						'prev_next',
@@ -102,8 +102,8 @@ abstract class Posts_Base extends Base_Widget {
 		$this->add_control(
 			'pagination_next_label',
 			[
-				'label' => __( 'Next Label', 'elementor-pro' ),
-				'default' => __( 'Next &raquo;', 'elementor-pro' ),
+				'label' => esc_html__( 'Next Label', 'elementor-pro' ),
+				'default' => esc_html__( 'Next &raquo;', 'elementor-pro' ),
 				'condition' => [
 					'pagination_type' => [
 						'prev_next',
@@ -116,19 +116,19 @@ abstract class Posts_Base extends Base_Widget {
 		$this->add_control(
 			'pagination_align',
 			[
-				'label' => __( 'Alignment', 'elementor-pro' ),
+				'label' => esc_html__( 'Alignment', 'elementor-pro' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'elementor-pro' ),
+						'title' => esc_html__( 'Left', 'elementor-pro' ),
 						'icon' => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'elementor-pro' ),
+						'title' => esc_html__( 'Center', 'elementor-pro' ),
 						'icon' => 'eicon-text-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'elementor-pro' ),
+						'title' => esc_html__( 'Right', 'elementor-pro' ),
 						'icon' => 'eicon-text-align-right',
 					],
 				],
@@ -147,7 +147,7 @@ abstract class Posts_Base extends Base_Widget {
 		$this->start_controls_section(
 			'section_pagination_style',
 			[
-				'label' => __( 'Pagination', 'elementor-pro' ),
+				'label' => esc_html__( 'Pagination', 'elementor-pro' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'pagination_type!' => '',
@@ -169,7 +169,7 @@ abstract class Posts_Base extends Base_Widget {
 		$this->add_control(
 			'pagination_color_heading',
 			[
-				'label' => __( 'Colors', 'elementor-pro' ),
+				'label' => esc_html__( 'Colors', 'elementor-pro' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -180,14 +180,14 @@ abstract class Posts_Base extends Base_Widget {
 		$this->start_controls_tab(
 			'pagination_color_normal',
 			[
-				'label' => __( 'Normal', 'elementor-pro' ),
+				'label' => esc_html__( 'Normal', 'elementor-pro' ),
 			]
 		);
 
 		$this->add_control(
 			'pagination_color',
 			[
-				'label' => __( 'Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-pagination .page-numbers:not(.dots)' => 'color: {{VALUE}};',
@@ -200,14 +200,14 @@ abstract class Posts_Base extends Base_Widget {
 		$this->start_controls_tab(
 			'pagination_color_hover',
 			[
-				'label' => __( 'Hover', 'elementor-pro' ),
+				'label' => esc_html__( 'Hover', 'elementor-pro' ),
 			]
 		);
 
 		$this->add_control(
 			'pagination_hover_color',
 			[
-				'label' => __( 'Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-pagination a.page-numbers:hover' => 'color: {{VALUE}};',
@@ -220,14 +220,14 @@ abstract class Posts_Base extends Base_Widget {
 		$this->start_controls_tab(
 			'pagination_color_active',
 			[
-				'label' => __( 'Active', 'elementor-pro' ),
+				'label' => esc_html__( 'Active', 'elementor-pro' ),
 			]
 		);
 
 		$this->add_control(
 			'pagination_active_color',
 			[
-				'label' => __( 'Color', 'elementor-pro' ),
+				'label' => esc_html__( 'Color', 'elementor-pro' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-pagination .page-numbers.current' => 'color: {{VALUE}};',
@@ -242,7 +242,7 @@ abstract class Posts_Base extends Base_Widget {
 		$this->add_responsive_control(
 			'pagination_spacing',
 			[
-				'label' => __( 'Space Between', 'elementor-pro' ),
+				'label' => esc_html__( 'Space Between', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'separator' => 'before',
 				'default' => [
@@ -266,7 +266,7 @@ abstract class Posts_Base extends Base_Widget {
 		$this->add_responsive_control(
 			'pagination_spacing_top',
 			[
-				'label' => __( 'Spacing', 'elementor-pro' ),
+				'label' => esc_html__( 'Spacing', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -364,7 +364,7 @@ abstract class Posts_Base extends Base_Widget {
 		$this->start_controls_section(
 			'section_layout',
 			[
-				'label' => __( 'Layout', 'elementor-pro' ),
+				'label' => esc_html__( 'Layout', 'elementor-pro' ),
 				'tab' => Controls_Manager::TAB_CONTENT,
 			]
 		);

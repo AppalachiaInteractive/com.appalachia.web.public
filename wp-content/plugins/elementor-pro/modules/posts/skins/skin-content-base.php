@@ -24,7 +24,7 @@ trait Skin_Content_Base {
 	}
 
 	public function get_title() {
-		return __( 'Full Content', 'elementor-pro' );
+		return esc_html__( 'Full Content', 'elementor-pro' );
 	}
 
 	public function register_skin_controls( Widget_Base $widget ) {
@@ -41,7 +41,7 @@ trait Skin_Content_Base {
 		$this->add_control(
 			'thumbnail',
 			[
-				'label' => __( 'Show Thumbnail', 'elementor-pro' ),
+				'label' => esc_html__( 'Show Thumbnail', 'elementor-pro' ),
 				'type' => Controls_Manager::SWITCHER,
 				'return_value' => 'thumbnail',
 				'prefix_class' => 'elementor-posts--show-',
@@ -65,7 +65,7 @@ trait Skin_Content_Base {
 		$this->add_responsive_control(
 			'item_ratio',
 			[
-				'label' => __( 'Image Ratio', 'elementor-pro' ),
+				'label' => esc_html__( 'Image Ratio', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 0.66,
@@ -96,7 +96,7 @@ trait Skin_Content_Base {
 		$this->add_responsive_control(
 			'image_width',
 			[
-				'label' => __( 'Image Width', 'elementor-pro' ),
+				'label' => esc_html__( 'Image Width', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'%' => [
@@ -142,7 +142,7 @@ trait Skin_Content_Base {
 		$this->add_control(
 			'row_gap',
 			[
-				'label' => __( 'Rows Gap', 'elementor-pro' ),
+				'label' => esc_html__( 'Rows Gap', 'elementor-pro' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 35,
@@ -257,11 +257,11 @@ trait Skin_Content_Base {
 				echo apply_filters( 'the_content', get_the_content() );
 
 				wp_link_pages( [
-					'before' => '<div class="page-links elementor-page-links"><span class="page-links-title elementor-page-links-title">' . __( 'Pages:', 'elementor-pro' ) . '</span>',
+					'before' => '<div class="page-links elementor-page-links"><span class="page-links-title elementor-page-links-title">' . esc_html__( 'Pages:', 'elementor-pro' ) . '</span>',
 					'after' => '</div>',
 					'link_before' => '<span>',
 					'link_after' => '</span>',
-					'pagelink' => '<span class="screen-reader-text">' . __( 'Page', 'elementor-pro' ) . ' </span>%',
+					'pagelink' => '<span class="screen-reader-text">' . esc_html__( 'Page', 'elementor-pro' ) . ' </span>%',
 					'separator' => '<span class="screen-reader-text">, </span>',
 				] );
 

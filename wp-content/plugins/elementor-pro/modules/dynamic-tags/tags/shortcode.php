@@ -15,7 +15,7 @@ class Shortcode extends Tag {
 	}
 
 	public function get_title() {
-		return __( 'Shortcode', 'elementor-pro' );
+		return esc_html__( 'Shortcode', 'elementor-pro' );
 	}
 
 	public function get_group() {
@@ -35,7 +35,7 @@ class Shortcode extends Tag {
 		$this->add_control(
 			'shortcode',
 			[
-				'label' => __( 'Shortcode', 'elementor-pro' ),
+				'label' => esc_html__( 'Shortcode', 'elementor-pro' ),
 				'type'  => Controls_Manager::TEXTAREA,
 			]
 		);

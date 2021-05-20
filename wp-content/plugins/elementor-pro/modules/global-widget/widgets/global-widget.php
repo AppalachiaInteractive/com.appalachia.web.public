@@ -85,7 +85,7 @@ class Global_Widget extends Base_Widget {
 	}
 
 	public function get_title() {
-		return __( 'Global', 'elementor-pro' );
+		return esc_html__( 'Global', 'elementor-pro' );
 	}
 
 	public function get_script_depends() {

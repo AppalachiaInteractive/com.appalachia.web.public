@@ -20,7 +20,7 @@ class Categories extends Base_Widget {
 	}
 
 	public function get_title() {
-		return __( 'Product Categories', 'elementor-pro' );
+		return esc_html__( 'Product Categories', 'elementor-pro' );
 	}
 
 	public function get_icon() {
@@ -41,7 +41,7 @@ class Categories extends Base_Widget {
 		$this->start_controls_section(
 			'section_layout',
 			[
-				'label' => __( 'Layout', 'elementor-pro' ),
+				'label' => esc_html__( 'Layout', 'elementor-pro' ),
 				'tab' => Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -49,7 +49,7 @@ class Categories extends Base_Widget {
 		$this->add_responsive_control(
 			'columns',
 			[
-				'label' => __( 'Columns', 'elementor-pro' ),
+				'label' => esc_html__( 'Columns', 'elementor-pro' ),
 				'type' => Controls_Manager::NUMBER,
 				'prefix_class' => 'elementor-products-columns%s-',
 				'default' => 4,
@@ -61,7 +61,7 @@ class Categories extends Base_Widget {
 		$this->add_control(
 			'number',
 			[
-				'label' => __( 'Categories Count', 'elementor-pro' ),
+				'label' => esc_html__( 'Categories Count', 'elementor-pro' ),
 				'type' => Controls_Manager::NUMBER,
 				'default' => '4',
 			]
@@ -72,7 +72,7 @@ class Categories extends Base_Widget {
 		$this->start_controls_section(
 			'section_filter',
 			[
-				'label' => __( 'Query', 'elementor-pro' ),
+				'label' => esc_html__( 'Query', 'elementor-pro' ),
 				'tab' => Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -80,13 +80,13 @@ class Categories extends Base_Widget {
 		$this->add_control(
 			'source',
 			[
-				'label' => __( 'Source', 'elementor-pro' ),
+				'label' => esc_html__( 'Source', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'options' => [
-					'' => __( 'Show All', 'elementor-pro' ),
-					'by_id' => __( 'Manual Selection', 'elementor-pro' ),
-					'by_parent' => __( 'By Parent', 'elementor-pro' ),
-					'current_subcategories' => __( 'Current Subcategories', 'elementor-pro' ),
+					'' => esc_html__( 'Show All', 'elementor-pro' ),
+					'by_id' => esc_html__( 'Manual Selection', 'elementor-pro' ),
+					'by_parent' => esc_html__( 'By Parent', 'elementor-pro' ),
+					'current_subcategories' => esc_html__( 'Current Subcategories', 'elementor-pro' ),
 				],
 				'label_block' => true,
 			]
@@ -102,7 +102,7 @@ class Categories extends Base_Widget {
 		$this->add_control(
 			'categories',
 			[
-				'label' => __( 'Categories', 'elementor-pro' ),
+				'label' => esc_html__( 'Categories', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT2,
 				'options' => $options,
 				'default' => [],
@@ -114,11 +114,11 @@ class Categories extends Base_Widget {
 			]
 		);
 
-		$parent_options = [ '0' => __( 'Only Top Level', 'elementor-pro' ) ] + $options;
+		$parent_options = [ '0' => esc_html__( 'Only Top Level', 'elementor-pro' ) ] + $options;
 		$this->add_control(
 			'parent',
 			[
-				'label' => __( 'Parent', 'elementor-pro' ),
+				'label' => esc_html__( 'Parent', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => '0',
 				'options' => $parent_options,
@@ -131,7 +131,7 @@ class Categories extends Base_Widget {
 		$this->add_control(
 			'hide_empty',
 			[
-				'label' => __( 'Hide Empty', 'elementor-pro' ),
+				'label' => esc_html__( 'Hide Empty', 'elementor-pro' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => '',
 				'label_on' => 'Hide',
@@ -142,14 +142,14 @@ class Categories extends Base_Widget {
 		$this->add_control(
 			'orderby',
 			[
-				'label' => __( 'Order By', 'elementor-pro' ),
+				'label' => esc_html__( 'Order By', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'name',
 				'options' => [
-					'name' => __( 'Name', 'elementor-pro' ),
-					'slug' => __( 'Slug', 'elementor-pro' ),
-					'description' => __( 'Description', 'elementor-pro' ),
-					'count' => __( 'Count', 'elementor-pro' ),
+					'name' => esc_html__( 'Name', 'elementor-pro' ),
+					'slug' => esc_html__( 'Slug', 'elementor-pro' ),
+					'description' => esc_html__( 'Description', 'elementor-pro' ),
+					'count' => esc_html__( 'Count', 'elementor-pro' ),
 				],
 			]
 		);
@@ -157,12 +157,12 @@ class Categories extends Base_Widget {
 		$this->add_control(
 			'order',
 			[
-				'label' => __( 'Order', 'elementor-pro' ),
+				'label' => esc_html__( 'Order', 'elementor-pro' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'desc',
 				'options' => [
-					'asc' => __( 'ASC', 'elementor-pro' ),
-					'desc' => __( 'DESC', 'elementor-pro' ),
+					'asc' => esc_html__( 'ASC', 'elementor-pro' ),
+					'desc' => esc_html__( 'DESC', 'elementor-pro' ),
 				],
 			]
 		);
@@ -172,7 +172,7 @@ class Categories extends Base_Widget {
 		$this->start_controls_section(
 			'section_products_style',
 			[
-				'label' => __( 'Products', 'elementor-pro' ),
+				'label' => esc_html__( 'Products', 'elementor-pro' ),
 				'tab'   => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -181,7 +181,7 @@ class Categories extends Base_Widget {
 			'wc_style_warning',
 			[
 				'type' => Controls_Manager::RAW_HTML,
-				'raw' => __( 'The style of this widget is often affected by your theme and plugins. If you experience any such issue, try to switch to a basic theme and deactivate related plugins.', 'elementor-pro' ),
+				'raw' => esc_html__( 'The style of this widget is often affected by your theme and plugins. If you experience any such issue, try to switch to a basic theme and deactivate related plugins.', 'elementor-pro' ),
 				'content_classes' => 'elementor-panel-alert elementor-panel-alert-info',
 			]
 		);
@@ -198,7 +198,7 @@ class Categories extends Base_Widget {
 		$this->add_control(
 			'column_gap',
 			[
-				'label'     => __( 'Columns Gap', 'elementor-pro' ),
+				'label'     => esc_html__( 'Columns Gap', 'elementor-pro' ),
 				'type'      => Controls_Manager::SLIDER,
 				'default'   => [
 					'size' => 20,
@@ -218,7 +218,7 @@ class Categories extends Base_Widget {
 		$this->add_control(
 			'row_gap',
 			[
-				'label'     => __( 'Rows Gap', 'elementor-pro' ),
+				'label'     => esc_html__( 'Rows Gap', 'elementor-pro' ),
 				'type'      => Controls_Manager::SLIDER,
 				'default'   => [
 					'size' => 40,
@@ -238,19 +238,19 @@ class Categories extends Base_Widget {
 		$this->add_responsive_control(
 			'align',
 			[
-				'label'     => __( 'Alignment', 'elementor-pro' ),
+				'label'     => esc_html__( 'Alignment', 'elementor-pro' ),
 				'type'      => Controls_Manager::CHOOSE,
 				'options'   => [
 					'left'   => [
-						'title' => __( 'Left', 'elementor-pro' ),
+						'title' => esc_html__( 'Left', 'elementor-pro' ),
 						'icon'  => 'eicon-text-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'elementor-pro' ),
+						'title' => esc_html__( 'Center', 'elementor-pro' ),
 						'icon'  => 'eicon-text-align-center',
 					],
 					'right'  => [
-						'title' => __( 'Right', 'elementor-pro' ),
+						'title' => esc_html__( 'Right', 'elementor-pro' ),
 						'icon'  => 'eicon-text-align-right',
 					],
 				],
@@ -264,7 +264,7 @@ class Categories extends Base_Widget {
 		$this->add_control(
 			'heading_image_style',
 			[
-				'label'     => __( 'Image', 'elementor-pro' ),
+				'label'     => esc_html__( 'Image', 'elementor-pro' ),
 				'type'      => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -281,7 +281,7 @@ class Categories extends Base_Widget {
 		$this->add_responsive_control(
 			'image_border_radius',
 			[
-				'label'      => __( 'Border Radius', 'elementor-pro' ),
+				'label'      => esc_html__( 'Border Radius', 'elementor-pro' ),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors'  => [
@@ -293,7 +293,7 @@ class Categories extends Base_Widget {
 		$this->add_responsive_control(
 			'image_spacing',
 			[
-				'label'      => __( 'Spacing', 'elementor-pro' ),
+				'label'      => esc_html__( 'Spacing', 'elementor-pro' ),
 				'type'       => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', 'em' ],
 				'selectors'  => [
@@ -305,7 +305,7 @@ class Categories extends Base_Widget {
 		$this->add_control(
 			'heading_title_style',
 			[
-				'label'     => __( 'Title', 'elementor-pro' ),
+				'label'     => esc_html__( 'Title', 'elementor-pro' ),
 				'type'      => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -314,7 +314,7 @@ class Categories extends Base_Widget {
 		$this->add_control(
 			'title_color',
 			[
-				'label'     => __( 'Color', 'elementor-pro' ),
+				'label'     => esc_html__( 'Color', 'elementor-pro' ),
 				'type'      => Controls_Manager::COLOR,
 				'global'    => [
 					'default' => Global_Colors::COLOR_PRIMARY,
@@ -339,7 +339,7 @@ class Categories extends Base_Widget {
 		$this->add_control(
 			'heading_count_style',
 			[
-				'label'     => __( 'Count', 'elementor-pro' ),
+				'label'     => esc_html__( 'Count', 'elementor-pro' ),
 				'type'      => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -348,7 +348,7 @@ class Categories extends Base_Widget {
 		$this->add_control(
 			'count_color',
 			[
-				'label'     => __( 'Color', 'elementor-pro' ),
+				'label'     => esc_html__( 'Color', 'elementor-pro' ),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .woocommerce-loop-category__title .count' => 'color: {{VALUE}}',

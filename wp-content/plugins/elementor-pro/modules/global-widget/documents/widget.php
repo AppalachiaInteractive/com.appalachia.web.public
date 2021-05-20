@@ -1,6 +1,7 @@
 <?php
 namespace ElementorPro\Modules\GlobalWidget\Documents;
 
+use Elementor\Core\Base\Document;
 use Elementor\Modules\Library\Documents\Library_Document;
 use Elementor\User;
 use ElementorPro\Modules\GlobalWidget\Module;
@@ -26,7 +27,11 @@ class Widget extends Library_Document {
 	}
 
 	public static function get_title() {
-		return __( 'Global Widget', 'elementor-pro' );
+		return esc_html__( 'Global Widget', 'elementor-pro' );
+	}
+
+	public static function get_plural_title() {
+		return esc_html__( 'Global Widgets', 'elementor-pro' );
 	}
 
 	public function is_editable_by_current_user() {
@@ -37,5 +42,12 @@ class Widget extends Library_Document {
 		parent::import( $data );
 
 		$this->update_main_meta( Module::WIDGET_TYPE_META_KEY, $data['content'][0]['widgetType'] );
+	}
+
+	public function save( $data ) {
+		// Since the method of 'modules/usage::before_document_save' will remove from global if new_status is the same as old.
+		$data['settings'] = [ 'post_status' => Document::STATUS_PUBLISH ];
+
+		return parent::save( $data );
 	}
 }

@@ -41,7 +41,7 @@ class Module extends Module_Base {
 	public function localize_settings( $settings ) {
 		$settings = array_replace_recursive( $settings, [
 			'i18n' => [
-				'x_field' => __( '%s Field', 'elementor-pro' ),
+				'x_field' => esc_html__( '%s Field', 'elementor-pro' ),
 			],
 		] );
 
@@ -127,8 +127,8 @@ class Module extends Module_Base {
 
 		$experiments_manager->add_feature( [
 			'name' => $name,
-			'title' => __( 'Form Submissions', 'elementor-pro' ),
-			'description' => __( 'Never lose another submission! Using “Actions After Submit” you can now choose to save all submissions to an internal database.', 'elementor-pro' ),
+			'title' => esc_html__( 'Form Submissions', 'elementor-pro' ),
+			'description' => esc_html__( 'Never lose another submission! Using “Actions After Submit” you can now choose to save all submissions to an internal database.', 'elementor-pro' ),
 			'release_status' => Manager::RELEASE_STATUS_BETA,
 			'default' => Manager::STATE_ACTIVE,
 		] );
