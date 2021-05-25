@@ -459,24 +459,22 @@
         <path id="Tree-400" data-name="Tree" stroke-width=".66" fill="#161515" stroke="#d9b776" d="m921.11 267.56-4.93 13.97h9.85l-4.92-13.97z"/>
         <path id="Tree-401" data-name="Tree" stroke-width=".66" fill="#161515" stroke="#d9b776" d="m923.07 287.97-4.88 13.84h9.76l-4.88-13.84z"/>
         <path id="Tree-402" data-name="Tree" class="cls-124" d="m921.89 295.65-4.79 13.59h9.59l-4.8-13.59z"/>
-        <g>
-          <path id="Tree-403" data-name="Tree" stroke-width=".64" fill="#161515" stroke="#d9b776" d="m908.97 266.61-4.77 13.53h9.54l-4.77-13.53z"/>
-          <path id="Tree-404" data-name="Tree" stroke-width=".66" fill="#161515" stroke="#d9b776" d="m906.91 285.32-4.86 13.78h9.72l-4.86-13.78z"/>
-          <path id="Tree-405" data-name="Tree" class="cls-403" d="m903.66 282.56-4.92 13.97h9.85l-4.93-13.97z"/>
-          <path id="Tree-406" data-name="Tree" class="cls-403" d="m901.45 299.43-4.93 13.97h9.86l-4.93-13.97z"/>
-          <path id="Tree-407" data-name="Tree" class="cls-403" d="m897.5 283.46-4.92 13.97h9.85l-4.93-13.97z"/>
-          <path id="Tree-408" data-name="Tree" class="cls-403" d="m896.48 299.77-4.93 13.97h9.86l-4.93-13.97z"/>
-          <path id="Tree-409" data-name="Tree" class="cls-403" d="m890.35 276.38-4.93 13.97h9.86l-4.93-13.97z"/>
-          <path id="Tree-410" data-name="Tree" stroke-width=".66" fill="#161515" stroke="#d9b776" d="m889.57 291.11-4.93 13.98h9.86l-4.93-13.98z"/>
-          <path id="Tree-411" data-name="Tree" stroke-width=".67" fill="#161515" stroke="#d9b776" d="m884.97 284.17-4.93 13.99h9.86l-4.93-13.99z"/>
-          <path id="Tree-412" data-name="Tree" stroke-width=".67" fill="#161515" stroke="#d9b776" d="m885.14 299.43-4.94 14h9.88l-4.94-14z"/>
-          <path id="Tree-413" data-name="Tree" stroke-width=".67" fill="#161515" stroke="#d9b776" d="m877.62 279.88-4.94 14.02h9.89l-4.95-14.02z"/>
-          <path id="Tree-414" data-name="Tree" stroke-width=".67" fill="#161515" stroke="#d9b776" d="m877.83 294.78-4.94 14.03h9.89l-4.95-14.03z"/>
-          <path id="Tree-415" data-name="Tree" stroke-width=".67" fill="#161515" stroke="#d9b776" d="m872.58 286.11-4.95 14.05h9.9l-4.95-14.05z"/>
-          <path id="Tree-416" data-name="Tree" stroke-width=".67" fill="#161515" stroke="#d9b776" d="m870.22 289.73-4.95 14.06h9.91l-4.96-14.06z"/>
-          <path id="Tree-417" data-name="Tree" stroke-width=".67" fill="#161515" stroke="#d9b776" d="m868.08 294.23-4.97 14.07h9.93l-4.96-14.07z"/>
-          <path id="Tree-418" data-name="Tree" class="cls-323" d="m863.97 290.49-4.96 14.08h9.93l-4.97-14.08z"/>
-        </g>
+        <path id="Tree-403" data-name="Tree" stroke-width=".64" fill="#161515" stroke="#d9b776" d="m908.97 266.61-4.77 13.53h9.54l-4.77-13.53z"/>
+        <path id="Tree-404" data-name="Tree" stroke-width=".66" fill="#161515" stroke="#d9b776" d="m906.91 285.32-4.86 13.78h9.72l-4.86-13.78z"/>
+        <path id="Tree-405" data-name="Tree" class="cls-403" d="m903.66 282.56-4.92 13.97h9.85l-4.93-13.97z"/>
+        <path id="Tree-406" data-name="Tree" class="cls-403" d="m901.45 299.43-4.93 13.97h9.86l-4.93-13.97z"/>
+        <path id="Tree-407" data-name="Tree" class="cls-403" d="m897.5 283.46-4.92 13.97h9.85l-4.93-13.97z"/>
+        <path id="Tree-408" data-name="Tree" class="cls-403" d="m896.48 299.77-4.93 13.97h9.86l-4.93-13.97z"/>
+        <path id="Tree-409" data-name="Tree" class="cls-403" d="m890.35 276.38-4.93 13.97h9.86l-4.93-13.97z"/>
+        <path id="Tree-410" data-name="Tree" stroke-width=".66" fill="#161515" stroke="#d9b776" d="m889.57 291.11-4.93 13.98h9.86l-4.93-13.98z"/>
+        <path id="Tree-411" data-name="Tree" stroke-width=".67" fill="#161515" stroke="#d9b776" d="m884.97 284.17-4.93 13.99h9.86l-4.93-13.99z"/>
+        <path id="Tree-412" data-name="Tree" stroke-width=".67" fill="#161515" stroke="#d9b776" d="m885.14 299.43-4.94 14h9.88l-4.94-14z"/>
+        <path id="Tree-413" data-name="Tree" stroke-width=".67" fill="#161515" stroke="#d9b776" d="m877.62 279.88-4.94 14.02h9.89l-4.95-14.02z"/>
+        <path id="Tree-414" data-name="Tree" stroke-width=".67" fill="#161515" stroke="#d9b776" d="m877.83 294.78-4.94 14.03h9.89l-4.95-14.03z"/>
+        <path id="Tree-415" data-name="Tree" stroke-width=".67" fill="#161515" stroke="#d9b776" d="m872.58 286.11-4.95 14.05h9.9l-4.95-14.05z"/>
+        <path id="Tree-416" data-name="Tree" stroke-width=".67" fill="#161515" stroke="#d9b776" d="m870.22 289.73-4.95 14.06h9.91l-4.96-14.06z"/>
+        <path id="Tree-417" data-name="Tree" stroke-width=".67" fill="#161515" stroke="#d9b776" d="m868.08 294.23-4.97 14.07h9.93l-4.96-14.07z"/>
+        <path id="Tree-418" data-name="Tree" class="cls-323" d="m863.97 290.49-4.96 14.08h9.93l-4.97-14.08z"/>
         <g>
           <path id="Tree-419" data-name="Tree" stroke-width=".79" fill="#161515" stroke="#d9b776" d="m931.03 284.84-5.87 16.65h11.74l-5.87-16.65z"/>
           <path id="Tree-420" data-name="Tree" stroke-width=".84" fill="#161515" stroke="#d9b776" d="m923.87 288.36-6.26 17.76h12.52l-6.26-17.76z"/>
