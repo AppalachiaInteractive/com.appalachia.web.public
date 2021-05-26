@@ -737,49 +737,6 @@ class Updraft_Manager_Updater_1_5 {
 	 */
 	protected function print_plugin_connector_box() {
 
-		// Are we already connected?
-
-		$options = $this->get_option($this->option_name);
-		$email = isset($options['email']) ? $options['email'] : '';
-
-		if (empty($this->connector_footer_added)) {
-			$this->connector_footer_added = true;
-			add_action('admin_footer', array($this, 'admin_footer'));
-		}
-
-		$plugin_label = htmlspecialchars($this->plugin_data['Name']);
-		if (!empty($this->plugin_data['PluginURI'])) $plugin_label = '<a href="'.esc_attr($this->plugin_data['PluginURI']).'">'.$plugin_label.'</a>';
-
-		?>
-		<div style="margin: 10px;  min-height: 36px;" class="udmupdater_box_<?php echo esc_attr($this->slug);?>">
-			<?php if ($this->is_connected()) { ?>
-			<div style="float: left; margin-right: 14px; margin-top: 4px;">
-				<em><?php echo apply_filters('udmupdater_entercustomerlogin', sprintf(__('You are connected to receive updates for %s (login: %s)', 'udmupdater'), $plugin_label, htmlspecialchars($email)), $this->plugin_data, $this->slug); ?></em>: 
-			</div>
-			<div class="udmupdater_userpassform udmupdater_userpassform_<?php echo esc_attr($this->slug);?>" style="float:left;">
-				<button class="button button-primary udmupdater-disconnect"><?php _e('Disconnect', 'udmupdater');?></button>
-			</div>
-			<?php } else { ?>
-			<div style="float: left; margin-right: 14px; margin-top: 4px;">
-				<em><?php echo apply_filters('udmupdater_entercustomerlogin', sprintf(__('Please enter your customer login to access updates for %s', 'udmupdater'), $plugin_label), $this->plugin_data); ?></em>: 
-			</div>
-			<div class="udmupdater_userpassform udmupdater_userpassform_<?php echo esc_attr($this->slug);?>" style="float:left;">
-				<input type="text" style="width:180px;" placeholder="<?php echo esc_attr(__('Email', 'udmupdater')); ?>" name="email" value="">
-				<input type="password" style="width:180px;" placeholder="<?php echo esc_attr(ucfirst(apply_filters('udmupdater_password_description', __('password', 'udmupdater'), $this->slug, $this->plugin_data))); ?>" name="password" value="">
-				<button class="button button-primary udmupdater-connect"><?php _e('Connect', 'udmupdater');?></button>
-			</div>
-			<?php } ?>
-			<?php if (apply_filters('udmupdater_autoupdate_form', $this->allow_auto_updates, $this->slug)) {
-				$auto_update = empty($options['auto_update']) ? false : true;
-				$checkbox_id = 'udmupdater_autoupdate_'.$this->slug;
-				?>
-				<div class="udmupdater_autoupdate" style="clear:left;">
-					<input type="checkbox" id="<?php echo esc_attr($checkbox_id);?>" <?php if ($auto_update) echo 'checked="checked"';?>>
-					<label for="<?php echo esc_attr($checkbox_id);?>"><?php echo apply_filters('udmupdater_entercustomerlogin', __('Automatically update as soon as an update becomes available (N.B. other plugins can over-ride this setting).', 'udmupdater'), $this->slug);?></label>
-				</div>
-			<?php } ?>
-		</div>
-		<?php
 	}
 
 	/**
