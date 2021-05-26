@@ -1,0 +1,2147 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Briefcase Elementor Widgets\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-18 16:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.3; wp-5.4"
+
+#: widgets/edd_dynamic_field.php:100
+msgid " - choose - "
+msgstr ""
+
+#: widgets/woo_search.php:996
+msgid "# Hit enter to search or ESC to close"
+msgstr ""
+
+#: widgets/woo_search.php:993
+#, php-format
+msgid "# Type at least %s %s to search"
+msgstr ""
+
+#: widgets/woo_search.php:242
+msgid ""
+"# Type at least 1 character to search # Hit enter to search or ESC to close"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:426 widgets/edd_grid.php:322
+msgid "$0.00"
+msgstr ""
+
+#. 1: reviews count 2: product name
+#: woocommerce/single-product-reviews.php:34
+#, php-format
+msgid "%1$s review for %2$s"
+msgid_plural "%1$s reviews for %2$s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/edd/functions-download-details.php:41
+#, php-format
+msgid "%s Details"
+msgstr ""
+
+#: widgets/bew_fullpage.php:63
+msgid ""
+"<span style=\"font-weight:bold; color: red;\">Important:</span> Use <b>"
+"0px</b> to disable the responsive option."
+msgstr ""
+
+#: briefcase-elementor-widgets.php:342
+msgid ""
+"A new version of Elementor is available. For better performance and "
+"compatibility of Briefcase Elementor Widgets, we recommend updating to the "
+"latest version."
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:600
+msgid "Above"
+msgstr ""
+
+#: widgets/woo_button.php:166 widgets/woo_button.php:210
+msgid "Absolute"
+msgstr ""
+
+#: widgets/woo_button.php:46
+msgid "Action Button"
+msgstr ""
+
+#: briefcase-elementor-widgets.php:305
+msgid "Activate Elementor Now"
+msgstr ""
+
+#: widgets/woo_buy_now.php:193
+msgid "Activate Style"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:78
+msgid "Add a review"
+msgstr ""
+
+#. Description of the plugin
+msgid "Add some new widgets to the popular free page builder Elementor."
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:180 widgets/edd_dynamic_field.php:181
+#: widgets/edd_dynamic_field.php:278 widgets/edd_grid.php:354
+#: widgets/edd_grid.php:406
+msgid "Add to Cart"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:121 widgets/edd_dynamic_field.php:1116
+msgid "Add to cart"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:131
+msgid "Add to cart Type"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1265 widgets/edd_dynamic_field.php:210
+#: widgets/woo_button.php:123 widgets/woo_buy_now.php:103
+msgid "After"
+msgstr ""
+
+#: widgets/bew_fullpage.php:994
+msgid "AfterLoad Callback"
+msgstr ""
+
+#: widgets/woo_search.php:123
+msgid "Ajax Search"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:638
+msgid "Alignment"
+msgstr ""
+
+#: widgets/classes/products-renderer.php:711
+msgid "All"
+msgstr ""
+
+#: widgets/woo_search.php:964
+msgid "All Categories"
+msgstr ""
+
+#: widgets/woo_buy_now.php:172
+msgid "All Product Types"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:650 widgets/woo_menu_cart.php:724
+#: widgets/woo_mini_cart.php:252 widgets/woo_mini_cart.php:326
+#: widgets/woo_shop_toolbar.php:509
+msgid "Amount Color"
+msgstr ""
+
+#: widgets/bew_fullpage.php:885
+msgid "Anchors"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:1220 widgets/woo_button.php:362
+#: widgets/woo_buy_now.php:332 widgets/woo_shop_toolbar.php:631
+msgid "Animation"
+msgstr ""
+
+#: widgets/bew_fullpage.php:904
+msgid "Animations and Videos"
+msgstr ""
+
+#: includes/metabox/metabox.php:342
+msgid "Apply global product template."
+msgstr ""
+
+#: widgets/bew_fullpage.php:337
+msgid "Apply Link On"
+msgstr ""
+
+#: includes/metabox/metabox.php:295
+msgid "Apply this template on the default Woocommerce categories page."
+msgstr ""
+
+#: includes/metabox/metabox.php:273
+msgid "Apply this template on the default Woocommerce shop page."
+msgstr ""
+
+#: widgets/bew_fullpage.php:875 widgets/bew_fullpage.php:1727
+msgid "Arrows"
+msgstr ""
+
+#: widgets/edd_grid.php:211
+msgid "ASC"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:521 widgets/edd_grid.php:228
+msgid "Author"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:1856
+msgid "Author Border"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:1646
+msgid "Author Image"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:2535
+msgid "Author since:"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:1794
+msgid "Author Text"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:2514
+msgid "Author:"
+msgstr ""
+
+#: widgets/bew_fullpage.php:555
+msgid "Auto Height"
+msgstr ""
+
+#: widgets/bew_fullpage.php:568
+msgid "Auto Height Responsive"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:108
+msgid "Average"
+msgstr ""
+
+#: widgets/classes/products-renderer.php:410
+msgid "Average rating"
+msgstr ""
+
+#: widgets/bew_fullpage.php:129 widgets/bew_fullpage.php:1669
+#: widgets/bew_fullpage.php:1781 widgets/woo_menu_cart.php:398
+#: widgets/woo_menu_cart.php:568 widgets/woo_menu_cart.php:672
+#: widgets/woo_menu_cart.php:735 widgets/woo_menu_cart.php:787
+#: widgets/woo_mini_cart.php:170 widgets/woo_mini_cart.php:274
+#: widgets/woo_mini_cart.php:337 widgets/woo_mini_cart.php:389
+#: widgets/woo_shop_toolbar.php:328 widgets/woo_shop_toolbar.php:520
+msgid "Background"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:1442
+msgid "Background Checked Color"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1455 widgets/bew_fullpage.php:1492
+#: widgets/edd_dynamic_field.php:718 widgets/edd_dynamic_field.php:750
+#: widgets/edd_dynamic_field.php:857 widgets/edd_dynamic_field.php:889
+#: widgets/edd_dynamic_field.php:987 widgets/edd_dynamic_field.php:1155
+#: widgets/edd_dynamic_field.php:1191 widgets/edd_dynamic_field.php:1340
+#: widgets/edd_dynamic_field.php:1372 widgets/edd_grid.php:494
+#: widgets/edd_grid.php:655 widgets/edd_grid.php:712 widgets/edd_grid.php:799
+#: widgets/edd_grid.php:892 widgets/woo_button.php:302
+#: widgets/woo_button.php:334 widgets/woo_buy_now.php:271
+#: widgets/woo_buy_now.php:304 widgets/woo_menu_cart.php:847
+#: widgets/woo_menu_cart.php:887 widgets/woo_menu_cart.php:962
+#: widgets/woo_menu_cart.php:993 widgets/woo_menu_cart.php:1127
+#: widgets/woo_mini_cart.php:449 widgets/woo_mini_cart.php:489
+#: widgets/woo_mini_cart.php:564 widgets/woo_mini_cart.php:595
+#: widgets/woo_mini_cart.php:694 widgets/woo_search.php:657
+#: widgets/woo_search.php:689 widgets/woo_shop_toolbar.php:574
+#: widgets/woo_shop_toolbar.php:605
+msgid "Background Color"
+msgstr ""
+
+#: widgets/bew_fullpage.php:163
+msgctxt "Background Control"
+msgid "Auto"
+msgstr ""
+
+#: widgets/bew_fullpage.php:162
+msgctxt "Background Control"
+msgid "Contain"
+msgstr ""
+
+#: widgets/bew_fullpage.php:161
+msgctxt "Background Control"
+msgid "Cover"
+msgstr ""
+
+#: widgets/bew_fullpage.php:146
+msgctxt "Background Control"
+msgid "Image"
+msgstr ""
+
+#: widgets/bew_fullpage.php:157
+msgctxt "Background Control"
+msgid "Size"
+msgstr ""
+
+#: widgets/bew_fullpage.php:226
+msgid "Background Overlay"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:79
+#, php-format
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1260 widgets/edd_dynamic_field.php:209
+#: widgets/woo_button.php:122 widgets/woo_buy_now.php:102
+msgid "Before"
+msgstr ""
+
+#: widgets/bew_fullpage.php:24
+msgid "BEW Fullpage"
+msgstr ""
+
+#: widgets/bew_menu.php:20
+msgid "BEW Menu"
+msgstr ""
+
+#: widgets/bew_mobile_first.php:30
+msgid "Bew Mobile First Design"
+msgstr ""
+
+#: widgets/woo_search.php:309
+msgid "Bold"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1684 widgets/edd_dynamic_field.php:783
+#: widgets/edd_dynamic_field.php:922 widgets/edd_dynamic_field.php:1000
+#: widgets/edd_dynamic_field.php:1233 widgets/edd_dynamic_field.php:1406
+#: widgets/edd_dynamic_field.php:1721 widgets/edd_grid.php:760
+#: widgets/edd_menu_cart.php:156 widgets/edd_menu_cart.php:274
+#: widgets/woo_button.php:375 widgets/woo_buy_now.php:345
+#: widgets/woo_menu_cart.php:329 widgets/woo_menu_cart.php:491
+#: widgets/woo_menu_cart.php:581 widgets/woo_menu_cart.php:627
+#: widgets/woo_menu_cart.php:921 widgets/woo_menu_cart.php:1024
+#: widgets/woo_mini_cart.php:183 widgets/woo_mini_cart.php:229
+#: widgets/woo_mini_cart.php:523 widgets/woo_mini_cart.php:626
+#: widgets/woo_search.php:414 widgets/woo_search.php:548
+#: widgets/woo_search.php:722 widgets/woo_shop_toolbar.php:259
+#: widgets/woo_shop_toolbar.php:421 widgets/woo_shop_toolbar.php:532
+#: widgets/woo_shop_toolbar.php:644
+msgid "Border"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1466 widgets/bew_fullpage.php:1503
+#: widgets/bew_fullpage.php:1818 widgets/edd_dynamic_field.php:763
+#: widgets/edd_dynamic_field.php:902 widgets/edd_dynamic_field.php:1206
+#: widgets/edd_dynamic_field.php:1386 widgets/edd_dynamic_field.php:1733
+#: widgets/edd_grid.php:505 widgets/edd_grid.php:666 widgets/edd_grid.php:825
+#: widgets/woo_button.php:347 widgets/woo_buy_now.php:317
+#: widgets/woo_menu_cart.php:902 widgets/woo_menu_cart.php:1005
+#: widgets/woo_mini_cart.php:504 widgets/woo_mini_cart.php:607
+#: widgets/woo_search.php:702 widgets/woo_shop_toolbar.php:617
+msgid "Border Color"
+msgstr ""
+
+#: widgets/woo_search.php:574
+msgid "Border Color Focus"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1422 widgets/bew_fullpage.php:1697
+#: widgets/bew_fullpage.php:1833 widgets/edd_dynamic_field.php:795
+#: widgets/edd_dynamic_field.php:934 widgets/edd_dynamic_field.php:1011
+#: widgets/edd_dynamic_field.php:1248 widgets/edd_dynamic_field.php:1418
+#: widgets/edd_dynamic_field.php:1560 widgets/edd_dynamic_field.php:1768
+#: widgets/edd_grid.php:774 widgets/edd_menu_cart.php:169
+#: widgets/edd_menu_cart.php:286 widgets/woo_button.php:387
+#: widgets/woo_buy_now.php:357 widgets/woo_menu_cart.php:342
+#: widgets/woo_menu_cart.php:503 widgets/woo_menu_cart.php:638
+#: widgets/woo_mini_cart.php:240 widgets/woo_search.php:426
+#: widgets/woo_search.php:558 widgets/woo_search.php:733
+#: widgets/woo_shop_toolbar.php:272 widgets/woo_shop_toolbar.php:433
+msgid "Border Radius"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1405 widgets/bew_fullpage.php:1797
+#: widgets/edd_dynamic_field.php:1748
+msgid "Border Width"
+msgstr ""
+
+#: widgets/bew_fullpage.php:442 widgets/bew_fullpage.php:1157
+msgid "Bottom"
+msgstr ""
+
+#. Name of the plugin
+msgid "Briefcase Elementor Widgets"
+msgstr ""
+
+#: briefcase-elementor-widgets.php:328
+msgid ""
+"Briefcase Elementor Widgets is not working because you are using an old "
+"version of Elementor."
+msgstr ""
+
+#: briefcase-elementor-widgets.php:304
+msgid ""
+"Briefcase Elementor Widgets is not working because you need to activate the "
+"Elementor plugin."
+msgstr ""
+
+#: briefcase-elementor-widgets.php:313
+msgid ""
+"Briefcase Elementor Widgets is not working because you need to install the "
+"Elementor plugin"
+msgstr ""
+
+#. Author of the plugin
+msgid "BriefcaseWP"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1366 widgets/edd_dynamic_field.php:258
+#: widgets/edd_grid.php:384
+msgid "Button"
+msgstr ""
+
+#: widgets/woo_search.php:184
+msgid "Button Icon"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:1286 widgets/woo_button.php:492
+#: widgets/woo_buy_now.php:392
+msgid "Button Margin"
+msgstr ""
+
+#: widgets/bew_fullpage.php:341
+msgid "Button Only"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:254 widgets/edd_grid.php:380
+msgid "Button Style"
+msgstr ""
+
+#: widgets/bew_fullpage.php:313 widgets/edd_grid.php:352
+#: widgets/woo_search.php:169
+msgid "Button Text"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:274 widgets/edd_grid.php:402
+#: widgets/woo_button.php:53
+msgid "Button Type"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:770 widgets/woo_mini_cart.php:372
+msgid "Buttons"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:145 widgets/woo_mini_cart.php:101
+msgid "Buttons Layout"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:282 widgets/edd_grid.php:410
+#: widgets/woo_buy_now.php:46 widgets/woo_buy_now.php:80
+#: widgets/woo_buy_now.php:81 widgets/woo_buy_now.php:234
+msgid "Buy Now"
+msgstr ""
+
+#: widgets/woo_buy_now.php:53
+msgid "Buy Now Button by ID"
+msgstr ""
+
+#: widgets/woo_buy_now.php:65
+msgid "Buy Now ID"
+msgstr ""
+
+#: widgets/woo_buy_now.php:141
+msgid "Cart"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:1060 widgets/woo_shop_toolbar.php:469
+msgid "Cart Dropdown"
+msgstr ""
+
+#: widgets/edd_menu_cart.php:114 widgets/woo_menu_cart.php:237
+#: widgets/woo_shop_toolbar.php:167
+msgid "Cart Icon"
+msgstr ""
+
+#: widgets/edd_menu_cart.php:184 widgets/woo_menu_cart.php:357
+#: widgets/woo_shop_toolbar.php:287
+msgid "Cart Quantity"
+msgstr ""
+
+#: widgets/woo_mini_cart.php:663
+msgid "Cart Sidebar"
+msgstr ""
+
+#: widgets/edd_menu_cart.php:95 widgets/woo_menu_cart.php:116
+#: widgets/woo_shop_toolbar.php:116
+msgid "Cart Style"
+msgstr ""
+
+#: widgets/woo_search.php:95 widgets/woo_search.php:588
+msgid "Categories"
+msgstr ""
+
+#: widgets/woo_search.php:518
+msgid "Categories Input Width"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:39
+msgid "Category:"
+msgid_plural "Categories:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: widgets/bew_fullpage.php:393 widgets/bew_fullpage.php:483
+#: widgets/bew_fullpage.php:1128 widgets/bew_fullpage.php:1177
+#: widgets/edd_dynamic_field.php:646 widgets/edd_menu_cart.php:53
+#: widgets/woo_button.php:245 widgets/woo_buy_now.php:213
+#: widgets/woo_menu_cart.php:61 widgets/woo_mini_cart.php:71
+#: widgets/woo_search.php:272 widgets/woo_shop_toolbar.php:62
+msgid "Center"
+msgstr ""
+
+#: widgets/woo_search.php:995
+msgid "character"
+msgid_plural "characters"
+msgstr[0] ""
+msgstr[1] ""
+
+#: widgets/edd_dynamic_field.php:1431
+msgid "Checked Color"
+msgstr ""
+
+#: widgets/woo_buy_now.php:142 widgets/woo_menu_cart.php:934
+#: widgets/woo_mini_cart.php:536
+msgid "Checkout"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:109
+msgid "Choose Field"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:94
+msgid "Choose from the available dynamic fields below."
+msgstr ""
+
+#: widgets/bew_fullpage.php:633 widgets/edd_grid.php:109
+msgid "Choose Template"
+msgstr ""
+
+#: widgets/edd_menu_cart.php:99 widgets/woo_menu_cart.php:120
+#: widgets/woo_shop_toolbar.php:120
+msgid "Circle"
+msgstr ""
+
+#: widgets/bew_fullpage.php:658 widgets/bew_fullpage.php:665
+#: widgets/bew_fullpage.php:672
+msgid ""
+"Click edit button to change this text. Lorem ipsum dolor sit amet "
+"consectetur adipiscing elit dolor"
+msgstr ""
+
+#: widgets/bew_fullpage.php:315 widgets/bew_fullpage.php:659
+#: widgets/bew_fullpage.php:666 widgets/bew_fullpage.php:673
+msgid "Click Here"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:190 widgets/woo_menu_cart.php:191
+msgid "Close"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:1116
+msgid "Close Button Color"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:188
+msgid "Close Text"
+msgstr ""
+
+#: widgets/edd_grid.php:126
+msgid "Code"
+msgstr ""
+
+#: widgets/bew_fullpage.php:134 widgets/bew_fullpage.php:246
+#: widgets/bew_fullpage.php:1654 widgets/bew_fullpage.php:1765
+#: widgets/bew_menu.php:315 widgets/bew_menu.php:349
+#: widgets/edd_dynamic_field.php:1329 widgets/edd_dynamic_field.php:1596
+#: widgets/edd_dynamic_field.php:1813 widgets/edd_grid.php:530
+#: widgets/edd_grid.php:587 widgets/edd_grid.php:726 widgets/edd_grid.php:813
+#: widgets/edd_grid.php:859 widgets/edd_grid.php:903
+#: widgets/woo_menu_cart.php:276 widgets/woo_menu_cart.php:298
+#: widgets/woo_menu_cart.php:387 widgets/woo_search.php:352
+#: widgets/woo_search.php:373 widgets/woo_shop_toolbar.php:206
+#: widgets/woo_shop_toolbar.php:228 widgets/woo_shop_toolbar.php:317
+msgid "Color"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:1824
+msgid "Color Titles"
+msgstr ""
+
+#: widgets/edd_grid.php:541 widgets/edd_grid.php:914
+msgid "Color: Hover"
+msgstr ""
+
+#: widgets/woo_button.php:57 widgets/woo_button.php:156
+msgid "Compare"
+msgstr ""
+
+#: widgets/bew_fullpage.php:266
+msgid "Content"
+msgstr ""
+
+#: widgets/bew_fullpage.php:514
+msgid "Content Color"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:1173 widgets/woo_mini_cart.php:740
+msgid "Content Inline Style"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1074
+msgid "Content Width"
+msgstr ""
+
+#: widgets/bew_fullpage.php:107
+msgid "Convert to horizontal slide"
+msgstr ""
+
+#: widgets/bew_fullpage.php:371 widgets/edd_menu_cart.php:102
+#: widgets/woo_button.php:59 widgets/woo_buy_now.php:143
+#: widgets/woo_menu_cart.php:123 widgets/woo_shop_toolbar.php:123
+msgid "Custom"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:148
+msgid "Custom Add to cart by ID"
+msgstr ""
+
+#: widgets/woo_buy_now.php:153
+msgid "Custom Redirect Location"
+msgstr ""
+
+#: widgets/woo_button.php:95
+msgid "Custom Text"
+msgstr ""
+
+#: widgets/edd_grid.php:224
+msgid "Date"
+msgstr ""
+
+#: widgets/edd_grid.php:209 widgets/edd_grid.php:223
+#: includes/metabox/metabox.php:249 widgets/classes/products-renderer.php:408
+msgid "Default"
+msgstr ""
+
+#: widgets/edd_grid.php:210
+msgid "DESC"
+msgstr ""
+
+#: widgets/bew_fullpage.php:300 widgets/bew_fullpage.php:1317
+#: widgets/bew_menu.php:99 widgets/bew_menu.php:340 widgets/woo_search.php:240
+msgid "Description"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:446 widgets/edd_dynamic_field.php:1585
+msgid "Details"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:1032
+msgid "Dimensions"
+msgstr ""
+
+#: includes/metabox/metabox.php:276 includes/metabox/metabox.php:298
+#: includes/metabox/metabox.php:345
+msgid "Disable"
+msgstr ""
+
+#: widgets/edd_menu_cart.php:226 widgets/woo_menu_cart.php:410
+#: widgets/woo_shop_toolbar.php:340
+msgid "Display Arrow"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:616
+msgid "Display Author Titles\t"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:531
+msgid "Display Avatar"
+msgstr ""
+
+#: widgets/edd_grid.php:340
+msgid "Display Button"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:495 widgets/edd_grid.php:426
+msgid "Display Categories"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:456
+msgid "Display Date Published"
+msgstr ""
+
+#: widgets/edd_grid.php:438
+msgid "Display Excerpt"
+msgstr ""
+
+#: widgets/edd_grid.php:460
+msgid "Display FREE Label"
+msgstr ""
+
+#: widgets/edd_grid.php:281
+msgid "Display Image Overlay"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:555
+msgid "Display Name"
+msgstr ""
+
+#: widgets/edd_grid.php:305
+msgid "Display Price"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:241 widgets/edd_grid.php:365
+msgid "Display Price on Button"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:468
+msgid "Display Sales"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:567
+msgid "Display Signup Date"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:543
+msgid "Display Store Name"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:507
+msgid "Display Tags"
+msgstr ""
+
+#: widgets/edd_menu_cart.php:241 widgets/woo_menu_cart.php:458
+#: widgets/woo_shop_toolbar.php:388
+msgid "Display Text"
+msgstr ""
+
+#: widgets/edd_grid.php:293
+msgid "Display Title"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:798 widgets/woo_mini_cart.php:400
+msgid "Display View Cart Button"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:579
+msgid "Display Website"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1528
+msgid "Dots"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1575
+msgid "Dots Active Color"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1560
+msgid "Dots Color"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1590
+msgid "Dots Hover Color"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1605
+msgid "Dots Separation"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1540
+msgid "Dots Size"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:164
+msgid "Download ID"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:135
+msgid "Dropdown"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:87
+msgid "Dynamic Field"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:39
+msgid "EDD Dynamic Field"
+msgstr ""
+
+#: widgets/edd_grid.php:24 widgets/edd_grid.php:144
+msgid "Edd Grid"
+msgstr ""
+
+#: widgets/edd_menu_cart.php:37
+msgid "EDD Menu Cart"
+msgstr ""
+
+#: widgets/edd_menu_cart.php:20
+msgid "Edd Menu Cart"
+msgstr ""
+
+#: includes/metabox/metabox.php:254
+msgid "Edd Shop"
+msgstr ""
+
+#: includes/metabox/metabox.php:253
+msgid "Edd Single Product"
+msgstr ""
+
+#: widgets/edd_grid.php:151
+msgid "Edds Per Page"
+msgstr ""
+
+#: briefcase-elementor-widgets.php:454 widgets/edd_grid.php:261
+msgid "Elements"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:88
+msgid "Email *"
+msgstr ""
+
+#: widgets/bew_mobile_first.php:38 includes/metabox/metabox.php:275
+#: includes/metabox/metabox.php:297 includes/metabox/metabox.php:344
+msgid "Enable"
+msgstr ""
+
+#: widgets/woo_buy_now.php:156
+msgid "Enter a full Url"
+msgstr ""
+
+#: widgets/edd_grid.php:240 widgets/edd_grid.php:250
+msgid "Enter the categories slugs seperated by a \"comma\""
+msgstr ""
+
+#: widgets/edd_grid.php:192
+msgid "Equal Heights"
+msgstr ""
+
+#: widgets/bew_fullpage.php:62
+msgid ""
+"Example for mobile device use <b>480px</b> (Width) and/or <b>568px</b> "
+"(Height)."
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:371 widgets/edd_dynamic_field.php:818
+#: widgets/edd_grid.php:848 widgets/woo_search.php:82
+msgid "Excerpt"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:381 widgets/edd_grid.php:450
+msgid "Excerpt Length"
+msgstr ""
+
+#: widgets/edd_grid.php:249
+msgid "Exclude Categories"
+msgstr ""
+
+#: widgets/bew_fullpage.php:74
+msgid "Extra Large"
+msgstr ""
+
+#: widgets/bew_fullpage.php:70
+msgid "Extra Small"
+msgstr ""
+
+#: widgets/woo_shop_toolbar.php:701 widgets/classes/products-renderer.php:312
+msgid "Filters"
+msgstr ""
+
+#: widgets/edd_grid.php:183
+msgid "Fit Rows"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:430 widgets/edd_grid.php:326
+msgid "FREE"
+msgstr ""
+
+#: widgets/edd_grid.php:318
+msgid "FREE Price Style "
+msgstr ""
+
+#: widgets/bew_fullpage.php:759
+msgid "Fullpage"
+msgstr ""
+
+#: widgets/bew_fullpage.php:83
+msgid "Fullpage General"
+msgstr ""
+
+#: widgets/bew_fullpage.php:657
+msgid "Fullpage Heading 1"
+msgstr ""
+
+#: widgets/bew_fullpage.php:664
+msgid "Fullpage Heading 2"
+msgstr ""
+
+#: widgets/bew_fullpage.php:671
+msgid "Fullpage Heading 3"
+msgstr ""
+
+#: widgets/bew_fullpage.php:747
+msgid "Fullpage Options"
+msgstr ""
+
+#: widgets/bew_fullpage.php:656
+msgid "Fullpage Section 1"
+msgstr ""
+
+#: widgets/bew_fullpage.php:663
+msgid "Fullpage Section 2"
+msgstr ""
+
+#: widgets/bew_fullpage.php:670
+msgid "Fullpage Section 3"
+msgstr ""
+
+#: widgets/bew_fullpage.php:651
+msgid "Fullpage Sections"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1066
+msgid "Fullpages"
+msgstr ""
+
+#: widgets/woo_search.php:138
+msgid "Fullwidth Results"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:1698 widgets/edd_dynamic_field.php:1838
+msgid "Gap"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:630 widgets/woo_button.php:229
+msgid "General"
+msgstr ""
+
+#: widgets/edd_menu_cart.php:322 widgets/woo_menu_cart.php:204
+#: widgets/woo_shop_toolbar.php:134
+msgid "General Style"
+msgstr ""
+
+#: includes/metabox/metabox.php:331
+msgid "Global"
+msgstr ""
+
+#: includes/metabox/metabox.php:341
+msgid "Global Template"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:107
+msgid "Good"
+msgstr ""
+
+#: widgets/edd_grid.php:486
+msgid "Grid"
+msgstr ""
+
+#: widgets/edd_grid.php:162
+msgid "Grid Columns"
+msgstr ""
+
+#: widgets/edd_grid.php:179
+msgid "Grid Style"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:1096 widgets/woo_mini_cart.php:674
+msgid "Header"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:1163 widgets/woo_mini_cart.php:730
+msgid "Header Border"
+msgstr ""
+
+#: widgets/bew_fullpage.php:276
+msgid "Heading"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:175 widgets/woo_mini_cart.php:131
+msgid "Heading Text"
+msgstr ""
+
+#: widgets/bew_fullpage.php:546 widgets/bew_fullpage.php:685
+#: widgets/bew_fullpage.php:715 widgets/bew_menu.php:137
+#: widgets/edd_dynamic_field.php:1059 widgets/woo_button.php:444
+msgid "Height"
+msgstr ""
+
+#: widgets/bew_fullpage.php:595 widgets/edd_dynamic_field.php:245
+#: widgets/edd_dynamic_field.php:460 widgets/edd_dynamic_field.php:472
+#: widgets/edd_dynamic_field.php:499 widgets/edd_dynamic_field.php:511
+#: widgets/edd_dynamic_field.php:535 widgets/edd_dynamic_field.php:547
+#: widgets/edd_dynamic_field.php:559 widgets/edd_dynamic_field.php:571
+#: widgets/edd_dynamic_field.php:583 widgets/edd_dynamic_field.php:620
+#: widgets/edd_grid.php:70 widgets/edd_grid.php:285 widgets/edd_grid.php:297
+#: widgets/edd_grid.php:309 widgets/edd_grid.php:344 widgets/edd_grid.php:369
+#: widgets/edd_grid.php:430 widgets/edd_grid.php:442 widgets/edd_grid.php:464
+#: widgets/edd_grid.php:476 widgets/edd_menu_cart.php:230
+#: widgets/edd_menu_cart.php:245 widgets/woo_menu_cart.php:414
+#: widgets/woo_menu_cart.php:462 widgets/woo_menu_cart.php:802
+#: widgets/woo_mini_cart.php:404 widgets/woo_shop_toolbar.php:344
+#: widgets/woo_shop_toolbar.php:392
+msgid "Hide"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1054
+msgid "Hide Menu on Scroll Down"
+msgstr ""
+
+#: widgets/bew_fullpage.php:865
+msgid "Horizontal Dots"
+msgstr ""
+
+#: widgets/bew_fullpage.php:384 widgets/bew_fullpage.php:1118
+msgid "Horizontal Position"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1476 widgets/bew_menu.php:204
+#: widgets/edd_dynamic_field.php:732 widgets/edd_dynamic_field.php:871
+#: widgets/edd_dynamic_field.php:1172 widgets/edd_dynamic_field.php:1354
+#: widgets/edd_menu_cart.php:354 widgets/woo_button.php:316
+#: widgets/woo_buy_now.php:285 widgets/woo_menu_cart.php:291
+#: widgets/woo_menu_cart.php:863 widgets/woo_menu_cart.php:975
+#: widgets/woo_mini_cart.php:465 widgets/woo_mini_cart.php:577
+#: widgets/woo_search.php:366 widgets/woo_search.php:671
+#: widgets/woo_shop_toolbar.php:221 widgets/woo_shop_toolbar.php:587
+msgid "Hover"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:1542
+msgid "Hover Animation"
+msgstr ""
+
+#: widgets/woo_search.php:814
+msgid "Hover Background"
+msgstr ""
+
+#: widgets/bew_fullpage.php:327
+msgid "http://your-link.com"
+msgstr ""
+
+#: widgets/bew_menu.php:69
+msgid "http://your-page-link.com"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://briefcasewp.com"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://briefcasewp.com/briefcase-elementor-widgets"
+msgstr ""
+
+#: widgets/woo_buy_now.php:155
+msgid "https://yourdomain.com/custom-location"
+msgstr ""
+
+#: widgets/bew_fullpage.php:302 widgets/bew_menu.php:101
+msgid ""
+"I am slide content. Click edit button to change this text. Lorem ipsum dolor "
+"sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec "
+"ullamcorper mattis, pulvinar dapibus leo."
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:192 widgets/woo_button.php:105
+#: widgets/woo_buy_now.php:88 widgets/woo_search.php:59
+msgid "Icon"
+msgstr ""
+
+#: widgets/woo_search.php:293
+msgid "Icon Button"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:205 widgets/woo_button.php:118
+#: widgets/woo_buy_now.php:98
+msgid "Icon Position"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:221 widgets/woo_button.php:134
+#: widgets/woo_buy_now.php:111
+msgid "Icon Spacing"
+msgstr ""
+
+#: widgets/woo_button.php:182
+msgid "Icon style"
+msgstr ""
+
+#: widgets/edd_menu_cart.php:71 widgets/woo_menu_cart.php:80
+#: widgets/woo_search.php:304 widgets/woo_shop_toolbar.php:80
+msgid "Icon Type"
+msgstr ""
+
+#: widgets/edd_grid.php:230
+msgid "ID"
+msgstr ""
+
+#: widgets/bew_menu.php:75 widgets/bew_menu.php:80 widgets/bew_menu.php:256
+#: widgets/edd_dynamic_field.php:297 widgets/edd_dynamic_field.php:1482
+msgid "Image"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:1551
+msgid "Image Border"
+msgstr ""
+
+#: widgets/bew_menu.php:272
+msgid "Image Fixed"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:317
+msgid "Image Link"
+msgstr ""
+
+#: widgets/bew_menu.php:264 widgets/edd_dynamic_field.php:307
+#: widgets/edd_dynamic_field.php:1681 widgets/edd_grid.php:271
+#: widgets/woo_menu_cart.php:608 widgets/woo_mini_cart.php:210
+msgid "Image Size"
+msgstr ""
+
+#: widgets/bew_menu.php:248
+msgid "Image Style"
+msgstr ""
+
+#: widgets/woo_button.php:69
+msgid ""
+"IMPORTANT: \"Compare\" button. This feature requires <a href=\"https:"
+"//wordpress.org/plugins/woo-smart-compare/\" target=\"_blank\">WPC Smart "
+"Compare for WooCommerce plugin</a> ."
+msgstr ""
+
+#: widgets/woo_button.php:81
+msgid ""
+"IMPORTANT: \"Wishlist\" button. This feature requires <a href=\"https:"
+"//wordpress.org/plugins/ti-woocommerce-wishlist/\" target=\"_blank\">TI "
+"WooCommerce Wishlist plugin</a> ."
+msgstr ""
+
+#: widgets/bew_fullpage.php:812
+msgid ""
+"IMPORTANT: The parallax transition only works if you have the Fullpage "
+"Parallax Extension."
+msgstr ""
+
+#: widgets/bew_fullpage.php:208
+msgid "In"
+msgstr ""
+
+#: widgets/edd_grid.php:239
+msgid "Include Categories"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:149 widgets/woo_mini_cart.php:105
+msgid "Inline"
+msgstr ""
+
+#: widgets/woo_search.php:63
+msgid "Input"
+msgstr ""
+
+#: briefcase-elementor-widgets.php:314
+msgid "Install Elementor Now"
+msgstr ""
+
+#: widgets/edd_grid.php:1303 widgets/classes/products-renderer.php:1466
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for."
+msgstr ""
+
+#: widgets/bew_menu.php:58
+msgid "Item"
+msgstr ""
+
+#: widgets/bew_menu.php:116
+msgid "Item 1 name"
+msgstr ""
+
+#: widgets/bew_menu.php:121
+msgid "Item 2 name"
+msgstr ""
+
+#: widgets/bew_menu.php:125
+msgid "Item 3 name"
+msgstr ""
+
+#: widgets/bew_menu.php:111
+msgid "Items"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:654
+msgid "Justified"
+msgstr ""
+
+#: widgets/bew_fullpage.php:924
+msgid "Keep Playing Video"
+msgstr ""
+
+#: widgets/bew_fullpage.php:184
+msgid "Ken Burns Effect"
+msgstr ""
+
+#: widgets/bew_fullpage.php:73
+msgid "Large"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:591
+msgid "Layout"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:81
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: widgets/bew_fullpage.php:389 widgets/bew_fullpage.php:479
+#: widgets/bew_fullpage.php:854 widgets/bew_fullpage.php:1124
+#: widgets/bew_fullpage.php:1173 widgets/edd_dynamic_field.php:596
+#: widgets/edd_dynamic_field.php:642 widgets/edd_menu_cart.php:49
+#: widgets/woo_button.php:241 widgets/woo_buy_now.php:209
+#: widgets/woo_menu_cart.php:57 widgets/woo_mini_cart.php:67
+#: widgets/woo_search.php:268 widgets/woo_shop_toolbar.php:58
+msgid "Left"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:1100
+msgid "Left/Right"
+msgstr ""
+
+#: widgets/woo_search.php:308
+msgid "Light"
+msgstr ""
+
+#: widgets/woo_search.php:227
+msgid "Limit Products"
+msgstr ""
+
+#: widgets/bew_fullpage.php:325 widgets/bew_menu.php:67
+#: widgets/edd_dynamic_field.php:136
+msgid "Link"
+msgstr ""
+
+#: widgets/edd_menu_cart.php:339 widgets/edd_menu_cart.php:361
+msgid "Links Color"
+msgstr ""
+
+#: widgets/bew_menu.php:43
+msgid "List"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1866 widgets/bew_menu.php:234
+#: widgets/bew_menu.php:296 widgets/edd_dynamic_field.php:1468
+#: widgets/edd_dynamic_field.php:1631 widgets/edd_dynamic_field.php:1878
+#: widgets/edd_menu_cart.php:256 widgets/woo_menu_cart.php:223
+#: widgets/woo_menu_cart.php:473 widgets/woo_menu_cart.php:758
+#: widgets/woo_menu_cart.php:1046 widgets/woo_menu_cart.php:1150
+#: widgets/woo_mini_cart.php:360 widgets/woo_mini_cart.php:648
+#: widgets/woo_mini_cart.php:717 widgets/woo_search.php:401
+#: widgets/woo_shop_toolbar.php:153 widgets/woo_shop_toolbar.php:403
+msgid "Margin"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:695 widgets/woo_mini_cart.php:297
+#: widgets/woo_search.php:890
+msgid "Margin Products"
+msgstr ""
+
+#: widgets/edd_grid.php:184
+msgid "Masonry"
+msgstr ""
+
+#: widgets/bew_fullpage.php:72
+msgid "Medium"
+msgstr ""
+
+#: widgets/bew_menu.php:52
+msgid "Menu"
+msgstr ""
+
+#: widgets/bew_menu.php:174
+msgid "Menu Item"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1046
+msgid "Menu Options"
+msgstr ""
+
+#: widgets/edd_grid.php:231
+msgid "Menu Order"
+msgstr ""
+
+#: widgets/bew_menu.php:166
+msgid "Menu Style"
+msgstr ""
+
+#: widgets/edd_grid.php:881
+msgid "Meta"
+msgstr ""
+
+#: widgets/bew_fullpage.php:438 widgets/bew_fullpage.php:1153
+#: widgets/edd_dynamic_field.php:1667
+msgid "Middle"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:539 widgets/woo_mini_cart.php:144
+msgid "Mini Cart"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:131 widgets/woo_mini_cart.php:89
+msgid "Mini Cart Style"
+msgstr ""
+
+#: widgets/edd_menu_cart.php:101 widgets/woo_menu_cart.php:122
+#: widgets/woo_shop_toolbar.php:122
+msgid "Minimalist"
+msgstr ""
+
+#: widgets/woo_search.php:214
+msgid "Minimum Character"
+msgstr ""
+
+#: widgets/bew_fullpage.php:755
+msgid "Mode"
+msgstr ""
+
+#: widgets/edd_grid.php:227
+msgid "Modified"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:34
+msgid "N/A"
+msgstr ""
+
+#: widgets/edd_grid.php:226
+msgid "Name"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:86
+msgid "Name *"
+msgstr ""
+
+#: widgets/bew_fullpage.php:827 widgets/bew_fullpage.php:1520
+msgid "Navigation"
+msgstr ""
+
+#: widgets/classes/products-renderer.php:411
+msgid "Newness"
+msgstr ""
+
+#: briefcase-elementor-widgets.php:437 woocommerce/loop/pagination.php:49
+msgid "Next"
+msgstr ""
+
+#: widgets/bew_menu.php:276 widgets/edd_grid.php:197
+msgid "No"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1439 widgets/bew_menu.php:183
+#: widgets/edd_dynamic_field.php:135 widgets/edd_dynamic_field.php:700
+#: widgets/edd_dynamic_field.php:839 widgets/edd_dynamic_field.php:1137
+#: widgets/edd_dynamic_field.php:1322 widgets/edd_grid.php:705
+#: widgets/edd_menu_cart.php:332 widgets/woo_button.php:284
+#: widgets/woo_buy_now.php:252 widgets/woo_menu_cart.php:269
+#: widgets/woo_menu_cart.php:823 widgets/woo_menu_cart.php:944
+#: widgets/woo_mini_cart.php:425 widgets/woo_mini_cart.php:546
+#: widgets/woo_search.php:345 widgets/woo_search.php:639
+#: widgets/woo_shop_toolbar.php:199 widgets/woo_shop_toolbar.php:556
+msgid "Normal"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:109
+msgid "Not that bad"
+msgstr ""
+
+#: widgets/bew_fullpage.php:105 widgets/bew_fullpage.php:118
+#: widgets/bew_fullpage.php:559 widgets/bew_fullpage.php:572
+#: widgets/bew_mobile_first.php:41 widgets/edd_dynamic_field.php:152
+#: widgets/edd_dynamic_field.php:321 widgets/edd_dynamic_field.php:334
+#: widgets/edd_dynamic_field.php:360 widgets/edd_dynamic_field.php:407
+#: widgets/woo_button.php:170 widgets/woo_button.php:186
+#: widgets/woo_button.php:214 widgets/woo_buy_now.php:57
+#: widgets/woo_buy_now.php:197 widgets/woo_menu_cart.php:1177
+#: widgets/woo_mini_cart.php:744 widgets/woo_search.php:101
+#: widgets/woo_search.php:114 widgets/woo_search.php:127
+#: widgets/woo_search.php:142 widgets/woo_search.php:158
+#: widgets/woo_search.php:188 widgets/woo_search.php:204
+msgid "Off"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:136 widgets/woo_menu_cart.php:166
+#: widgets/woo_menu_cart.php:1085
+msgid "Off Canvas"
+msgstr ""
+
+#: widgets/bew_fullpage.php:104 widgets/bew_fullpage.php:117
+#: widgets/bew_fullpage.php:558 widgets/bew_fullpage.php:571
+#: widgets/bew_mobile_first.php:40 widgets/edd_dynamic_field.php:151
+#: widgets/edd_dynamic_field.php:320 widgets/edd_dynamic_field.php:333
+#: widgets/edd_dynamic_field.php:359 widgets/edd_dynamic_field.php:406
+#: widgets/woo_button.php:169 widgets/woo_button.php:185
+#: widgets/woo_button.php:213 widgets/woo_buy_now.php:56
+#: widgets/woo_buy_now.php:196 widgets/woo_menu_cart.php:1176
+#: widgets/woo_mini_cart.php:743 widgets/woo_search.php:100
+#: widgets/woo_search.php:113 widgets/woo_search.php:126
+#: widgets/woo_search.php:141 widgets/woo_search.php:157
+#: widgets/woo_search.php:187 widgets/woo_search.php:203
+msgid "On"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1015
+msgid "Onleave Callback"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:124
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:1521
+msgid "Opacity (%)"
+msgstr ""
+
+#: widgets/edd_grid.php:205
+msgid "Order"
+msgstr ""
+
+#: widgets/edd_grid.php:219
+msgid "Order By"
+msgstr ""
+
+#: widgets/bew_fullpage.php:209
+msgid "Out"
+msgstr ""
+
+#: widgets/edd_grid.php:622
+msgid "Overlay Buttons"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1106 widgets/bew_fullpage.php:1712
+#: widgets/bew_fullpage.php:1850 widgets/bew_menu.php:284
+#: widgets/edd_dynamic_field.php:1455 widgets/edd_dynamic_field.php:1618
+#: widgets/edd_dynamic_field.php:1865 widgets/edd_grid.php:561
+#: widgets/edd_grid.php:607 widgets/edd_grid.php:677 widgets/edd_grid.php:746
+#: widgets/edd_menu_cart.php:143 widgets/edd_menu_cart.php:298
+#: widgets/woo_menu_cart.php:211 widgets/woo_menu_cart.php:316
+#: widgets/woo_menu_cart.php:515 widgets/woo_menu_cart.php:746
+#: widgets/woo_menu_cart.php:1034 widgets/woo_menu_cart.php:1138
+#: widgets/woo_mini_cart.php:348 widgets/woo_mini_cart.php:636
+#: widgets/woo_mini_cart.php:705 widgets/woo_search.php:389
+#: widgets/woo_shop_toolbar.php:141 widgets/woo_shop_toolbar.php:246
+#: widgets/woo_shop_toolbar.php:445
+msgid "Padding"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:683 widgets/woo_mini_cart.php:285
+#: widgets/woo_search.php:878
+msgid "Padding Product"
+msgstr ""
+
+#: widgets/bew_fullpage.php:775
+msgid "Parallax"
+msgstr ""
+
+#: widgets/bew_fullpage.php:800
+msgid "Parallax Extension"
+msgstr ""
+
+#: widgets/bew_fullpage.php:114
+msgid "Parent Slide"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:106
+msgid "Perfect"
+msgstr ""
+
+#: widgets/woo_search.php:481
+msgid "Placeholder Text Color"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:262 widgets/edd_grid.php:388
+msgid "Plain Text"
+msgstr ""
+
+#: widgets/classes/products-renderer.php:409
+msgid "Popularity"
+msgstr ""
+
+#: widgets/bew_fullpage.php:849 widgets/bew_fullpage.php:1254
+#: widgets/edd_dynamic_field.php:1073 widgets/edd_menu_cart.php:45
+#: widgets/woo_button.php:237 widgets/woo_buy_now.php:205
+#: widgets/woo_menu_cart.php:53 widgets/woo_mini_cart.php:63
+#: widgets/woo_search.php:264 widgets/woo_shop_toolbar.php:54
+msgid "Position"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:403
+msgid "Position Absolute"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:1072
+msgid "Position Top"
+msgstr ""
+
+#: briefcase-elementor-widgets.php:436 woocommerce/loop/pagination.php:48
+msgid "Prev"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:393 widgets/edd_dynamic_field.php:957
+#: widgets/edd_grid.php:576
+msgid "Price"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:1301
+msgid "Price Options"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:422
+msgid "Price Style (FREE)  "
+msgstr ""
+
+#: widgets/classes/products-renderer.php:413
+msgid "Price: high to low"
+msgstr ""
+
+#: widgets/classes/products-renderer.php:412
+msgid "Price: low to high"
+msgstr ""
+
+#: widgets/woo_search.php:792
+msgid "Product Details Color"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:591 widgets/woo_mini_cart.php:193
+msgid "Product List"
+msgstr ""
+
+#: widgets/woo_search.php:803
+msgid "Product Price Color"
+msgstr ""
+
+#: widgets/woo_search.php:781
+msgid "Product Title Color"
+msgstr ""
+
+#: widgets/edd_grid.php:692
+msgid "Purchase Buttons"
+msgstr ""
+
+#: widgets/edd_menu_cart.php:214
+msgid "Quantity Background"
+msgstr ""
+
+#: widgets/edd_grid.php:229
+msgid "Random"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:105
+msgid "Rate&hellip;"
+msgstr ""
+
+#: widgets/woo_buy_now.php:128
+msgid "Redirect"
+msgstr ""
+
+#: widgets/woo_buy_now.php:138
+msgid "Redirect Location"
+msgstr ""
+
+#: widgets/classes/products-renderer.php:417
+msgid "Relevance"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:661 widgets/woo_mini_cart.php:263
+msgid "Remove Button Color"
+msgstr ""
+
+#: widgets/bew_fullpage.php:913
+msgid "Reset Sections Animation Mode"
+msgstr ""
+
+#: widgets/bew_fullpage.php:970
+msgid "Responsive Height(px)"
+msgstr ""
+
+#: widgets/bew_fullpage.php:946
+msgid "Responsive Sections"
+msgstr ""
+
+#: widgets/bew_fullpage.php:957
+msgid "Responsive Width(px)"
+msgstr ""
+
+#: widgets/woo_search.php:853
+msgid "Results Height"
+msgstr ""
+
+#: widgets/woo_search.php:825
+msgid "Results Width"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:38
+msgid "Reviews"
+msgstr ""
+
+#: widgets/bew_fullpage.php:397 widgets/bew_fullpage.php:487
+#: widgets/bew_fullpage.php:853 widgets/bew_fullpage.php:1132
+#: widgets/bew_fullpage.php:1181 widgets/edd_dynamic_field.php:604
+#: widgets/edd_dynamic_field.php:650 widgets/edd_menu_cart.php:57
+#: widgets/woo_button.php:249 widgets/woo_buy_now.php:217
+#: widgets/woo_menu_cart.php:65 widgets/woo_mini_cart.php:75
+#: widgets/woo_search.php:276 widgets/woo_shop_toolbar.php:66
+msgid "Right"
+msgstr ""
+
+#: widgets/bew_fullpage.php:789
+msgid "Scroll Horizontally"
+msgstr ""
+
+#: widgets/bew_fullpage.php:934
+msgid "Scroll Overflow"
+msgstr ""
+
+#: widgets/bew_fullpage.php:788
+msgid "Scroll Vertically"
+msgstr ""
+
+#: widgets/bew_fullpage.php:895
+msgid "Scrolling Speed"
+msgstr ""
+
+#: widgets/woo_search.php:171 widgets/woo_search.php:172
+#: widgets/woo_search.php:987 widgets/woo_search.php:1052
+msgid "Search"
+msgstr ""
+
+#: widgets/woo_search.php:628
+msgid "Search Button"
+msgstr ""
+
+#: widgets/woo_search.php:77
+msgid "Search by"
+msgstr ""
+
+#: widgets/woo_search.php:200
+msgid "Search Description"
+msgstr ""
+
+#: widgets/woo_search.php:442
+msgid "Search Form"
+msgstr ""
+
+#: widgets/woo_search.php:492
+msgid "Search Input Width"
+msgstr ""
+
+#: widgets/woo_search.php:253
+msgid "Search Placeholder"
+msgstr ""
+
+#: widgets/woo_search.php:950
+msgid "Search Posts..."
+msgstr ""
+
+#: widgets/woo_search.php:256 widgets/woo_search.php:257
+msgid "Search Products..."
+msgstr ""
+
+#: widgets/woo_search.php:772
+msgid "Search Results"
+msgstr ""
+
+#: widgets/woo_search.php:55
+msgid "Search Style"
+msgstr ""
+
+#: widgets/bew_fullpage.php:92
+msgid "Section Name"
+msgstr ""
+
+#: widgets/woo_shop_toolbar.php:689 widgets/classes/products-renderer.php:299
+msgid "See:"
+msgstr ""
+
+#: widgets/bew_fullpage.php:620 widgets/edd_grid.php:95
+msgid "Select"
+msgstr ""
+
+#: includes/metabox/metabox.php:247
+msgid "Select template type"
+msgstr ""
+
+#: widgets/woo_search.php:614
+msgid "Selected Background"
+msgstr ""
+
+#: widgets/woo_search.php:600
+msgid "Selected Color"
+msgstr ""
+
+#: widgets/bew_fullpage.php:374
+msgid "Set custom style that will only affect this specific slide."
+msgstr ""
+
+#: widgets/bew_fullpage.php:123
+msgid "Set this section a parent slide"
+msgstr ""
+
+#: includes/metabox/metabox.php:219
+msgid "Settings"
+msgstr ""
+
+#: widgets/edd_grid.php:472
+msgid "Shadow Effect"
+msgstr ""
+
+#: widgets/edd_menu_cart.php:79 widgets/woo_menu_cart.php:88
+#: widgets/woo_shop_toolbar.php:88
+msgid "Shopping Bag"
+msgstr ""
+
+#: widgets/edd_menu_cart.php:83 widgets/woo_menu_cart.php:92
+#: widgets/woo_shop_toolbar.php:92
+msgid "Shopping Basket"
+msgstr ""
+
+#: widgets/edd_menu_cart.php:75 widgets/woo_menu_cart.php:84
+#: widgets/woo_shop_toolbar.php:84
+msgid "Shopping Cart"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:100 widgets/woo_shop_toolbar.php:100
+msgid "Shopping Line Bag"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:104 widgets/woo_shop_toolbar.php:104
+msgid "Shopping Line Basket"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:96 widgets/woo_shop_toolbar.php:96
+msgid "Shopping Line Hand Bag"
+msgstr ""
+
+#: widgets/bew_fullpage.php:594 widgets/edd_dynamic_field.php:244
+#: widgets/edd_dynamic_field.php:459 widgets/edd_dynamic_field.php:471
+#: widgets/edd_dynamic_field.php:498 widgets/edd_dynamic_field.php:510
+#: widgets/edd_dynamic_field.php:534 widgets/edd_dynamic_field.php:546
+#: widgets/edd_dynamic_field.php:558 widgets/edd_dynamic_field.php:570
+#: widgets/edd_dynamic_field.php:582 widgets/edd_dynamic_field.php:619
+#: widgets/edd_grid.php:69 widgets/edd_grid.php:284 widgets/edd_grid.php:296
+#: widgets/edd_grid.php:308 widgets/edd_grid.php:343 widgets/edd_grid.php:368
+#: widgets/edd_grid.php:429 widgets/edd_grid.php:441 widgets/edd_grid.php:463
+#: widgets/edd_grid.php:475 widgets/edd_menu_cart.php:229
+#: widgets/edd_menu_cart.php:244 widgets/woo_menu_cart.php:413
+#: widgets/woo_menu_cart.php:461 widgets/woo_menu_cart.php:801
+#: widgets/woo_mini_cart.php:403 widgets/woo_shop_toolbar.php:343
+#: widgets/woo_shop_toolbar.php:391
+msgid "Show"
+msgstr ""
+
+#: widgets/woo_buy_now.php:166
+msgid "Show Buy Now Button for"
+msgstr ""
+
+#: widgets/woo_search.php:110
+msgid "Show Excerpt"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:330
+msgid "Show Free Label"
+msgstr ""
+
+#. %d: total results
+#: woocommerce/loop/result-count.php:29
+#, php-format
+msgid "Showing the single result"
+msgid_plural "Showing all %d results"
+msgstr[0] ""
+msgstr[1] ""
+
+#: widgets/woo_mini_cart.php:93 widgets/woo_mini_cart.php:122
+msgid "Sidebar"
+msgstr ""
+
+#: widgets/woo_buy_now.php:173
+msgid "Simple"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1374 widgets/bew_fullpage.php:1739
+#: widgets/edd_grid.php:633 widgets/edd_menu_cart.php:122
+#: widgets/woo_menu_cart.php:245 widgets/woo_search.php:321
+#: widgets/woo_shop_toolbar.php:175
+msgid "Size"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:1493
+msgid "Size (%)"
+msgstr ""
+
+#: widgets/woo_search.php:83
+msgid "SKU"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:32
+msgid "SKU:"
+msgstr ""
+
+#: widgets/bew_fullpage.php:101 widgets/bew_fullpage.php:774
+msgid "Slide"
+msgstr ""
+
+#: widgets/bew_menu.php:91
+msgid "Slide Heading"
+msgstr ""
+
+#: widgets/bew_fullpage.php:784
+msgid "Slide Style"
+msgstr ""
+
+#: widgets/bew_fullpage.php:71
+msgid "Small"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1205 widgets/bew_fullpage.php:1276
+#: widgets/bew_fullpage.php:1325
+msgid "Spacing"
+msgstr ""
+
+#: widgets/edd_menu_cart.php:100 widgets/woo_menu_cart.php:121
+#: widgets/woo_shop_toolbar.php:121
+msgid "Square"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:153 widgets/woo_mini_cart.php:109
+msgid "Stacked"
+msgstr ""
+
+#: widgets/bew_fullpage.php:363
+msgid "Style"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1246
+msgid "Sub Title"
+msgstr ""
+
+#: widgets/bew_fullpage.php:289
+msgid "Sub-Heading"
+msgstr ""
+
+#: widgets/bew_fullpage.php:287
+msgid "Sub-Title"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:91
+msgid "Submit"
+msgstr ""
+
+#: widgets/woo_search.php:154
+msgid "Submit Button"
+msgstr ""
+
+#: widgets/bew_fullpage.php:760
+msgid "Swiper"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:41
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: widgets/bew_fullpage.php:582 widgets/edd_grid.php:58
+#: includes/metabox/metabox.php:236
+msgid "Template"
+msgstr ""
+
+#: includes/metabox/metabox.php:246
+msgid "Template Type"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:178 widgets/woo_button.php:93
+#: widgets/woo_buy_now.php:78
+msgid "Text"
+msgstr ""
+
+#: widgets/bew_fullpage.php:474 widgets/bew_fullpage.php:1168
+msgid "Text Align"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1222 widgets/bew_fullpage.php:1293
+#: widgets/bew_fullpage.php:1342 widgets/bew_fullpage.php:1383
+#: widgets/bew_fullpage.php:1444 widgets/bew_fullpage.php:1481
+#: widgets/bew_menu.php:190 widgets/bew_menu.php:211
+#: widgets/edd_dynamic_field.php:707 widgets/edd_dynamic_field.php:739
+#: widgets/edd_dynamic_field.php:846 widgets/edd_dynamic_field.php:878
+#: widgets/edd_dynamic_field.php:976 widgets/edd_dynamic_field.php:1144
+#: widgets/edd_dynamic_field.php:1179 widgets/edd_dynamic_field.php:1361
+#: widgets/woo_button.php:291 widgets/woo_button.php:323
+#: widgets/woo_buy_now.php:259 widgets/woo_buy_now.php:292
+#: widgets/woo_menu_cart.php:833 widgets/woo_menu_cart.php:873
+#: widgets/woo_menu_cart.php:951 widgets/woo_menu_cart.php:982
+#: widgets/woo_mini_cart.php:435 widgets/woo_mini_cart.php:475
+#: widgets/woo_mini_cart.php:553 widgets/woo_mini_cart.php:584
+#: widgets/woo_search.php:458 widgets/woo_search.php:469
+#: widgets/woo_search.php:646 widgets/woo_search.php:678
+#: widgets/woo_shop_toolbar.php:563 widgets/woo_shop_toolbar.php:594
+msgid "Text Color"
+msgstr ""
+
+#: widgets/woo_search.php:759
+msgid "Text Margin"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:1273 widgets/woo_button.php:479
+#: widgets/woo_buy_now.php:379 widgets/woo_search.php:746
+msgid "Text Padding"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:62
+msgid "There are no reviews yet."
+msgstr ""
+
+#: widgets/bew_fullpage.php:274 widgets/bew_fullpage.php:1197
+#: widgets/bew_menu.php:308 widgets/edd_dynamic_field.php:345
+#: widgets/edd_dynamic_field.php:679 widgets/edd_grid.php:225
+#: widgets/edd_grid.php:519 widgets/woo_search.php:81
+msgid "Title"
+msgstr ""
+
+#: widgets/bew_menu.php:89
+msgid "Title & Description"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:1105 widgets/woo_mini_cart.php:683
+msgid "Title Color"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:356
+msgid "Title Link"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1035
+msgid ""
+"To use custom callbacks on your section, check the BEW Fullpage <a "
+"class=\"bew-widget-fullpage-documentation-url\" href=\"https://briefcasewp."
+"com/bew-fullpage-documentation/\" target=\"_blank\">documentation</a>."
+msgstr ""
+
+#: widgets/bew_fullpage.php:1630
+msgid "Tooltips"
+msgstr ""
+
+#: widgets/bew_fullpage.php:434 widgets/bew_fullpage.php:1149
+#: widgets/bew_fullpage.php:1261 widgets/edd_dynamic_field.php:1663
+#: widgets/woo_shop_toolbar.php:477
+msgid "Top"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:1086
+msgid "Top/Bottom"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:707 widgets/woo_mini_cart.php:309
+msgid "Total"
+msgstr ""
+
+#: widgets/bew_fullpage.php:770
+msgid "Transition"
+msgstr ""
+
+#: widgets/bew_fullpage.php:61
+msgid ""
+"Turn to normal scroll when the window size gets smaller than X Width or X "
+"Height."
+msgstr ""
+
+#: widgets/bew_fullpage.php:1235 widgets/bew_fullpage.php:1306
+#: widgets/bew_fullpage.php:1355 widgets/bew_fullpage.php:1396
+#: widgets/bew_fullpage.php:1643 widgets/bew_menu.php:226
+#: widgets/bew_menu.php:331 widgets/bew_menu.php:365
+msgid "Typography"
+msgstr ""
+
+#: widgets/woo_buy_now.php:183
+msgid "Underlines Button"
+msgstr ""
+
+#: briefcase-elementor-widgets.php:329 briefcase-elementor-widgets.php:343
+msgid "Update Elementor Now"
+msgstr ""
+
+#: widgets/bew_fullpage.php:591 widgets/edd_grid.php:66
+msgid "Use Custom Template"
+msgstr ""
+
+#: widgets/bew_fullpage.php:939
+msgid ""
+"Use ScrollOverflow to create a scroll for the section in case its content is "
+"bigger than the window height."
+msgstr ""
+
+#: widgets/bew_fullpage.php:561
+msgid "Use the original height section"
+msgstr ""
+
+#: widgets/bew_fullpage.php:574
+msgid ""
+"Use the original responsive height section (Note: It only works with the "
+"responsive section option enabled) "
+msgstr ""
+
+#: widgets/bew_fullpage.php:917
+msgid ""
+"Use this Mode to reset the elementor animations when you scrolling back or "
+"revisiting the section."
+msgstr ""
+
+#: widgets/woo_buy_now.php:174
+msgid "Variable"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:1658
+msgid "Vertical Align"
+msgstr ""
+
+#: widgets/bew_fullpage.php:836
+msgid "Vertical Dots"
+msgstr ""
+
+#: widgets/bew_fullpage.php:429 widgets/bew_fullpage.php:1143
+msgid "Vertical Position"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:110
+msgid "Very poor"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:668
+msgid "View"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:810 widgets/woo_mini_cart.php:412
+msgid "View Cart"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:2555
+msgid "Website:"
+msgstr ""
+
+#: widgets/bew_fullpage.php:340
+msgid "Whole Slide"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:1045 widgets/woo_button.php:408
+#: widgets/woo_menu_cart.php:547 widgets/woo_mini_cart.php:152
+#: widgets/woo_shop_toolbar.php:488
+msgid "Width"
+msgstr ""
+
+#: widgets/woo_button.php:58 widgets/woo_button.php:200
+msgid "Wishlist"
+msgstr ""
+
+#: widgets/woo_button.php:21
+msgid "Woo Action Button"
+msgstr ""
+
+#: widgets/woo_button.php:266
+msgid "Woo Button"
+msgstr ""
+
+#: widgets/woo_buy_now.php:21
+msgid "Woo Buy Now"
+msgstr ""
+
+#: widgets/woo_menu_cart.php:18 widgets/woo_menu_cart.php:45
+#: widgets/woo_shop_toolbar.php:46
+msgid "Woo Menu Cart"
+msgstr ""
+
+#: widgets/woo_mini_cart.php:28 widgets/woo_mini_cart.php:55
+msgid "Woo Mini Cart"
+msgstr ""
+
+#: widgets/woo_search.php:48
+msgid "Woo Products Search"
+msgstr ""
+
+#: widgets/woo_search.php:23
+msgid "Woo Search"
+msgstr ""
+
+#: widgets/woo_shop_toolbar.php:23
+msgid "Woo Shop Toolbar"
+msgstr ""
+
+#: includes/metabox/metabox.php:294
+msgid "Woocommerce Categories"
+msgstr ""
+
+#: includes/metabox/metabox.php:252
+msgid "Woocommerce Category"
+msgstr ""
+
+#: includes/metabox/metabox.php:251 includes/metabox/metabox.php:272
+msgid "Woocommerce Shop"
+msgstr ""
+
+#: includes/metabox/metabox.php:250
+msgid "Woocommerce Single Product"
+msgstr ""
+
+#: widgets/bew_fullpage.php:1005
+msgid ""
+"Write your own custom afterLoad callback. This callback fired once the "
+"sections have been loaded, after the scrolling has ended. Parameters:"
+"(anchorLink, index). "
+msgstr ""
+
+#: widgets/bew_fullpage.php:1026
+msgid ""
+"Write your own custom onleave callback. This callback is fired once the user "
+"leaves a section, in the transition to the new section. Parameters:(index, "
+"nextIndex, direction) "
+msgstr ""
+
+#: widgets/bew_menu.php:275 widgets/edd_grid.php:196
+msgid "Yes"
+msgstr ""
+
+#: widgets/edd_grid.php:152
+msgid "You can enter \"-1\" to display all posts."
+msgstr ""
+
+#: widgets/woo_search.php:78
+msgid "You can select multiples options"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:97
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a review."
+msgstr ""
+
+#: widgets/woo_menu_cart.php:177 widgets/woo_menu_cart.php:178
+#: widgets/woo_mini_cart.php:133 widgets/woo_mini_cart.php:134
+msgid "Your Cart"
+msgstr ""
+
+#: widgets/edd_dynamic_field.php:166
+msgid "Your download ID"
+msgstr ""
+
+#: widgets/woo_buy_now.php:67
+msgid "Your Product ID"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:103
+msgid "Your rating"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:114
+msgid "Your review *"
+msgstr ""
+
+#: widgets/bew_fullpage.php:204
+msgid "Zoom Direction"
+msgstr ""
