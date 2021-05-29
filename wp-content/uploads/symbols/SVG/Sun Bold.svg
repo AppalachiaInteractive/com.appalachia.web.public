@@ -106,10 +106,6 @@
       .cls-24 {
         mask: url(#mask-7);
       }
-
-      .cls-25 {
-        fill: #c9993d;
-      }
     </style>
     <pattern id="_431-K" data-name="431-K" width="74.56" height="74.55" patternTransform="translate(-514.72 -1201.22) scale(6.1)" patternUnits="userSpaceOnUse" viewBox="0 0 74.56 74.55">
       <rect class="cls-4" width="74.56" height="74.55"/>
@@ -1078,7 +1074,7 @@
       <circle id="Outer_Ring-2" data-name="Outer Ring" class="cls-23" cx="518.17" cy="508.02" r="226.77"/>
       <rect class="cls-4" x="27.35" y="24.05" width="981.53" height="981.53"/>
       <g class="cls-24">
-        <path id="Inner_Ring_Fill-2" data-name="Inner Ring Fill" class="cls-25" d="M446.64,314.6c73.71,39.65,119,117.31,116.47,200-2.35,78.14-46.94,149.49-116.47,186.81,10.11,3.86,98.38,35.82,182.47-16.69C723.24,626,724.4,516.13,724.35,508s-2.69-114.84-95.24-173.81C545.27,280.79,457.12,310.83,446.64,314.6Z"/>
+        <path id="Inner_Ring_Fill-2" data-name="Inner Ring Fill" class="cls-18" d="M446.64,314.6c73.71,39.65,119,117.31,116.47,200-2.35,78.14-46.94,149.49-116.47,186.81,10.11,3.86,98.38,35.82,182.47-16.69C723.24,626,724.4,516.13,724.35,508s-2.69-114.84-95.24-173.81C545.27,280.79,457.12,310.83,446.64,314.6Z"/>
       </g>
       <circle id="Inner_Ring" data-name="Inner Ring" class="cls-23" cx="518.17" cy="508.02" r="206.18" transform="translate(-207.46 515.2) rotate(-45)"/>
     </g>
