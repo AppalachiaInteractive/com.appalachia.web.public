@@ -1,4 +1,4 @@
-<svg id="Sun_Bold" data-name="Sun Bold" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="1024" viewBox="0 0 1024 1024">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="1024" viewBox="0 0 1024 1024">
   <defs>
     <style>
       .cls-1 {
@@ -30,7 +30,7 @@
         fill-rule: evenodd;
       }
 
-      .cls-10, .cls-7, .cls-8 {
+      .cls-7, .cls-8 {
         filter: url(#luminosity-invert);
       }
 
@@ -44,6 +44,7 @@
 
       .cls-10 {
         fill: url(#_656);
+        filter: url(#luminosity-noclip-4);
       }
 
       .cls-11 {
@@ -107,7 +108,7 @@
         mask: url(#mask-7);
       }
     </style>
-    <pattern id="_431-K" data-name="431-K" width="74.56" height="74.55" patternTransform="translate(-514.72 -1201.22) scale(6.1)" patternUnits="userSpaceOnUse" viewBox="0 0 74.56 74.55">
+    <pattern id="_431-K" data-name="431-K" width="74.56" height="74.55" patternTransform="translate(-591.72 -1298.2) scale(6.1)" patternUnits="userSpaceOnUse" viewBox="0 0 74.56 74.55">
       <rect class="cls-4" width="74.56" height="74.55"/>
       <path class="cls-5" d="M63.9,11.15C67.4,8,71.13,2.15,72.85,0"/>
       <path class="cls-5" d="M70.42,0c-.7,1.06-1.3,2.1-1.45,2.36"/>
@@ -320,7 +321,7 @@
       <path class="cls-5" d="M7.68,43.87a25.93,25.93,0,0,0,2.66-3.42,15.74,15.74,0,0,0,1.85-3.17h0c.87-2.07.72-3.45,1.17-4.73.66-1.84,3.68-5.84,5.32-7.81"/>
       <path class="cls-5" d="M41.32,30.52a16.21,16.21,0,0,0-1.77,3.08s-.46,1.31-.79,2.38a11.83,11.83,0,0,1-1.49,2.59h0a5.68,5.68,0,0,1-.55.74c-1.06,1.17-4.2,4.79-4.86,5.71"/>
     </pattern>
-    <pattern id="_705" data-name="705" width="53.5" height="53.5" patternTransform="translate(-2532.42 -1261.77) scale(5.96)" patternUnits="userSpaceOnUse" viewBox="0 0 53.5 53.5">
+    <pattern id="_705" data-name="705" width="53.5" height="53.5" patternTransform="translate(-2609.42 -1494.88) scale(5.96)" patternUnits="userSpaceOnUse" viewBox="0 0 53.5 53.5">
       <rect class="cls-4" width="53.5" height="53.5"/>
       <path class="cls-9" d="M0,7.42C1.85,5.66,4.47,2.73,5.58,1.48l.76-1"/>
       <path class="cls-9" d="M4.08,5.23C3.08,6.4,1.67,8.4.92,9.15c-.23.23-.56.58-.92,1"/>
@@ -400,7 +401,7 @@
       <path class="cls-9" d="M11.17,18.94a85.33,85.33,0,0,0,5.41-7.09C18.17,9.69,21.75,4.44,23.17,3c1.11-1.12,1.82-2,3-3"/>
       <path class="cls-9" d="M31.91,0c-2,2.53-5,6.49-6.24,7.77"/>
     </pattern>
-    <pattern id="_656" data-name="656" width="54.13" height="54.13" patternTransform="translate(-883.62 -1170.91) scale(4.77)" patternUnits="userSpaceOnUse" viewBox="0 0 54.13 54.13">
+    <pattern id="_656" data-name="656" width="54.13" height="54.13" patternTransform="translate(-960.62 -1464.82) scale(4.77)" patternUnits="userSpaceOnUse" viewBox="0 0 54.13 54.13">
       <rect class="cls-4" width="54.13" height="54.13"/>
       <path class="cls-9" d="M1,4.23C2.21,4,4,2.9,7.12,3.31"/>
       <path class="cls-9" d="M17.71,3.31c3.58-.66,6,.92,7.5,1.09"/>
@@ -981,102 +982,108 @@
         <use width="61.09" height="126.9" transform="translate(142.08 220.59) rotate(-45) scale(2.22)" xlink:href="#Straight_Sun_Ray_Mask"/>
       </g>
     </mask>
+    <filter id="luminosity-noclip-4" x="-0.05" y="1.11" width="724.4" height="713.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
     <mask id="mask-7" x="-0.05" y="1.11" width="724.4" height="713.5" maskUnits="userSpaceOnUse">
       <path id="Inner_Ring_Fill" data-name="Inner Ring Fill" class="cls-10" d="M445.64,314.6c73.71,39.65,119,117.31,116.47,200-2.35,78.14-46.94,149.49-116.47,186.81,10.11,3.86,98.38,35.82,182.47-16.69C722.24,626,723.4,516.13,723.35,508s-2.69-114.84-95.24-173.81C544.27,280.79,456.12,310.83,445.64,314.6Z"/>
     </mask>
   </defs>
-  <g id="Sun">
-    <g class="cls-14">
-      <g id="Rays">
-        <g class="cls-15">
-          <g id="Curvy_Rays" data-name="Curvy Rays">
-            <g class="cls-16">
-              <g id="Background">
-                <g class="cls-17">
-                  <rect id="Background_Fill" data-name="Background Fill" class="cls-18" x="11.46" y="-35.24" width="1048.24" height="1090.59"/>
+  <g id="Sun_Bold" data-name="Sun Bold">
+    <g id="Sun">
+      <g class="cls-14">
+        <g id="Rays">
+          <g class="cls-15">
+            <g id="Curvy_Rays" data-name="Curvy Rays">
+              <g class="cls-16">
+                <g id="Background">
+                  <g class="cls-17">
+                    <rect id="Background_Fill" data-name="Background Fill" class="cls-18" x="11.46" y="-35.24" width="1048.24" height="1090.59"/>
+                  </g>
+                </g>
+              </g>
+              <g id="Outlines">
+                <path id="Outline" class="cls-19" d="M520.46,717.29l62.94-21.08,62.94-21.09c17.41,37.7,21.11,68.43,21.48,88.88.79,44.67-13.9,65.28-13,110.92a220.41,220.41,0,0,0,18,82.15c-22.18-15.66-46-38.13-61.31-70.31-17.67-37.15-11.33-60.64-28.92-97.93C572.15,766.7,554,741.14,520.46,717.29Z"/>
+                <path id="Outline-2" data-name="Outline" class="cls-19" d="M511.66,299.53l-63.31,20-63.31,20c-16.73-38-19.89-68.79-19.89-89.24,0-44.67,15.06-65,15-110.67a220.21,220.21,0,0,0-16.57-82.46c21.9,16,45.32,38.94,60.05,71.39,17,37.46,10.26,60.83,27.18,98.42C460.86,249.21,478.6,275.09,511.66,299.53Z"/>
+                <path id="Outline-3" data-name="Outline" class="cls-19" d="M668.64,654.18q14.8-29.71,29.6-59.42t29.6-59.41c39,14.35,63.31,33.46,78,47.66,32.14,31,36.34,56,69.22,87.65A220.32,220.32,0,0,0,945.93,716c-26.76,4.61-59.49,5.57-93.07-6.36-38.77-13.77-50.89-34.87-89.7-48.79C740.13,652.57,709.19,647.36,668.64,654.18Z"/>
+                <path id="Outline-4" data-name="Outline" class="cls-19" d="M367,365l-30.65,58.87Q321,453.33,305.72,482.76c-38.71-15-62.71-34.57-77.17-49C197,402.13,193.21,377.1,160.9,344.86a220.51,220.51,0,0,0-70-46.59c26.83-4.14,59.58-4.51,92.94,8,38.52,14.47,50.27,35.77,88.81,50.39C295.51,365.34,326.36,371.1,367,365Z"/>
+                <path id="Outline-5" data-name="Outline" class="cls-19" d="M728.29,504.93Q717.76,473.46,707.21,442t-21.08-62.94c37.7-17.41,68.42-21.11,88.88-21.47,44.66-.8,65.28,13.89,110.92,13a220.3,220.3,0,0,0,82.14-18c-15.66,22.18-38.12,46-70.3,61.31-37.16,17.67-60.65,11.33-97.93,28.92C777.71,453.24,752.14,471.44,728.29,504.93Z"/>
+                <path id="Outline-6" data-name="Outline" class="cls-19" d="M310.54,513.74q10,31.65,20,63.3t20,63.31c-38,16.74-68.79,19.89-89.25,19.89-44.67,0-65-15.06-110.67-15a220.11,220.11,0,0,0-82.45,16.57c16-21.9,38.93-45.32,71.38-60,37.46-17,60.84-10.26,98.43-27.18C260.21,564.53,286.09,546.79,310.54,513.74Z"/>
+                <path id="Outline-7" data-name="Outline" class="cls-19" d="M665.18,356.75l-59.41-29.6-59.42-29.6c14.35-39,33.46-63.31,47.67-78,31-32.14,56-36.34,87.64-69.22A220.15,220.15,0,0,0,727,79.46c4.62,26.76,5.58,59.49-6.35,93.07-13.78,38.77-34.87,50.9-48.8,89.7C663.58,285.26,658.37,316.2,665.18,356.75Z"/>
+                <path id="Outline-8" data-name="Outline" class="cls-19" d="M376,658.37,434.89,689l58.88,30.65c-15,38.71-34.58,62.71-49,77.17-31.59,31.59-56.62,35.34-88.86,67.65a220.27,220.27,0,0,0-46.58,70c-4.14-26.83-4.52-59.58,8-92.93,14.46-38.52,35.77-50.27,50.38-88.82C376.34,729.88,382.1,699,376,658.37Z"/>
+              </g>
+            </g>
+          </g>
+          <g id="Straight_Rays" data-name="Straight Rays">
+            <g class="cls-20">
+              <g id="Background-2" data-name="Background">
+                <g class="cls-21">
+                  <rect id="Background_Fill-2" data-name="Background Fill" class="cls-22" x="-7.6" y="19.82" width="1049.29" height="997.41"/>
                 </g>
               </g>
             </g>
-            <g id="Outlines">
-              <path id="Outline" class="cls-19" d="M520.46,717.29l62.94-21.08,62.94-21.09c17.41,37.7,21.11,68.43,21.48,88.88.79,44.67-13.9,65.28-13,110.92a220.41,220.41,0,0,0,18,82.15c-22.18-15.66-46-38.13-61.31-70.31-17.67-37.15-11.33-60.64-28.92-97.93C572.15,766.7,554,741.14,520.46,717.29Z"/>
-              <path id="Outline-2" data-name="Outline" class="cls-19" d="M511.66,299.53l-63.31,20-63.31,20c-16.73-38-19.89-68.79-19.89-89.24,0-44.67,15.06-65,15-110.67a220.21,220.21,0,0,0-16.57-82.46c21.9,16,45.32,38.94,60.05,71.39,17,37.46,10.26,60.83,27.18,98.42C460.86,249.21,478.6,275.09,511.66,299.53Z"/>
-              <path id="Outline-3" data-name="Outline" class="cls-19" d="M668.64,654.18q14.8-29.71,29.6-59.42t29.6-59.41c39,14.35,63.31,33.46,78,47.66,32.14,31,36.34,56,69.22,87.65A220.32,220.32,0,0,0,945.93,716c-26.76,4.61-59.49,5.57-93.07-6.36-38.77-13.77-50.89-34.87-89.7-48.79C740.13,652.57,709.19,647.36,668.64,654.18Z"/>
-              <path id="Outline-4" data-name="Outline" class="cls-19" d="M367,365l-30.65,58.87Q321,453.33,305.72,482.76c-38.71-15-62.71-34.57-77.17-49C197,402.13,193.21,377.1,160.9,344.86a220.51,220.51,0,0,0-70-46.59c26.83-4.14,59.58-4.51,92.94,8,38.52,14.47,50.27,35.77,88.81,50.39C295.51,365.34,326.36,371.1,367,365Z"/>
-              <path id="Outline-5" data-name="Outline" class="cls-19" d="M728.29,504.93Q717.76,473.46,707.21,442t-21.08-62.94c37.7-17.41,68.42-21.11,88.88-21.47,44.66-.8,65.28,13.89,110.92,13a220.3,220.3,0,0,0,82.14-18c-15.66,22.18-38.12,46-70.3,61.31-37.16,17.67-60.65,11.33-97.93,28.92C777.71,453.24,752.14,471.44,728.29,504.93Z"/>
-              <path id="Outline-6" data-name="Outline" class="cls-19" d="M310.54,513.74q10,31.65,20,63.3t20,63.31c-38,16.74-68.79,19.89-89.25,19.89-44.67,0-65-15.06-110.67-15a220.11,220.11,0,0,0-82.45,16.57c16-21.9,38.93-45.32,71.38-60,37.46-17,60.84-10.26,98.43-27.18C260.21,564.53,286.09,546.79,310.54,513.74Z"/>
-              <path id="Outline-7" data-name="Outline" class="cls-19" d="M665.18,356.75l-59.41-29.6-59.42-29.6c14.35-39,33.46-63.31,47.67-78,31-32.14,56-36.34,87.64-69.22A220.15,220.15,0,0,0,727,79.46c4.62,26.76,5.58,59.49-6.35,93.07-13.78,38.77-34.87,50.9-48.8,89.7C663.58,285.26,658.37,316.2,665.18,356.75Z"/>
-              <path id="Outline-8" data-name="Outline" class="cls-19" d="M376,658.37,434.89,689l58.88,30.65c-15,38.71-34.58,62.71-49,77.17-31.59,31.59-56.62,35.34-88.86,67.65a220.27,220.27,0,0,0-46.58,70c-4.14-26.83-4.52-59.58,8-92.93,14.46-38.52,35.77-50.27,50.38-88.82C376.34,729.88,382.1,699,376,658.37Z"/>
-            </g>
-          </g>
-        </g>
-        <g id="Straight_Rays" data-name="Straight Rays">
-          <g class="cls-20">
-            <g id="Background-2" data-name="Background">
-              <g class="cls-21">
-                <rect id="Background_Fill-2" data-name="Background Fill" class="cls-22" x="-7.6" y="19.82" width="1049.29" height="997.41"/>
+            <g id="Outlines-2" data-name="Outlines">
+              <g>
+                <g id="Middle_Line" data-name="Middle Line">
+                  <path class="cls-18" d="M646.92,642.2,745.1,739l49.09,48.4c16,16.46,34,31,46.28,51.25-20.44-12-35.22-29.75-51.9-45.55L739.48,744.7,641.3,647.89Z"/>
+                </g>
+                <path id="Outline-9" data-name="Outline" class="cls-23" d="M597.17,692q23.48-23.46,46.94-46.94l46.94-46.93L840.47,838.66Z"/>
               </g>
-            </g>
-          </g>
-          <g id="Outlines-2" data-name="Outlines">
-            <g>
-              <g id="Middle_Line" data-name="Middle Line">
-                <path class="cls-18" d="M646.92,642.2,745.1,739l49.09,48.4c16,16.46,34,31,46.28,51.25-20.44-12-35.22-29.75-51.9-45.55L739.48,744.7,641.3,647.89Z"/>
+              <g>
+                <g id="Middle_Line-2" data-name="Middle Line">
+                  <path class="cls-18" d="M385.54,373.85,287.36,277l-49.09-48.4c-16-16.47-34-31-46.28-51.26,20.43,12,35.21,29.75,51.9,45.56L293,271.34l98.17,96.81Z"/>
+                </g>
+                <path id="Outline-10" data-name="Outline" class="cls-23" d="M435.28,324.06,388.35,371l-46.94,46.94Q266.7,297.65,192,177.38Z"/>
               </g>
-              <path id="Outline-9" data-name="Outline" class="cls-23" d="M597.17,692q23.48-23.46,46.94-46.94l46.94-46.93L840.47,838.66Z"/>
-            </g>
-            <g>
-              <g id="Middle_Line-2" data-name="Middle Line">
-                <path class="cls-18" d="M385.54,373.85,287.36,277l-49.09-48.4c-16-16.47-34-31-46.28-51.26,20.43,12,35.21,29.75,51.9,45.56L293,271.34l98.17,96.81Z"/>
+              <g>
+                <g id="Middle_Line-3" data-name="Middle Line">
+                  <path class="cls-18" d="M518.69,320.74l-1-137.88-.48-68.94c.3-23-2.13-45.95,3.51-69,6,22.94,3.87,45.94,4.49,68.91l.48,68.94,1,137.88Z"/>
+                </g>
+                <path id="Outline-11" data-name="Outline" class="cls-23" d="M589.07,320.71H456.31L520.75,45Q554.92,182.83,589.07,320.71Z"/>
               </g>
-              <path id="Outline-10" data-name="Outline" class="cls-23" d="M435.28,324.06,388.35,371l-46.94,46.94Q266.7,297.65,192,177.38Z"/>
-            </g>
-            <g>
-              <g id="Middle_Line-3" data-name="Middle Line">
-                <path class="cls-18" d="M518.69,320.74l-1-137.88-.48-68.94c.3-23-2.13-45.95,3.51-69,6,22.94,3.87,45.94,4.49,68.91l.48,68.94,1,137.88Z"/>
+              <g>
+                <g id="Middle_Line-4" data-name="Middle Line">
+                  <path class="cls-18" d="M513.77,695.31l1,137.88.49,68.94c-.3,23,2.12,45.94-3.52,69-6-22.94-3.86-45.93-4.48-68.91l-.49-68.94-1-137.87Z"/>
+                </g>
+                <path id="Outline-12" data-name="Outline" class="cls-23" d="M443.39,695.34H576.15Q543.92,833.22,511.7,971.09Z"/>
               </g>
-              <path id="Outline-11" data-name="Outline" class="cls-23" d="M589.07,320.71H456.31L520.75,45Q554.92,182.83,589.07,320.71Z"/>
-            </g>
-            <g>
-              <g id="Middle_Line-4" data-name="Middle Line">
-                <path class="cls-18" d="M513.77,695.31l1,137.88.49,68.94c-.3,23,2.12,45.94-3.52,69-6-22.94-3.86-45.93-4.48-68.91l-.49-68.94-1-137.87Z"/>
+              <g>
+                <g id="Middle_Line-5" data-name="Middle Line">
+                  <path class="cls-18" d="M650.4,377.33l96.81-98.18,48.4-49.09c16.47-16,31-34,51.26-46.28-12,20.44-29.75,35.22-45.56,51.9l-48.4,49.09L656.1,383Z"/>
+                </g>
+                <path id="Outline-13" data-name="Outline" class="cls-23" d="M700.19,427.08l-46.94-46.94L606.31,333.2,846.87,183.78Q773.52,305.43,700.19,427.08Z"/>
               </g>
-              <path id="Outline-12" data-name="Outline" class="cls-23" d="M443.39,695.34H576.15Q543.92,833.22,511.7,971.09Z"/>
-            </g>
-            <g>
-              <g id="Middle_Line-5" data-name="Middle Line">
-                <path class="cls-18" d="M650.4,377.33l96.81-98.18,48.4-49.09c16.47-16,31-34,51.26-46.28-12,20.44-29.75,35.22-45.56,51.9l-48.4,49.09L656.1,383Z"/>
+              <g>
+                <g id="Middle_Line-6" data-name="Middle Line">
+                  <path class="cls-18" d="M382.05,638.71l-96.8,98.18L236.84,786c-16.46,16-31,34-51.25,46.28,12-20.43,29.75-35.21,45.55-51.89l48.41-49.09,96.81-98.18Z"/>
+                </g>
+                <path id="Outline-14" data-name="Outline" class="cls-23" d="M332.27,589l46.94,46.94,46.93,46.93L185.59,832.26Z"/>
               </g>
-              <path id="Outline-13" data-name="Outline" class="cls-23" d="M700.19,427.08l-46.94-46.94L606.31,333.2,846.87,183.78Q773.52,305.43,700.19,427.08Z"/>
-            </g>
-            <g>
-              <g id="Middle_Line-6" data-name="Middle Line">
-                <path class="cls-18" d="M382.05,638.71l-96.8,98.18L236.84,786c-16.46,16-31,34-51.25,46.28,12-20.43,29.75-35.21,45.55-51.89l48.41-49.09,96.81-98.18Z"/>
+              <g>
+                <g id="Middle_Line-7" data-name="Middle Line">
+                  <path class="cls-18" d="M703.52,510.49l137.87-1,68.94-.49c23,.3,45.95-2.12,69,3.52-22.94,6-45.94,3.86-68.91,4.48l-68.94.49-137.88,1Z"/>
+                </g>
+                <path id="Outline-15" data-name="Outline" class="cls-23" d="M703.54,580.86V448.11L979.3,512.55Z"/>
               </g>
-              <path id="Outline-14" data-name="Outline" class="cls-23" d="M332.27,589l46.94,46.94,46.93,46.93L185.59,832.26Z"/>
-            </g>
-            <g>
-              <g id="Middle_Line-7" data-name="Middle Line">
-                <path class="cls-18" d="M703.52,510.49l137.87-1,68.94-.49c23,.3,45.95-2.12,69,3.52-22.94,6-45.94,3.86-68.91,4.48l-68.94.49-137.88,1Z"/>
+              <g>
+                <g id="Middle_Line-8" data-name="Middle Line">
+                  <path class="cls-18" d="M328.94,505.56l-137.88,1-68.94.48c-23-.29-45.94,2.13-69-3.51,22.94-6,45.93-3.87,68.91-4.49l68.94-.48,137.87-1Z"/>
+                </g>
+                <path id="Outline-16" data-name="Outline" class="cls-23" d="M328.91,435.18V567.94L53.16,503.5Z"/>
               </g>
-              <path id="Outline-15" data-name="Outline" class="cls-23" d="M703.54,580.86V448.11L979.3,512.55Z"/>
-            </g>
-            <g>
-              <g id="Middle_Line-8" data-name="Middle Line">
-                <path class="cls-18" d="M328.94,505.56l-137.88,1-68.94.48c-23-.29-45.94,2.13-69-3.51,22.94-6,45.93-3.87,68.91-4.49l68.94-.48,137.87-1Z"/>
-              </g>
-              <path id="Outline-16" data-name="Outline" class="cls-23" d="M328.91,435.18V567.94L53.16,503.5Z"/>
             </g>
           </g>
         </g>
       </g>
-    </g>
-    <g id="Body">
-      <circle id="Outer_Ring-2" data-name="Outer Ring" class="cls-23" cx="518.17" cy="508.02" r="226.77"/>
-      <rect class="cls-4" x="27.35" y="24.05" width="981.53" height="981.53"/>
-      <g class="cls-24">
-        <path id="Inner_Ring_Fill-2" data-name="Inner Ring Fill" class="cls-18" d="M446.64,314.6c73.71,39.65,119,117.31,116.47,200-2.35,78.14-46.94,149.49-116.47,186.81,10.11,3.86,98.38,35.82,182.47-16.69C723.24,626,724.4,516.13,724.35,508s-2.69-114.84-95.24-173.81C545.27,280.79,457.12,310.83,446.64,314.6Z"/>
+      <g id="Body">
+        <circle id="Outer_Ring-2" data-name="Outer Ring" class="cls-23" cx="518.17" cy="508.02" r="226.77"/>
+        <rect class="cls-4" x="27.35" y="24.05" width="981.53" height="981.53"/>
+        <g class="cls-24">
+          <path id="Inner_Ring_Fill-2" data-name="Inner Ring Fill" class="cls-18" d="M446.64,314.6c73.71,39.65,119,117.31,116.47,200-2.35,78.14-46.94,149.49-116.47,186.81,10.11,3.86,98.38,35.82,182.47-16.69C723.24,626,724.4,516.13,724.35,508s-2.69-114.84-95.24-173.81C545.27,280.79,457.12,310.83,446.64,314.6Z"/>
+        </g>
+        <circle id="Inner_Ring" data-name="Inner Ring" class="cls-23" cx="518.17" cy="508.02" r="206.18" transform="translate(-207.46 515.2) rotate(-45)"/>
       </g>
-      <circle id="Inner_Ring" data-name="Inner Ring" class="cls-23" cx="518.17" cy="508.02" r="206.18" transform="translate(-207.46 515.2) rotate(-45)"/>
     </g>
   </g>
 </svg>

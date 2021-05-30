@@ -1,8 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="428.11" height="436.24">
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
   <defs>
-    <symbol id="a" data-name="Moon" viewBox="0 0 165.72 165.72">
-      <path d="M55.31 10a77.85 77.85 0 1 0 105.41 72.5 51.2 51.2 0 1 1-65.13-68.19L112.85 11a77.89 77.89 0 0 0-57.54-1z" fill="#161515" stroke="#d9b776" stroke-miterlimit="3" stroke-width="10"/>
-    </symbol>
+    <style>
+      .cls-1 {
+        fill: #171616;
+        stroke: #d9b776;
+        stroke-miterlimit: 3;
+        stroke-width: 18px;
+      }
+    </style>
   </defs>
-  <use width="165.72" height="165.72" transform="matrix(2.52 0 0 2.52 3.42 7.76)" xlink:href="#a"/>
+  <g id="Moon">
+    <path id="Moon-2" data-name="Moon" class="cls-1" d="M374.64,148.92C174.14,224.81,73.13,448.87,149,649.37S449,950.87,649.47,875A388.18,388.18,0,0,0,900.22,510.21a255.35,255.35,0,0,1-144,137.54C624.35,697.66,477,631.23,427.07,499.36S443.59,220.12,575.46,170.2h0l86.06-16.49A388.16,388.16,0,0,0,374.64,148.92Z"/>
+  </g>
 </svg>
