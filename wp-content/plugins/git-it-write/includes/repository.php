@@ -14,10 +14,11 @@ class GIW_Repository{
 
     public $structure = array();
 
-    public function __construct( $user, $repo ){
+    public function __construct( $user, $repo, $branch ){
 
         $this->user = $user;
         $this->repo = $repo;
+        $this->branch = $branch;
 
         $this->build_repo_structure();
 
