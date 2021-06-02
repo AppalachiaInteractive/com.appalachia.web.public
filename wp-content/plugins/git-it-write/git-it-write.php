@@ -41,7 +41,7 @@ final class Git_It_Write{
             'username' => '',
             'repository' => '',
             'folder' => '',
-            'default_branch' => 'master',
+            'branch' => 'master',
             'post_type' => '',
             'post_author' => 1,
             'content_template' => '%%content%%',

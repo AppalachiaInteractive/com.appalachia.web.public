@@ -138,7 +138,7 @@ class GIW_Admin{
             echo '</div>';
             '</td>';
 
-            echo '<td>' . ( empty( $config[ 'branch' ] ) ? 'Master' : $config[ 'branch' ] ) . '</td>';
+            echo '<td>' . ( empty( $config[ 'branch' ] ) ? 'master' : $config[ 'branch' ] ) . '</td>';
             echo '<td>' . ( empty( $config[ 'folder' ] ) ? 'Root' : $config[ 'folder' ] ) . '</td>';
             echo '<td>' . $config[ 'post_type' ] . '</td>';
             echo '<td>' . ( $config[ 'last_publish' ] == 0 ? '-' : human_time_diff( $config[ 'last_publish' ] ) . ' ago' ) . '</td>';

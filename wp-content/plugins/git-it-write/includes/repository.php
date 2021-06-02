@@ -6,7 +6,7 @@ class GIW_Repository{
 
     public $repo;
 
-    public $default_branch;
+    public $branch;
 
     public $user;
 
@@ -46,15 +46,15 @@ class GIW_Repository{
     }
 
     public function tree_url(){
-        return 'https://api.github.com/repos/' . $this->user . '/' . $this->repo . '/git/trees/' . $this->default_branch . '?recursive=1';
+        return 'https://api.github.com/repos/' . $this->user . '/' . $this->repo . '/git/trees/' . $this->branch . '?recursive=1';
     }
 
     public function raw_url( $file_path ){
-        return 'https://raw.githubusercontent.com/' . $this->user . '/' . $this->repo . '/' . $this->default_branch . '/' . $file_path;
+        return 'https://raw.githubusercontent.com/' . $this->user . '/' . $this->repo . '/' . $this->branch . '/' . $file_path;
     }
 
     public function github_url( $file_path ){
-        return 'https://github.com/' . $this->user . '/' . $this->repo . '/blob/' . $this->default_branch . '/' . $file_path;
+        return 'https://github.com/' . $this->user . '/' . $this->repo . '/blob/' . $this->branch . '/' . $file_path;
     }
 
     public function add_to_structure( $structure, $path_split, $item ){
