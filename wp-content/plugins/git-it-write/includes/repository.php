@@ -102,18 +102,18 @@ class GIW_Repository{
 
     public function build_repo_structure(){
 
-        GIW_Utils::log( 'Building repo structure' );
+        GIW_Utils::log( 'Building repo structure...' );
 
         $tree_url = $this->tree_url();
         $data = $this->get_json( $tree_url );
 
         if( !$data ){
-            GIW_Utils::log( 'Failed to fetch the repository tree' );
+            GIW_Utils::log( 'Failed to fetch the repository tree! ['. $tree_url .']' );
             return false;
         }
 
         if( !property_exists( $data, 'tree' ) ){
-            GIW_Utils::log( 'Repository not found on Github !' );
+            GIW_Utils::log( 'Repository not found on Github! ['. $tree_url .']' );
             return false;
         }
 
