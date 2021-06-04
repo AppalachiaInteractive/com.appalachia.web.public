@@ -135,9 +135,13 @@ class GIW_Publisher{
             $menu_order = empty( $front_matter[ 'menu_order' ] ) ? 0 : $front_matter[ 'menu_order' ];
             $taxonomy = $front_matter[ 'taxonomy' ];
             $custom_fields = $front_matter[ 'custom_fields' ];
-
+            
             $sha = $item_props[ 'sha' ];
             $github_url = $item_props[ 'github_url' ];
+
+            $post_category = $front_matter[ 'post_category' ];
+            $tags_input = $front_matter[ 'tags_input' ];
+            $tax_input = $front_matter[ 'tax_input' ];
 
         }else{
 
@@ -151,6 +155,10 @@ class GIW_Publisher{
             $content = '';
             $sha = '';
             $github_url = '';
+            
+            $post_category = array();
+            $tags_input = array();
+            $tax_input = array();
         }
 
         $meta_input = array_merge( $custom_fields, array(
@@ -169,7 +177,10 @@ class GIW_Publisher{
             'post_excerpt' => $post_excerpt,
             'post_parent' => $parent,
             'menu_order' => $menu_order,
-            'meta_input' => $meta_input
+            'meta_input' => $meta_input,
+            'post_category' => $post_category,
+            'tags_input' => $tags_input,
+            'tax_input' => $tax_input,
         );
 
         $new_post_id = wp_insert_post( $post_details );
