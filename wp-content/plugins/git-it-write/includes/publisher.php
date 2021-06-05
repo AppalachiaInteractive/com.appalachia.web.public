@@ -139,10 +139,6 @@ class GIW_Publisher{
             $sha = $item_props[ 'sha' ];
             $github_url = $item_props[ 'github_url' ];
 
-            $post_category = $front_matter[ 'post_category' ];
-            $tags_input = $front_matter[ 'tags_input' ];
-            $tax_input = $front_matter[ 'tax_input' ];
-
         }else{
 
             $post_title = $item_slug;
@@ -155,10 +151,6 @@ class GIW_Publisher{
             $content = '';
             $sha = '';
             $github_url = '';
-            
-            $post_category = array();
-            $tags_input = array();
-            $tax_input = array();
         }
 
         $meta_input = array_merge( $custom_fields, array(
@@ -177,10 +169,7 @@ class GIW_Publisher{
             'post_excerpt' => $post_excerpt,
             'post_parent' => $parent,
             'menu_order' => $menu_order,
-            'meta_input' => $meta_input,
-            'post_category' => $post_category,
-            'tags_input' => $tags_input,
-            'tax_input' => $tax_input,
+            'meta_input' => $meta_input
         );
 
         $new_post_id = wp_insert_post( $post_details );
@@ -195,13 +184,15 @@ class GIW_Publisher{
             // Set the post taxonomy
             if( !empty( $taxonomy ) ){
                 foreach( $taxonomy as $tax_name => $terms ){
-                    GIW_Utils::log( 'Setting taxonomy to post - ' . $tax_name );
+                    GIW_Utils::log( 'Setting taxonomy [' . $tax_name . '] to post.' );
                     if( !taxonomy_exists( $tax_name ) ){
+                        GIW_Utils::log( 'Skipping taxonomy [' . $tax_name . '] - does not exist.' );
                         continue;
                     }
+
                     $set_tax = wp_set_object_terms( $new_post_id, $terms, $tax_name );
                     if( is_wp_error( $set_tax ) ){
-                        GIW_Utils::log( 'Failed to set taxonomy - ' . $set_tax->get_error_message() );
+                        GIW_Utils::log( 'Failed to set taxonomy  [' . $set_tax->get_error_message() . ']' );
                     }
                 }
             }
