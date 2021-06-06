@@ -176,6 +176,7 @@ if (!function_exists('hello_elementor_check_hide_title')) {
 	}
 }
 add_filter('hello_elementor_page_title', 'hello_elementor_check_hide_title');
+add_post_type_support( 'page', 'excerpt' );
 
 /**
  * Wrapper function to deal with backwards compatibility.
