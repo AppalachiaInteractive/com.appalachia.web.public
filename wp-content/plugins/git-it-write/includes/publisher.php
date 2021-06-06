@@ -160,6 +160,16 @@ class GIW_Publisher{
             foreach( $attachments as $attachment ){                
                 $field_key = 'attachment' . str_replace( $item_slug, '', $attachment->post_title );                
                 $custom_fields[$field_key] = $attachment->ID;
+
+                if( str_contains( $attachment->post_title, 'twitter' ) ){          
+                    $custom_fields['_yoast_wpseo_twitter-image'] = $attachment->guid;
+                    $custom_fields['_yoast_wpseo_twitter-image-id'] = $attachment->ID;
+                }
+
+                if( str_contains( $attachment->post_title, 'opengraph' ) ){          
+                    $custom_fields['_yoast_wpseo_opengraph-image'] = $attachment->guid;
+                    $custom_fields['_yoast_wpseo_opengraph-image-id'] = $attachment->ID;
+                }
             }
         }        
         
