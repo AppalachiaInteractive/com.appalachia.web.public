@@ -190,3 +190,34 @@ if (!function_exists('hello_elementor_body_open')) {
 		}
 	}
 }
+
+if (!function_exists('search_attachments_by_title')) {
+	function search_attachments_by_title($title)
+	{
+		global $wpdb;
+
+		$attachments = $wpdb->get_results("SELECT * FROM $wpdb->posts WHERE INSTR(post_title, '$title') AND post_type = 'attachment' ", OBJECT);
+
+		if ($attachments) {
+			return $attachments;
+		} else {
+			return array();
+		}
+	}
+}
+
+if (!function_exists('get_attachment_by_title')) {
+	function get_attachment_by_title($title)
+	{
+		global $wpdb;
+
+		$attachment = $wpdb->get_results("SELECT * FROM $wpdb->posts WHERE post_title = '$title' AND post_type = 'attachment' ", OBJECT);
+
+		if ($attachment) {
+			return $attachment[0];
+		} else {
+			return NULL;
+		}
+	}
+}
+

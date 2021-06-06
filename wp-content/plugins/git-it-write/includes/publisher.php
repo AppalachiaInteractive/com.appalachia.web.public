@@ -153,6 +153,16 @@ class GIW_Publisher{
             $github_url = '';
         }
 
+        # get attachments that include the slug
+        $attachments = search_attachments_by_title($item_slug);
+
+        if( !empty( $attachments ) ){
+            foreach( $attachments as $attachment ){                
+                $field_key = 'attachment' . str_replace( $item_slug, '', $attachment->post_title );                
+                $custom_fields[$field_key] = $attachment->ID;
+            }
+        }        
+        
         $meta_input = array_merge( $custom_fields, array(
             'sha' => $sha,
             'github_url' => $github_url
