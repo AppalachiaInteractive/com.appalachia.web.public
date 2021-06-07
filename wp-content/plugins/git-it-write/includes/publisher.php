@@ -161,18 +161,20 @@ class GIW_Publisher{
                 $field_key = 'attachment' . str_replace( $item_slug, '', $attachment->post_title );                
                 $custom_fields[$field_key] = $attachment->ID;
 
+
                 if( str_contains( $attachment->post_title, 'twitter' ) ){          
                     $custom_fields['_yoast_wpseo_twitter-image'] = $attachment->guid;
                     $custom_fields['_yoast_wpseo_twitter-image-id'] = $attachment->ID;
                 }
 
-                if( str_contains( $attachment->post_title, 'opengraph' ) ){          
+                if( str_contains( $attachment->post_title, 'opengraph' ) ){
+                    $custom_fields['inline_featured_image'] = $attachment->ID;
                     $custom_fields['_yoast_wpseo_opengraph-image'] = $attachment->guid;
                     $custom_fields['_yoast_wpseo_opengraph-image-id'] = $attachment->ID;
                 }
             }
         }
-
+        
         $custom_fields['_yoast_wpseo_metadesc'] = $post_excerpt;
 	    $custom_fields['_yoast_wpseo_opengraph-description'] = $post_excerpt;
 	    $custom_fields['_yoast_wpseo_twitter-description'] = $post_excerpt;
