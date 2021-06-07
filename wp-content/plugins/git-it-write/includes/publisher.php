@@ -177,12 +177,12 @@ class GIW_Publisher{
         
         $custom_fields['_yoast_wpseo_metadesc'] = $post_excerpt;
 	    $custom_fields['_yoast_wpseo_opengraph-description'] = $post_excerpt;
-	    $custom_fields['_yoast_wpseo_twitter-description'] = $post_excerpt;
+	    $custom_fields['_yoast_wpseo_twitter-description'] = $post_excerpt . ' #appalachiainteractive';
 
         $seo_title = '%%title%% - %%sitename%%';
-	    $custom_fields['_yoast_wpseo_title'] = $seo_title;
-	    $custom_fields['_yoast_wpseo_opengraph-title'] = $seo_title;
-	    $custom_fields['_yoast_wpseo_twitter-title'] = $seo_title;
+	    $custom_fields['_yoast_wpseo_title'] = $seo_title . ' Blog';
+	    $custom_fields['_yoast_wpseo_opengraph-title'] = $seo_title . ' Blog';
+	    $custom_fields['_yoast_wpseo_twitter-title'] = $seo_title . ' Blog';
 
 	    $custom_fields['_yoast_wpseo_focuskw'] = "appalachia interactive" . $post_title ;
         
