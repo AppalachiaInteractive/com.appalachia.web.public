@@ -182,7 +182,7 @@ class GIW_Publisher{
 	    $custom_fields['_yoast_wpseo_opengraph-title'] = $seo_title;
 	    $custom_fields['_yoast_wpseo_twitter-title'] = $seo_title;
 
-	    $custom_fields['_yoast_wpseo_focuskw'] = "%%sitename%% %%title%%";
+	    $custom_fields['_yoast_wpseo_focuskw'] = "appalachia interactive" . $post_title ;
         
         $meta_input = array_merge( $custom_fields, array(
             'sha' => $sha,
