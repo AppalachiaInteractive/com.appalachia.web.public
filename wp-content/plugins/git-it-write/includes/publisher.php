@@ -171,7 +171,18 @@ class GIW_Publisher{
                     $custom_fields['_yoast_wpseo_opengraph-image-id'] = $attachment->ID;
                 }
             }
-        }        
+        }
+
+        $custom_fields['_yoast_wpseo_metadesc'] = $post_excerpt;
+	    $custom_fields['_yoast_wpseo_opengraph-description'] = $post_excerpt;
+	    $custom_fields['_yoast_wpseo_twitter-description'] = $post_excerpt;
+
+        $seo_title = '%%title%% - %%sitename%%';
+	    $custom_fields['_yoast_wpseo_title'] = $seo_title;
+	    $custom_fields['_yoast_wpseo_opengraph-title'] = $seo_title;
+	    $custom_fields['_yoast_wpseo_twitter-title'] = $seo_title;
+
+	    $custom_fields['_yoast_wpseo_focuskw'] = "%%sitename%% %%title%%";
         
         $meta_input = array_merge( $custom_fields, array(
             'sha' => $sha,
