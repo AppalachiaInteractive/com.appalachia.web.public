@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="985.51" height="985.51" viewBox="0 0 985.51 985.51">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #161515;
+        stroke-miterlimit: 3;
+        stroke-width: 40.24px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Moon_Simple" data-name="Moon Simple">
+      <path id="Moon" class="cls-1" d="M325.52,50.72C81.43,143.12-41.54,415.9,50.85,660S416,1027.05,660.11,934.66A472.56,472.56,0,0,0,965.38,490.57,310.83,310.83,0,0,1,790.08,658c-160.55,60.77-340-20.11-400.73-180.66S409.47,137.41,570,76.64h0L674.78,56.56A472.58,472.58,0,0,0,325.52,50.72Z"/>
+    </g>
+  </g>
+</svg>
